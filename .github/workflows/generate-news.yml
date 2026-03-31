@@ -1,0 +1,51 @@
+name: Generate SEA Ad News
+
+on:
+  schedule:
+    # Every Monday at 00:00 UTC (08:00 SGT)
+    - cron: "0 0 * * 1"
+  # Allow manual trigger from GitHub Actions UI
+  workflow_dispatch:
+
+jobs:
+  generate-and-push:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout GitHub repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install feedparser python-dateutil
+
+      - name: Generate news.json
+        run: python generate_news.py
+
+      - name: Push news.json to GitLab
+        env:
+          GITLAB_TOKEN: ${{ secrets.GITLAB_TOKEN }}
+          GITLAB_HOST: myteksi.net
+          GITLAB_PROJECT: christina.yong/ads-news-widget
+        run: |
+          # Configure git
+          git config --global user.email "github-actions-bot@grabads"
+          git config --global user.name "GrabAds GitHub Bot"
+
+          # Clone the GitLab repo
+          git clone "https://oauth2:${GITLAB_TOKEN}@${GITLAB_HOST}/${GITLAB_PROJECT}.git" gitlab-repo
+
+          # Copy the freshly generated news.json into it
+          cp news.json gitlab-repo/news.json
+
+          # Commit and push
+          cd gitlab-repo
+          git add news.json
+          git diff --cached --quiet && echo "No changes to news.json" && exit 0
+          git commit -m "chore: auto-update news.json from GitHub Actions"
+          git push origin main
+          echo "news.json pushed to GitLab successfully!"
