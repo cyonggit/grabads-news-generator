@@ -22,7 +22,7 @@ jobs:
           python-version: "3.11"
 
       - name: Install dependencies
-        run: pip install feedparser python-dateutil
+        run: pip install feedparser python-dateutil requests
 
       - name: Generate news.json
         run: python generate_news.py
