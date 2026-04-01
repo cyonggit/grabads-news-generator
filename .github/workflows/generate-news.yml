@@ -1,49 +1,46 @@
 name: Generate SEA Ad News
- 
+
 on:
   schedule:
-    # Every Monday at 00:00 UTC (08:00 SGT)
     - cron: "0 0 * * 1"
-  # Allow manual trigger from GitHub Actions UI for testing
   workflow_dispatch:
- 
-# Required permissions for GitHub Pages deployment
+
 permissions:
   contents: write
-  pages: write
-  id-token: write
- 
+
 jobs:
   generate-and-publish:
     runs-on: ubuntu-latest
- 
+
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
- 
+
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
- 
+
       - name: Install dependencies
         run: pip install feedparser python-dateutil
- 
+
       - name: Generate news.json
         run: python generate_news.py
- 
+
       - name: Verify news.json was created
         run: |
           echo "news.json preview:"
           head -30 news.json
- 
-      - name: Publish news.json to GitHub Pages
+
+      - name: Save news.json to temp location
+        run: cp news.json /tmp/news.json
+
+      - name: Publish news.json to gh-pages branch
         run: |
-          # Configure git
           git config user.email "github-actions-bot@grabads"
           git config user.name "GrabAds Bot"
- 
-          # Check if gh-pages branch exists, create it if not
+
+          # Switch to gh-pages branch or create it fresh
           if git ls-remote --exit-code --heads origin gh-pages; then
             git fetch origin gh-pages
             git checkout gh-pages
@@ -51,16 +48,12 @@ jobs:
             git checkout --orphan gh-pages
             git rm -rf . 2>/dev/null || true
           fi
- 
-          # Copy news.json and add a simple index so the file is accessible
-          cp $GITHUB_WORKSPACE/news.json ./news.json 2>/dev/null || git checkout main -- news.json
- 
-          # Ensure CORS-friendly access by adding a _headers file
-          echo "/*
-            Access-Control-Allow-Origin: *" > _headers
- 
-          # Commit and push to gh-pages branch
-          git add news.json _headers
-          git diff --cached --quiet && echo "No changes." || git commit -m "chore: update news.json"
+
+          # Copy news.json from temp location
+          cp /tmp/news.json ./news.json
+
+          # Commit and push
+          git add news.json
+          git diff --cached --quiet && echo "No changes to news.json." || git commit -m "chore: update news.json"
           git push origin gh-pages
-          echo "news.json published to GitHub Pages successfully!"
+          echo "news.json published successfully!"
