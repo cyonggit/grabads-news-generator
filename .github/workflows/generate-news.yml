@@ -40,9 +40,14 @@ jobs:
           git config user.email "github-actions-bot@grabads"
           git config user.name "GrabAds Bot"
 
+          # Save news.json to temp before switching branches
+          cp news.json /tmp/news.json
+
           # Switch to gh-pages branch or create it fresh
           if git ls-remote --exit-code --heads origin gh-pages; then
             git fetch origin gh-pages
+            # Remove any untracked files that would conflict
+            rm -f news.json
             git checkout gh-pages
           else
             git checkout --orphan gh-pages
