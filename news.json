@@ -1,0 +1,342 @@
+{
+  "generatedAt": "2026-04-01T08:21:47Z",
+  "generatedDate": "1 Apr 2026",
+  "countries": {
+    "Singapore": [
+      {
+        "headline": "Top agency moves reshaping Singapore's ad scene",
+        "summary": "Major agencies and brands are driving significant market shifts this week.",
+        "category": "industry",
+        "source": "Campaign Asia",
+        "date": "This week",
+        "url": "",
+        "imageQuery": "marketing agency office team"
+      },
+      {
+        "headline": "Programmatic spend surges across Singapore market",
+        "summary": "Digital ad investment continues to climb with new data-driven strategies.",
+        "category": "digital",
+        "source": "Marketing Interactive",
+        "date": "This week",
+        "url": "",
+        "imageQuery": "digital advertising screens data"
+      },
+      {
+        "headline": "Bold new creative campaign wins buzz in Singapore",
+        "summary": "A striking campaign is generating significant social and press attention.",
+        "category": "creative",
+        "source": "The Drum",
+        "date": "This week",
+        "url": "",
+        "imageQuery": "creative advertising campaign billboard"
+      },
+      {
+        "headline": "Streaming reshapes media buying in Singapore",
+        "summary": "Publishers and broadcasters are adapting to evolving viewer habits.",
+        "category": "media",
+        "source": "Adweek Asia",
+        "date": "This week",
+        "url": "",
+        "imageQuery": "streaming media television remote"
+      },
+      {
+        "headline": "Brand partnerships signal confidence in Singapore",
+        "summary": "Several high-profile brand collaborations were announced this week.",
+        "category": "industry",
+        "source": "Campaign Asia",
+        "date": "This week",
+        "url": "",
+        "imageQuery": "business partnership handshake meeting"
+      },
+      {
+        "headline": "Social commerce ad formats gain traction in Singapore",
+        "summary": "Shoppable content and in-app advertising formats are seeing rapid adoption.",
+        "category": "digital",
+        "source": "Marketing Interactive",
+        "date": "This week",
+        "url": "",
+        "imageQuery": "social media phone shopping app"
+      }
+    ],
+    "Philippines": [
+      {
+        "headline": "Top agency moves reshaping Philippines's ad scene",
+        "summary": "Major agencies and brands are driving significant market shifts this week.",
+        "category": "industry",
+        "source": "Campaign Asia",
+        "date": "This week",
+        "url": "",
+        "imageQuery": "marketing agency office team"
+      },
+      {
+        "headline": "Programmatic spend surges across Philippines market",
+        "summary": "Digital ad investment continues to climb with new data-driven strategies.",
+        "category": "digital",
+        "source": "Marketing Interactive",
+        "date": "This week",
+        "url": "",
+        "imageQuery": "digital advertising screens data"
+      },
+      {
+        "headline": "Bold new creative campaign wins buzz in Philippines",
+        "summary": "A striking campaign is generating significant social and press attention.",
+        "category": "creative",
+        "source": "The Drum",
+        "date": "This week",
+        "url": "",
+        "imageQuery": "creative advertising campaign billboard"
+      },
+      {
+        "headline": "Streaming reshapes media buying in Philippines",
+        "summary": "Publishers and broadcasters are adapting to evolving viewer habits.",
+        "category": "media",
+        "source": "Adweek Asia",
+        "date": "This week",
+        "url": "",
+        "imageQuery": "streaming media television remote"
+      },
+      {
+        "headline": "Brand partnerships signal confidence in Philippines",
+        "summary": "Several high-profile brand collaborations were announced this week.",
+        "category": "industry",
+        "source": "Campaign Asia",
+        "date": "This week",
+        "url": "",
+        "imageQuery": "business partnership handshake meeting"
+      },
+      {
+        "headline": "Social commerce ad formats gain traction in Philippines",
+        "summary": "Shoppable content and in-app advertising formats are seeing rapid adoption.",
+        "category": "digital",
+        "source": "Marketing Interactive",
+        "date": "This week",
+        "url": "",
+        "imageQuery": "social media phone shopping app"
+      }
+    ],
+    "Indonesia": [
+      {
+        "headline": "Top agency moves reshaping Indonesia's ad scene",
+        "summary": "Major agencies and brands are driving significant market shifts this week.",
+        "category": "industry",
+        "source": "Campaign Asia",
+        "date": "This week",
+        "url": "",
+        "imageQuery": "marketing agency office team"
+      },
+      {
+        "headline": "Programmatic spend surges across Indonesia market",
+        "summary": "Digital ad investment continues to climb with new data-driven strategies.",
+        "category": "digital",
+        "source": "Marketing Interactive",
+        "date": "This week",
+        "url": "",
+        "imageQuery": "digital advertising screens data"
+      },
+      {
+        "headline": "Bold new creative campaign wins buzz in Indonesia",
+        "summary": "A striking campaign is generating significant social and press attention.",
+        "category": "creative",
+        "source": "The Drum",
+        "date": "This week",
+        "url": "",
+        "imageQuery": "creative advertising campaign billboard"
+      },
+      {
+        "headline": "Streaming reshapes media buying in Indonesia",
+        "summary": "Publishers and broadcasters are adapting to evolving viewer habits.",
+        "category": "media",
+        "source": "Adweek Asia",
+        "date": "This week",
+        "url": "",
+        "imageQuery": "streaming media television remote"
+      },
+      {
+        "headline": "Brand partnerships signal confidence in Indonesia",
+        "summary": "Several high-profile brand collaborations were announced this week.",
+        "category": "industry",
+        "source": "Campaign Asia",
+        "date": "This week",
+        "url": "",
+        "imageQuery": "business partnership handshake meeting"
+      },
+      {
+        "headline": "Social commerce ad formats gain traction in Indonesia",
+        "summary": "Shoppable content and in-app advertising formats are seeing rapid adoption.",
+        "category": "digital",
+        "source": "Marketing Interactive",
+        "date": "This week",
+        "url": "",
+        "imageQuery": "social media phone shopping app"
+      }
+    ],
+    "Thailand": [
+      {
+        "headline": "Top agency moves reshaping Thailand's ad scene",
+        "summary": "Major agencies and brands are driving significant market shifts this week.",
+        "category": "industry",
+        "source": "Campaign Asia",
+        "date": "This week",
+        "url": "",
+        "imageQuery": "marketing agency office team"
+      },
+      {
+        "headline": "Programmatic spend surges across Thailand market",
+        "summary": "Digital ad investment continues to climb with new data-driven strategies.",
+        "category": "digital",
+        "source": "Marketing Interactive",
+        "date": "This week",
+        "url": "",
+        "imageQuery": "digital advertising screens data"
+      },
+      {
+        "headline": "Bold new creative campaign wins buzz in Thailand",
+        "summary": "A striking campaign is generating significant social and press attention.",
+        "category": "creative",
+        "source": "The Drum",
+        "date": "This week",
+        "url": "",
+        "imageQuery": "creative advertising campaign billboard"
+      },
+      {
+        "headline": "Streaming reshapes media buying in Thailand",
+        "summary": "Publishers and broadcasters are adapting to evolving viewer habits.",
+        "category": "media",
+        "source": "Adweek Asia",
+        "date": "This week",
+        "url": "",
+        "imageQuery": "streaming media television remote"
+      },
+      {
+        "headline": "Brand partnerships signal confidence in Thailand",
+        "summary": "Several high-profile brand collaborations were announced this week.",
+        "category": "industry",
+        "source": "Campaign Asia",
+        "date": "This week",
+        "url": "",
+        "imageQuery": "business partnership handshake meeting"
+      },
+      {
+        "headline": "Social commerce ad formats gain traction in Thailand",
+        "summary": "Shoppable content and in-app advertising formats are seeing rapid adoption.",
+        "category": "digital",
+        "source": "Marketing Interactive",
+        "date": "This week",
+        "url": "",
+        "imageQuery": "social media phone shopping app"
+      }
+    ],
+    "Vietnam": [
+      {
+        "headline": "Top agency moves reshaping Vietnam's ad scene",
+        "summary": "Major agencies and brands are driving significant market shifts this week.",
+        "category": "industry",
+        "source": "Campaign Asia",
+        "date": "This week",
+        "url": "",
+        "imageQuery": "marketing agency office team"
+      },
+      {
+        "headline": "Programmatic spend surges across Vietnam market",
+        "summary": "Digital ad investment continues to climb with new data-driven strategies.",
+        "category": "digital",
+        "source": "Marketing Interactive",
+        "date": "This week",
+        "url": "",
+        "imageQuery": "digital advertising screens data"
+      },
+      {
+        "headline": "Bold new creative campaign wins buzz in Vietnam",
+        "summary": "A striking campaign is generating significant social and press attention.",
+        "category": "creative",
+        "source": "The Drum",
+        "date": "This week",
+        "url": "",
+        "imageQuery": "creative advertising campaign billboard"
+      },
+      {
+        "headline": "Streaming reshapes media buying in Vietnam",
+        "summary": "Publishers and broadcasters are adapting to evolving viewer habits.",
+        "category": "media",
+        "source": "Adweek Asia",
+        "date": "This week",
+        "url": "",
+        "imageQuery": "streaming media television remote"
+      },
+      {
+        "headline": "Brand partnerships signal confidence in Vietnam",
+        "summary": "Several high-profile brand collaborations were announced this week.",
+        "category": "industry",
+        "source": "Campaign Asia",
+        "date": "This week",
+        "url": "",
+        "imageQuery": "business partnership handshake meeting"
+      },
+      {
+        "headline": "Social commerce ad formats gain traction in Vietnam",
+        "summary": "Shoppable content and in-app advertising formats are seeing rapid adoption.",
+        "category": "digital",
+        "source": "Marketing Interactive",
+        "date": "This week",
+        "url": "",
+        "imageQuery": "social media phone shopping app"
+      }
+    ],
+    "Malaysia": [
+      {
+        "headline": "Top agency moves reshaping Malaysia's ad scene",
+        "summary": "Major agencies and brands are driving significant market shifts this week.",
+        "category": "industry",
+        "source": "Campaign Asia",
+        "date": "This week",
+        "url": "",
+        "imageQuery": "marketing agency office team"
+      },
+      {
+        "headline": "Programmatic spend surges across Malaysia market",
+        "summary": "Digital ad investment continues to climb with new data-driven strategies.",
+        "category": "digital",
+        "source": "Marketing Interactive",
+        "date": "This week",
+        "url": "",
+        "imageQuery": "digital advertising screens data"
+      },
+      {
+        "headline": "Bold new creative campaign wins buzz in Malaysia",
+        "summary": "A striking campaign is generating significant social and press attention.",
+        "category": "creative",
+        "source": "The Drum",
+        "date": "This week",
+        "url": "",
+        "imageQuery": "creative advertising campaign billboard"
+      },
+      {
+        "headline": "Streaming reshapes media buying in Malaysia",
+        "summary": "Publishers and broadcasters are adapting to evolving viewer habits.",
+        "category": "media",
+        "source": "Adweek Asia",
+        "date": "This week",
+        "url": "",
+        "imageQuery": "streaming media television remote"
+      },
+      {
+        "headline": "Brand partnerships signal confidence in Malaysia",
+        "summary": "Several high-profile brand collaborations were announced this week.",
+        "category": "industry",
+        "source": "Campaign Asia",
+        "date": "This week",
+        "url": "",
+        "imageQuery": "business partnership handshake meeting"
+      },
+      {
+        "headline": "Social commerce ad formats gain traction in Malaysia",
+        "summary": "Shoppable content and in-app advertising formats are seeing rapid adoption.",
+        "category": "digital",
+        "source": "Marketing Interactive",
+        "date": "This week",
+        "url": "",
+        "imageQuery": "social media phone shopping app"
+      }
+    ]
+  }
+}
