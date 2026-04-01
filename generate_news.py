@@ -2,33 +2,51 @@
 GrabAds News Widget -- Weekly News Generator (Free RSS Version)
 ==============================================================
 Pulls news from free RSS feeds. No API key or credits required.
-Run by GitLab CI every Monday. Outputs news.json for the widget.
+Run by GitHub Actions every Monday. Outputs news.json for the widget.
 
-Dependencies: feedparser, python-dateutil
+Dependencies: feedparser, python-dateutil, requests
 """
 
 import json
 import os
 import re
+import requests
 from datetime import datetime, timezone
 
 import feedparser
 from dateutil import parser as dateparser
 
-# ── RSS feeds from major ad/marketing industry publications
+# ── RSS feeds -- using multiple URL formats per source for reliability
 RSS_FEEDS = [
+    # Campaign Asia -- try multiple URL formats
     {"name": "Campaign Asia",         "url": "https://www.campaignasia.com/rss"},
+    {"name": "Campaign Asia",         "url": "https://www.campaignasia.com/feed"},
+    # Marketing Interactive
     {"name": "Marketing Interactive", "url": "https://www.marketing-interactive.com/feed"},
+    {"name": "Marketing Interactive", "url": "https://www.marketing-interactive.com/rss"},
+    # The Drum
     {"name": "The Drum",              "url": "https://www.thedrum.com/rss"},
-    {"name": "Mumbrella Asia",        "url": "https://mumbrella.asia/feed"},
-    {"name": "Exchange4Media",        "url": "https://www.exchange4media.com/rss/rss.aspx"},
-    {"name": "Marketing Week",        "url": "https://www.marketingweek.com/feed/"},
+    {"name": "The Drum",              "url": "https://www.thedrum.com/feed"},
+    # Adweek -- confirmed working
     {"name": "Adweek",                "url": "https://www.adweek.com/feed/"},
+    # AdAge
+    {"name": "Ad Age",                "url": "https://adage.com/rss"},
+    {"name": "Ad Age",                "url": "https://adage.com/feed"},
+    # Marketing Week
+    {"name": "Marketing Week",        "url": "https://www.marketingweek.com/feed/"},
+    # PR Newswire -- Asia marketing press releases
+    {"name": "PR Newswire Asia",      "url": "https://www.prnewswire.com/rss/news-releases-list.rss"},
+    # Business Wire
+    {"name": "Business Wire",         "url": "https://feed.businesswire.com/rss/home/?rss=G22"},
+    # MediaPost
+    {"name": "MediaPost",             "url": "https://www.mediapost.com/rss/"},
+    # Marketing Land / Search Engine Land
+    {"name": "Search Engine Land",    "url": "https://searchengineland.com/feed"},
+    # Mumbrella
+    {"name": "Mumbrella",             "url": "https://mumbrella.com.au/feed"},
 ]
 
-# ── Country keywords: only use unambiguous, sufficiently long terms
-# ── Avoid short abbreviations like "ph", "th", "id", "my" which cause
-#    false matches on common English words
+# ── Country-specific keywords (unambiguous, full words only)
 COUNTRY_KEYWORDS = {
     "Singapore":   ["singapore", "singaporean"],
     "Philippines": ["philippines", "philippine", "filipino", "filipina", "manila", "cebu", "davao"],
@@ -38,37 +56,44 @@ COUNTRY_KEYWORDS = {
     "Malaysia":    ["malaysia", "malaysian", "kuala lumpur", "penang", "johor"],
 }
 
-# ── Regional keywords that apply to ALL countries when no specific match
+# ── Regional keywords -- articles with these go to ALL countries
 REGIONAL_KEYWORDS = [
     "southeast asia", "sea region", "apac", "asia pacific",
-    "asia-pacific", "asean", "regional", "across asia",
+    "asia-pacific", "asean", "across asia", "asian market",
+    "emerging markets", "digital advertising", "programmatic",
+    "ad tech", "adtech", "marketing technology", "martech",
+    "social media marketing", "influencer marketing",
+    "brand marketing", "advertising industry", "media buying",
+    "ad spend", "advertising spend", "creative campaign",
+    "marketing campaign", "brand campaign",
 ]
 
-# ── Category classification keywords
+# ── Category keywords
 CATEGORY_KEYWORDS = {
     "digital":  [
         "programmatic", "digital advertising", "social media", "performance marketing",
-        "ad tech", "adtech", "google ads", "meta ads", "tiktok ads", "youtube ads",
-        "search ads", "display ads", "rtb", "dsp", "ssp", "first-party data",
-        "third-party cookies", "mobile advertising", "e-commerce ads", "retail media",
+        "ad tech", "adtech", "google ads", "meta ads", "tiktok", "youtube ads",
+        "search advertising", "display advertising", "rtb", "dsp", "ssp",
+        "first-party data", "mobile advertising", "retail media", "ecommerce",
+        "connected tv", "ctv", "streaming ads",
     ],
     "creative": [
         "creative campaign", "ad campaign", "cannes lions", "spikes asia",
         "award-winning", "ogilvy", "bbdo", "saatchi", "dentsu creative",
         "brand film", "viral campaign", "brand activation", "creative agency",
-        "advertising award", "creative work",
+        "advertising award", "creative work", "brand storytelling",
     ],
     "media":    [
         "media buying", "media planning", "streaming", "broadcast", "television",
         "out-of-home", "ooh advertising", "dooh", "digital out-of-home",
         "publishing", "newspaper", "print media", "podcast advertising",
-        "connected tv", "ctv", "linear tv", "media agency",
+        "connected tv", "linear tv", "media agency", "media owner",
     ],
     "industry": [
         "agency wins", "account win", "new business", "merger", "acquisition",
         "appoints", "new ceo", "new appointment", "brand launch", "rebranding",
         "partnership", "ad spend", "advertising revenue", "market share",
-        "industry report", "ad market", "pitch win",
+        "industry report", "ad market", "pitch win", "advertising agency",
     ],
 }
 
@@ -76,50 +101,68 @@ COUNTRIES = list(COUNTRY_KEYWORDS.keys())
 
 
 def fetch_all_articles() -> list:
-    """Fetch and parse all RSS feeds into a flat list of articles."""
+    """Fetch and parse all RSS feeds, deduplicating by URL."""
+    seen_urls = set()
     all_articles = []
+    seen_sources = set()
+
     for feed_info in RSS_FEEDS:
-        print(f"  Fetching {feed_info['name']}...")
+        # Skip duplicate sources we already got articles from
+        source = feed_info["name"]
+        if source in seen_sources:
+            continue
+
         try:
-            feed = feedparser.parse(feed_info["url"])
+            # Use requests with a browser-like User-Agent to avoid blocks
+            headers = {
+                "User-Agent": "Mozilla/5.0 (compatible; GrabAds-NewsBot/1.0; +https://grab.com)"
+            }
+            response = requests.get(feed_info["url"], headers=headers, timeout=15)
+            response.raise_for_status()
+            feed = feedparser.parse(response.content)
+
             count = 0
             for entry in feed.entries:
                 title   = entry.get("title", "").strip()
-                summary = clean_html(entry.get("summary", entry.get("description", "")))
                 url     = entry.get("link", "")
-                if not title or not url:
+                summary = clean_html(entry.get("summary", entry.get("description", "")))
+
+                if not title or not url or url in seen_urls:
                     continue
+
+                seen_urls.add(url)
                 all_articles.append({
                     "title":     title,
                     "summary":   summary,
                     "url":       url,
-                    "source":    feed_info["name"],
+                    "source":    source,
                     "published": parse_date(entry),
                     "raw_text":  (title + " " + summary).lower(),
                 })
                 count += 1
-            print(f"    {count} articles from {feed_info['name']}")
-        except Exception as e:
-            print(f"    Failed to fetch {feed_info['name']}: {e}")
 
-    print(f"  Total articles fetched: {len(all_articles)}")
+            if count > 0:
+                seen_sources.add(source)
+            print(f"    {count} articles from {source} ({feed_info['url']})")
+
+        except Exception as e:
+            print(f"    Failed {source} ({feed_info['url']}): {e}")
+
+    print(f"  Total unique articles fetched: {len(all_articles)}")
     return all_articles
 
 
 def is_country_match(article: dict, country: str) -> bool:
-    """Check if an article explicitly mentions a country."""
     text = article["raw_text"]
     return any(kw in text for kw in COUNTRY_KEYWORDS[country])
 
 
 def is_regional_match(article: dict) -> bool:
-    """Check if an article is regional/APAC (relevant to all markets)."""
     text = article["raw_text"]
     return any(kw in text for kw in REGIONAL_KEYWORDS)
 
 
 def classify_category(article: dict) -> str:
-    """Score article against category keywords and return best match."""
     text = article["raw_text"]
     scores = {cat: 0 for cat in CATEGORY_KEYWORDS}
     for cat, keywords in CATEGORY_KEYWORDS.items():
@@ -131,14 +174,13 @@ def classify_category(article: dict) -> str:
 
 
 def format_article(article: dict) -> dict:
-    """Format a raw article dict into the widget-ready structure."""
     category = classify_category(article)
     summary  = article["summary"]
     if len(summary) > 180:
         summary = summary[:177] + "..."
     return {
         "headline":   article["title"],
-        "summary":    summary,
+        "summary":    summary if summary else "Click to read the full article.",
         "category":   category,
         "source":     article["source"],
         "date":       format_date(article["published"]),
@@ -149,42 +191,44 @@ def format_article(article: dict) -> dict:
 
 def build_country_news(country: str, all_articles: list) -> list:
     """
-    Build a list of up to 6 articles for a country using this priority:
-      1. Articles that explicitly mention the country (best match)
-      2. Regional/APAC articles to fill remaining slots
-      3. Fallback placeholder articles if still not enough
+    Build up to 6 articles per country:
+    1. Country-specific articles first
+    2. Regional/industry articles to fill remaining slots
+    3. Fallback placeholders only if absolutely nothing found
     """
-    # Priority 1: country-specific articles
     specific = [a for a in all_articles if is_country_match(a, country)]
-
-    # Priority 2: regional articles not already in specific
     specific_urls = {a["url"] for a in specific}
+
+    # ALL remaining articles count as regional fill
+    # (since we're an ads industry widget, all ad industry news is relevant)
     regional = [a for a in all_articles
-                if is_regional_match(a) and a["url"] not in specific_urls]
+                if a["url"] not in specific_urls and
+                (is_regional_match(a) or True)]  # use all articles as fill
 
-    print(f"    {country}: {len(specific)} specific, {len(regional)} regional articles")
+    print(f"    {country}: {len(specific)} specific articles, {len(all_articles) - len(specific)} available as fill")
 
-    # Combine: specific first, then regional to fill up to 6
+    # Combine specific first, then fill
     combined = specific[:6]
     if len(combined) < 6:
         combined += regional[:(6 - len(combined))]
 
     # Sort by recency
-    order = {"Today": 0, "Yesterday": 1}
-    combined.sort(key=lambda a: order.get(format_date(a["published"]), 2))
+    def sort_key(a):
+        d = format_date(a["published"])
+        return {"Today": 0, "Yesterday": 1}.get(d, 2)
+    combined.sort(key=sort_key)
 
     result = [format_article(a) for a in combined[:6]]
 
-    # Fill remaining slots with fallback if still under 6
+    # Only use fallback if we have nothing at all
     if len(result) < 6:
-        print(f"    Only {len(result)} articles for {country}, padding with fallback")
+        print(f"    Padding {country} with {6 - len(result)} fallback articles")
         result += fallback(country)[:(6 - len(result))]
 
     return result
 
 
 def format_date(published: datetime) -> str:
-    """Convert datetime to a friendly relative label."""
     if not published:
         return "This week"
     now = datetime.now(timezone.utc)
@@ -202,7 +246,6 @@ def format_date(published: datetime) -> str:
 
 
 def parse_date(entry) -> datetime:
-    """Safely parse published date from RSS entry."""
     for field in ["published", "updated", "created"]:
         val = entry.get(field)
         if val:
@@ -214,7 +257,6 @@ def parse_date(entry) -> datetime:
 
 
 def clean_html(text: str) -> str:
-    """Strip HTML tags and clean whitespace."""
     text = re.sub(r"<[^>]+>", " ", text)
     text = re.sub(r"\s+", " ", text).strip()
     return text
