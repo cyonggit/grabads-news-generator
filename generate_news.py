@@ -10,43 +10,46 @@ Dependencies: feedparser, python-dateutil, requests
 import json
 import os
 import re
+import hashlib
 import requests
 from datetime import datetime, timezone
 
 import feedparser
 from dateutil import parser as dateparser
 
-# ── RSS feeds -- using multiple URL formats per source for reliability
+# ── RSS feeds
 RSS_FEEDS = [
-    # Campaign Asia -- try multiple URL formats
     {"name": "Campaign Asia",         "url": "https://www.campaignasia.com/rss"},
     {"name": "Campaign Asia",         "url": "https://www.campaignasia.com/feed"},
-    # Marketing Interactive
     {"name": "Marketing Interactive", "url": "https://www.marketing-interactive.com/feed"},
     {"name": "Marketing Interactive", "url": "https://www.marketing-interactive.com/rss"},
-    # The Drum
     {"name": "The Drum",              "url": "https://www.thedrum.com/rss"},
     {"name": "The Drum",              "url": "https://www.thedrum.com/feed"},
-    # Adweek -- confirmed working
     {"name": "Adweek",                "url": "https://www.adweek.com/feed/"},
-    # AdAge
     {"name": "Ad Age",                "url": "https://adage.com/rss"},
     {"name": "Ad Age",                "url": "https://adage.com/feed"},
-    # Marketing Week
     {"name": "Marketing Week",        "url": "https://www.marketingweek.com/feed/"},
-    # PR Newswire -- Asia marketing press releases
-    {"name": "PR Newswire Asia",      "url": "https://www.prnewswire.com/rss/news-releases-list.rss"},
-    # Business Wire
-    {"name": "Business Wire",         "url": "https://feed.businesswire.com/rss/home/?rss=G22"},
-    # MediaPost
     {"name": "MediaPost",             "url": "https://www.mediapost.com/rss/"},
-    # Marketing Land / Search Engine Land
     {"name": "Search Engine Land",    "url": "https://searchengineland.com/feed"},
-    # Mumbrella
     {"name": "Mumbrella",             "url": "https://mumbrella.com.au/feed"},
 ]
 
-# ── Country-specific keywords (unambiguous, full words only)
+# ── STRICT ads/marketing relevance filter
+# Articles must contain at least one of these to be included at all
+ADS_RELEVANCE_KEYWORDS = [
+    "advertis", "marketing", "agency", "brand", "campaign", "media buy",
+    "programmatic", "ad tech", "adtech", "martech", "creative", "ad spend",
+    "digital media", "social media", "influencer", "content marketing",
+    "out-of-home", "ooh", "dooh", "retail media", "retail network",
+    "ecommerce advertising", "search advertising", "display advertising",
+    "media planning", "media agency", "ad network", "ad platform",
+    "ad revenue", "ad market", "advertising industry", "media industry",
+    "publisher", "broadcasting", "streaming ads", "connected tv", "ctv",
+    "data-driven", "first-party data", "targeting", "audience",
+    "grabads", "grab ads",
+]
+
+# ── Country keywords
 COUNTRY_KEYWORDS = {
     "Singapore":   ["singapore", "singaporean"],
     "Philippines": ["philippines", "philippine", "filipino", "filipina", "manila", "cebu", "davao"],
@@ -54,28 +57,25 @@ COUNTRY_KEYWORDS = {
     "Thailand":    ["thailand", "thai", "bangkok", "phuket", "chiang mai"],
     "Vietnam":     ["vietnam", "vietnamese", "hanoi", "ho chi minh", "saigon", "hcmc"],
     "Malaysia":    ["malaysia", "malaysian", "kuala lumpur", "penang", "johor"],
+    "Taiwan":      ["taiwan", "taiwanese", "taipei", "kaohsiung", "taichung"],
 }
 
-# ── Regional keywords -- articles with these go to ALL countries
+# ── Regional keywords for APAC-level articles
 REGIONAL_KEYWORDS = [
     "southeast asia", "sea region", "apac", "asia pacific",
     "asia-pacific", "asean", "across asia", "asian market",
-    "emerging markets", "digital advertising", "programmatic",
-    "ad tech", "adtech", "marketing technology", "martech",
-    "social media marketing", "influencer marketing",
-    "brand marketing", "advertising industry", "media buying",
-    "ad spend", "advertising spend", "creative campaign",
-    "marketing campaign", "brand campaign",
+    "emerging markets",
 ]
 
 # ── Category keywords
 CATEGORY_KEYWORDS = {
-    "digital":  [
+    "digital": [
         "programmatic", "digital advertising", "social media", "performance marketing",
         "ad tech", "adtech", "google ads", "meta ads", "tiktok", "youtube ads",
         "search advertising", "display advertising", "rtb", "dsp", "ssp",
-        "first-party data", "mobile advertising", "retail media", "ecommerce",
-        "connected tv", "ctv", "streaming ads",
+        "first-party data", "mobile advertising", "retail media", "retail media network",
+        "ecommerce advertising", "connected tv", "ctv", "streaming ads",
+        "shoppable", "commerce media", "data-driven advertising",
     ],
     "creative": [
         "creative campaign", "ad campaign", "cannes lions", "spikes asia",
@@ -83,7 +83,7 @@ CATEGORY_KEYWORDS = {
         "brand film", "viral campaign", "brand activation", "creative agency",
         "advertising award", "creative work", "brand storytelling",
     ],
-    "media":    [
+    "media": [
         "media buying", "media planning", "streaming", "broadcast", "television",
         "out-of-home", "ooh advertising", "dooh", "digital out-of-home",
         "publishing", "newspaper", "print media", "podcast advertising",
@@ -100,20 +100,23 @@ CATEGORY_KEYWORDS = {
 COUNTRIES = list(COUNTRY_KEYWORDS.keys())
 
 
+def is_ads_relevant(article: dict) -> bool:
+    """Strictly filter to only ads/marketing related articles."""
+    text = article["raw_text"]
+    return any(kw in text for kw in ADS_RELEVANCE_KEYWORDS)
+
+
 def fetch_all_articles() -> list:
-    """Fetch and parse all RSS feeds, deduplicating by URL."""
+    """Fetch RSS feeds, deduplicate, and filter to ads-relevant only."""
     seen_urls = set()
-    all_articles = []
     seen_sources = set()
+    all_articles = []
 
     for feed_info in RSS_FEEDS:
-        # Skip duplicate sources we already got articles from
         source = feed_info["name"]
         if source in seen_sources:
             continue
-
         try:
-            # Use requests with a browser-like User-Agent to avoid blocks
             headers = {
                 "User-Agent": "Mozilla/5.0 (compatible; GrabAds-NewsBot/1.0; +https://grab.com)"
             }
@@ -122,6 +125,7 @@ def fetch_all_articles() -> list:
             feed = feedparser.parse(response.content)
 
             count = 0
+            filtered = 0
             for entry in feed.entries:
                 title   = entry.get("title", "").strip()
                 url     = entry.get("link", "")
@@ -130,25 +134,32 @@ def fetch_all_articles() -> list:
                 if not title or not url or url in seen_urls:
                     continue
 
-                seen_urls.add(url)
-                all_articles.append({
+                article = {
                     "title":     title,
                     "summary":   summary,
                     "url":       url,
                     "source":    source,
                     "published": parse_date(entry),
                     "raw_text":  (title + " " + summary).lower(),
-                })
+                }
+
+                # Strict ads relevance filter
+                if not is_ads_relevant(article):
+                    filtered += 1
+                    continue
+
+                seen_urls.add(url)
+                all_articles.append(article)
                 count += 1
 
             if count > 0:
                 seen_sources.add(source)
-            print(f"    {count} articles from {source} ({feed_info['url']})")
+            print(f"    {count} ads-relevant articles from {source} ({filtered} filtered out)")
 
         except Exception as e:
             print(f"    Failed {source} ({feed_info['url']}): {e}")
 
-    print(f"  Total unique articles fetched: {len(all_articles)}")
+    print(f"  Total ads-relevant articles: {len(all_articles)}")
     return all_articles
 
 
@@ -193,24 +204,36 @@ def build_country_news(country: str, all_articles: list) -> list:
     """
     Build up to 6 articles per country:
     1. Country-specific articles first
-    2. Regional/industry articles to fill remaining slots
-    3. Fallback placeholders only if absolutely nothing found
+    2. Regional APAC articles to fill remaining slots
+    3. Rotate general ads articles per country so each market gets different ones
+    4. Fallback placeholders only if absolutely nothing found
     """
+    # Priority 1: country-specific
     specific = [a for a in all_articles if is_country_match(a, country)]
-    specific_urls = {a["url"] for a in specific}
+    used_urls = {a["url"] for a in specific}
 
-    # ALL remaining articles count as regional fill
-    # (since we're an ads industry widget, all ad industry news is relevant)
+    # Priority 2: regional APAC articles
     regional = [a for a in all_articles
-                if a["url"] not in specific_urls and
-                (is_regional_match(a) or True)]  # use all articles as fill
+                if a["url"] not in used_urls and is_regional_match(a)]
+    used_urls.update(a["url"] for a in regional)
 
-    print(f"    {country}: {len(specific)} specific articles, {len(all_articles) - len(specific)} available as fill")
+    # Priority 3: remaining ads articles, rotated per country
+    # Use a deterministic shuffle based on country name so each country
+    # gets a different slice of the general pool
+    general = [a for a in all_articles if a["url"] not in used_urls]
 
-    # Combine specific first, then fill
+    # Rotate general pool differently per country using country name as seed
+    country_seed = int(hashlib.md5(country.encode()).hexdigest(), 16) % max(len(general), 1)
+    rotated_general = general[country_seed:] + general[:country_seed]
+
+    print(f"    {country}: {len(specific)} specific, {len(regional)} regional, {len(general)} general available")
+
+    # Combine in priority order
     combined = specific[:6]
     if len(combined) < 6:
         combined += regional[:(6 - len(combined))]
+    if len(combined) < 6:
+        combined += rotated_general[:(6 - len(combined))]
 
     # Sort by recency
     def sort_key(a):
@@ -220,7 +243,7 @@ def build_country_news(country: str, all_articles: list) -> list:
 
     result = [format_article(a) for a in combined[:6]]
 
-    # Only use fallback if we have nothing at all
+    # Only pad with fallback if still under 6
     if len(result) < 6:
         print(f"    Padding {country} with {6 - len(result)} fallback articles")
         result += fallback(country)[:(6 - len(result))]
@@ -276,9 +299,9 @@ def fallback(country: str) -> list:
         {"headline": f"Top agency moves reshaping {country}'s ad scene", "summary": "Major agencies and brands are driving significant market shifts this week.", "category": "industry", "source": "Campaign Asia", "date": "This week", "url": "", "imageQuery": "marketing agency office team"},
         {"headline": f"Programmatic spend surges across {country} market", "summary": "Digital ad investment continues to climb with new data-driven strategies.", "category": "digital", "source": "Marketing Interactive", "date": "This week", "url": "", "imageQuery": "digital advertising screens data"},
         {"headline": f"Bold new creative campaign wins buzz in {country}", "summary": "A striking campaign is generating significant social and press attention.", "category": "creative", "source": "The Drum", "date": "This week", "url": "", "imageQuery": "creative advertising campaign billboard"},
-        {"headline": f"Streaming reshapes media buying in {country}", "summary": "Publishers and broadcasters are adapting to evolving viewer habits.", "category": "media", "source": "Adweek Asia", "date": "This week", "url": "", "imageQuery": "streaming media television remote"},
+        {"headline": f"Retail media networks grow in {country}", "summary": "Retailers are increasingly launching ad platforms to monetise their audiences.", "category": "digital", "source": "Adweek", "date": "This week", "url": "", "imageQuery": "retail media network shopping"},
+        {"headline": f"Streaming reshapes media buying in {country}", "summary": "Publishers and broadcasters are adapting to evolving viewer habits.", "category": "media", "source": "Adweek", "date": "This week", "url": "", "imageQuery": "streaming media television remote"},
         {"headline": f"Brand partnerships signal confidence in {country}", "summary": "Several high-profile brand collaborations were announced this week.", "category": "industry", "source": "Campaign Asia", "date": "This week", "url": "", "imageQuery": "business partnership handshake meeting"},
-        {"headline": f"Social commerce ad formats gain traction in {country}", "summary": "Shoppable content and in-app advertising formats are seeing rapid adoption.", "category": "digital", "source": "Marketing Interactive", "date": "This week", "url": "", "imageQuery": "social media phone shopping app"},
     ]
 
 
