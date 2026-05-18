@@ -1,396 +1,396 @@
 {
-  "generatedAt": "2026-05-11T04:04:42Z",
-  "generatedDate": "11 May 2026",
+  "generatedAt": "2026-05-18T04:13:49Z",
+  "generatedDate": "18 May 2026",
   "countries": {
     "Singapore": [
       {
-        "headline": "The Iconic launches media pitch",
-        "summary": "The Iconic is pitching its media planning and buying account as part of what appears to be a broader overhaul of its agency structure. The Australian online fashion retailer con...",
-        "category": "media",
+        "headline": "Nescafé the unifying factor in new masterbrand campaign, via Saatchi and Saatchi",
+        "summary": "Nescafé has launched a new masterbrand campaign in Australia with Saatchi and Saatchi, titled ‘Make Your World’, focusing on everyday moments that bring people together. The cam...",
+        "category": "creative",
         "source": "Mumbrella",
         "date": "Today",
-        "url": "https://mumbrella.com.au/the-iconic-launches-media-pitch-922784",
-        "imageQuery": "media broadcasting publishing"
+        "url": "https://mumbrella.com.au/nescafe-the-unifying-factor-in-new-masterbrand-campaign-via-saatchi-and-saatchi-923452",
+        "imageQuery": "creative advertising campaign"
       },
       {
-        "headline": "Inside JB Hi-Fi’s retail media rollout at Mumbrella Remade conference",
-        "summary": "Mumbrella’s Remade conference is set to return on September 10, bringing together Mumbrella’s retail media and retail marketing conferences for the first time. To be held at the...",
+        "headline": "Why intentional audio is the new frontier for Australian marketers",
+        "summary": "In an era defined by &#8220;slop&#8221; the influx of low-quality, AI-generated content and the relentless doomscroll, the digital landscape has become increasingly fragmented. ...",
+        "category": "industry",
+        "source": "Mumbrella",
+        "date": "Today",
+        "url": "https://mumbrella.com.au/why-intentional-audio-is-the-new-frontier-for-australian-marketers-923366",
+        "imageQuery": "marketing agency business"
+      },
+      {
+        "headline": "‘Australian avocados and Thinkerbell want to stop Aussies ‘bruisin while they’re choosin’",
+        "summary": "Australian Avocados and Thinkerbell launched an educational campaign aimed at changing how consumers check avocado ripeness. The initiative highlights that many Australians sque...",
+        "category": "industry",
+        "source": "Mumbrella",
+        "date": "Today",
+        "url": "https://mumbrella.com.au/australian-avocados-and-thinkerbell-want-to-stop-aussies-bruisin-while-theyre-choosin-923487",
+        "imageQuery": "marketing agency business"
+      },
+      {
+        "headline": "Marketers on the Move: Hires at Gap, Saucony, Fanatics, and More",
+        "summary": "A weekly roundup of the biggest U.S. and global brand leadership appointments.",
+        "category": "industry",
+        "source": "Adweek",
+        "date": "2 days ago",
+        "url": "https://www.adweek.com/brand-marketing/marketers-on-the-move-hires-at-gap-saucony-fanatics-and-more/",
+        "imageQuery": "marketing agency business"
+      },
+      {
+        "headline": "Ads of the Week: 10 Campaigns That Caught Our Eye, From Dove to Hinge",
+        "summary": "Dove, Apple Mac, TJ Maxx, CeraVe, and more are among the week's standout ads",
+        "category": "industry",
+        "source": "Adweek",
+        "date": "2 days ago",
+        "url": "https://www.adweek.com/creativity/ads-of-the-week-10-campaigns-that-caught-our-eye-from-dove-to-hinge/",
+        "imageQuery": "marketing agency business"
+      },
+      {
+        "headline": "ADWEEK Commerce Advantage: Retail Media Is About To Take Even More TV Ad Spend",
+        "summary": "Walmart, Amazon, and commerce media firms are stepping up their data and AI pitches.",
         "category": "digital",
-        "source": "Mumbrella",
-        "date": "Today",
-        "url": "https://mumbrella.com.au/inside-jb-hi-fis-retail-media-rollout-at-mumbrella-remade-conference-922797",
+        "source": "Adweek",
+        "date": "3 days ago",
+        "url": "https://www.adweek.com/commerce/adweek-commerce-advantage-retail-media-is-about-to-take-even-more-tv-ad-spend/",
         "imageQuery": "digital advertising technology"
-      },
-      {
-        "headline": "What a 30-year-old road safety ad teaches us about audience testing in 2026",
-        "summary": "My very first job in research, day one, minute one, was working on a questionnaire for a road safety campaign. At the time, I was based in New Zealand, testing campaigns focused...",
-        "category": "industry",
-        "source": "Mumbrella",
-        "date": "Today",
-        "url": "https://mumbrella.com.au/what-a-30-year-old-road-safety-ad-teaches-us-about-audience-testing-in-2026-922773",
-        "imageQuery": "marketing agency business"
-      },
-      {
-        "headline": "The bidding war begins as Ooh Media receives second takeover offer",
-        "summary": "Outdoor advertising company Ooh Media has received a second, higher bid for its company, following an unsolicited takeover bid late last month by Pacific Equity Partners. Ooh Me...",
-        "category": "industry",
-        "source": "Mumbrella",
-        "date": "Today",
-        "url": "https://mumbrella.com.au/the-bidding-war-begins-as-ooh-media-receives-second-takeover-offer-922783",
-        "imageQuery": "marketing agency business"
-      },
-      {
-        "headline": "‘Agencies must drop their sense of entitlement’: Momentum’s Jen Peace",
-        "summary": "As someone who has barely spoken publicly for the past two years, Momentum Worldwide Australia leader Jen Peace is certainly making up for lost time. Since becoming the agency’s...",
-        "category": "industry",
-        "source": "Mumbrella",
-        "date": "Today",
-        "url": "https://mumbrella.com.au/agencies-must-drop-their-sense-of-entitlement-momentums-jen-peace-922165",
-        "imageQuery": "marketing agency business"
-      },
-      {
-        "headline": "QMS appoints Hannah Pritchard as NSW agency sales director",
-        "summary": "QMS has appointed Hannah Pritchard as NSW Sales Director – Agency, effective immediately. Pritchard brings over 18 years of experience in the media industry, previously holding ...",
-        "category": "industry",
-        "source": "Mumbrella",
-        "date": "Today",
-        "url": "https://mumbrella.com.au/qms-appoints-hannah-pritchard-as-nsw-agency-sales-director-922770",
-        "imageQuery": "marketing agency business"
       }
     ],
     "Philippines": [
       {
-        "headline": "‘Agencies must drop their sense of entitlement’: Momentum’s Jen Peace",
-        "summary": "As someone who has barely spoken publicly for the past two years, Momentum Worldwide Australia leader Jen Peace is certainly making up for lost time. Since becoming the agency’s...",
-        "category": "industry",
+        "headline": "Nescafé the unifying factor in new masterbrand campaign, via Saatchi and Saatchi",
+        "summary": "Nescafé has launched a new masterbrand campaign in Australia with Saatchi and Saatchi, titled ‘Make Your World’, focusing on everyday moments that bring people together. The cam...",
+        "category": "creative",
         "source": "Mumbrella",
         "date": "Today",
-        "url": "https://mumbrella.com.au/agencies-must-drop-their-sense-of-entitlement-momentums-jen-peace-922165",
+        "url": "https://mumbrella.com.au/nescafe-the-unifying-factor-in-new-masterbrand-campaign-via-saatchi-and-saatchi-923452",
+        "imageQuery": "creative advertising campaign"
+      },
+      {
+        "headline": "Tiktok launches suite of AI advertising tools",
+        "summary": "Tiktok has launched a suite of AI-powered tools for creating video advertising &#8220;without the manual fixes that slow down production&#8221;. That was the promise at the TikT...",
+        "category": "digital",
+        "source": "Mumbrella",
+        "date": "3 days ago",
+        "url": "https://mumbrella.com.au/tiktok-launches-suite-of-ai-advertising-tools-923304",
+        "imageQuery": "digital advertising technology"
+      },
+      {
+        "headline": "Going back on your word is riskier in an AI world",
+        "summary": "When is a lie not a lie? In the wake of the Federal Budget on 12 May, the answer matters because your audience gets to decide if you’re speaking the truth. Not you. The governme...",
+        "category": "industry",
+        "source": "Mumbrella",
+        "date": "3 days ago",
+        "url": "https://mumbrella.com.au/going-back-on-your-word-is-riskier-in-an-ai-world-923302",
         "imageQuery": "marketing agency business"
       },
       {
-        "headline": "QMS appoints Hannah Pritchard as NSW agency sales director",
-        "summary": "QMS has appointed Hannah Pritchard as NSW Sales Director – Agency, effective immediately. Pritchard brings over 18 years of experience in the media industry, previously holding ...",
+        "headline": "Marketers on the Move: Hires at Gap, Saucony, Fanatics, and More",
+        "summary": "A weekly roundup of the biggest U.S. and global brand leadership appointments.",
         "category": "industry",
-        "source": "Mumbrella",
-        "date": "Today",
-        "url": "https://mumbrella.com.au/qms-appoints-hannah-pritchard-as-nsw-agency-sales-director-922770",
-        "imageQuery": "marketing agency business"
-      },
-      {
-        "headline": "Mumbrella Publish catchup: Deep diving into Taboola’s DeeperDive",
-        "summary": "Session A deep dive Into DeeperDive: What we’ve learned experimenting with agentic experiences on traditional publisher websites Date 28 October 2025 &#124; State Library of NSW...",
-        "category": "industry",
-        "source": "Mumbrella",
+        "source": "Adweek",
         "date": "2 days ago",
-        "url": "https://mumbrella.com.au/mumbrella-publish-catchup-deep-diving-into-taboolas-deeperdive-922724",
+        "url": "https://www.adweek.com/brand-marketing/marketers-on-the-move-hires-at-gap-saucony-fanatics-and-more/",
         "imageQuery": "marketing agency business"
       },
       {
-        "headline": "Allianz debuts fully generative AI campaign",
-        "summary": "Allianz Australia has launched its first fully generative AI–created advertising campaign. The insurance brand tapped its creative agency Howatson and Company to develop a serie...",
-        "category": "creative",
-        "source": "Mumbrella",
-        "date": "3 days ago",
-        "url": "https://mumbrella.com.au/allianz-debuts-fully-generative-ai-campaign-922649",
-        "imageQuery": "creative advertising campaign"
-      },
-      {
-        "headline": "Ali Wong takes aim at Telstra in new Vodafone commercial",
-        "summary": "The next iteration of Vodafone&#8217;s controversial new campaign starring US comedian Ali Wong shows the comedian repeatedly saying that Vodafone is cheaper than Telstra, with ...",
+        "headline": "Ads of the Week: 10 Campaigns That Caught Our Eye, From Dove to Hinge",
+        "summary": "Dove, Apple Mac, TJ Maxx, CeraVe, and more are among the week's standout ads",
         "category": "industry",
-        "source": "Mumbrella",
-        "date": "3 days ago",
-        "url": "https://mumbrella.com.au/ali-wong-takes-aim-at-telstra-in-new-vodafone-commercial-922679",
+        "source": "Adweek",
+        "date": "2 days ago",
+        "url": "https://www.adweek.com/creativity/ads-of-the-week-10-campaigns-that-caught-our-eye-from-dove-to-hinge/",
         "imageQuery": "marketing agency business"
       },
       {
-        "headline": "Dentsu Creative steps aside as the Iconic calls pitch",
-        "summary": "The Iconic has launched a creative pitch, with its four-year incumbent Dentsu Creative opting not to defend the account. The Australian and New Zealand fashion and lifestyle ret...",
-        "category": "creative",
-        "source": "Mumbrella",
+        "headline": "ADWEEK Commerce Advantage: Retail Media Is About To Take Even More TV Ad Spend",
+        "summary": "Walmart, Amazon, and commerce media firms are stepping up their data and AI pitches.",
+        "category": "digital",
+        "source": "Adweek",
         "date": "3 days ago",
-        "url": "https://mumbrella.com.au/dentsu-creative-steps-aside-as-the-iconic-calls-pitch-922653",
-        "imageQuery": "creative advertising campaign"
+        "url": "https://www.adweek.com/commerce/adweek-commerce-advantage-retail-media-is-about-to-take-even-more-tv-ad-spend/",
+        "imageQuery": "digital advertising technology"
       }
     ],
     "Indonesia": [
       {
-        "headline": "Dentsu Creative steps aside as the Iconic calls pitch",
-        "summary": "The Iconic has launched a creative pitch, with its four-year incumbent Dentsu Creative opting not to defend the account. The Australian and New Zealand fashion and lifestyle ret...",
-        "category": "creative",
-        "source": "Mumbrella",
-        "date": "3 days ago",
-        "url": "https://mumbrella.com.au/dentsu-creative-steps-aside-as-the-iconic-calls-pitch-922653",
-        "imageQuery": "creative advertising campaign"
-      },
-      {
-        "headline": "‘Baleful bad-boy bots’: News Corp news takes a hit as ‘woo or sue’ campaign continues",
-        "summary": "News Corp&#8217;s news media division saw a 5% revenue rise, but a 55% EBITDA dive for the March quarter, with set-up costs for the California Post and a weak performance from i...",
+        "headline": "Why intentional audio is the new frontier for Australian marketers",
+        "summary": "In an era defined by &#8220;slop&#8221; the influx of low-quality, AI-generated content and the relentless doomscroll, the digital landscape has become increasingly fragmented. ...",
         "category": "industry",
         "source": "Mumbrella",
-        "date": "3 days ago",
-        "url": "https://mumbrella.com.au/baleful-bad-boy-bots-news-corp-news-takes-a-hit-as-woo-or-sue-campaign-continues-922646",
+        "date": "Today",
+        "url": "https://mumbrella.com.au/why-intentional-audio-is-the-new-frontier-for-australian-marketers-923366",
         "imageQuery": "marketing agency business"
       },
       {
-        "headline": "Agencies push Video Futures Collective to simplify buying and unify data",
-        "summary": "Agencies are telling the Video Futures Collective (VFC) to fix two core problems – complexity and inconsistent data – or risk losing advertising dollars to simpler channels like...",
+        "headline": "‘Australian avocados and Thinkerbell want to stop Aussies ‘bruisin while they’re choosin’",
+        "summary": "Australian Avocados and Thinkerbell launched an educational campaign aimed at changing how consumers check avocado ripeness. The initiative highlights that many Australians sque...",
         "category": "industry",
         "source": "Mumbrella",
-        "date": "3 days ago",
-        "url": "https://mumbrella.com.au/agencies-push-video-futures-collective-to-simplify-buying-and-unify-data-922658",
+        "date": "Today",
+        "url": "https://mumbrella.com.au/australian-avocados-and-thinkerbell-want-to-stop-aussies-bruisin-while-theyre-choosin-923487",
         "imageQuery": "marketing agency business"
       },
       {
-        "headline": "Removing the CGT discount could cripple Australian startups",
-        "summary": "Let me be upfront about two things. First: I have an obvious vested interest here. Mutinex is a venture-backed martech business I&#8217;ve built for several years at a salary we...",
+        "headline": "QMS expands Melbourne network with new digital Citylink sites",
+        "summary": "QMS has added and converted two large-format billboards on Melbourne&#8217;s CityLink to digital screens. The new sites are positioned near key commercial and entertainment venu...",
         "category": "industry",
         "source": "Mumbrella",
-        "date": "3 days ago",
-        "url": "https://mumbrella.com.au/capital-gains-whack-spot-on-for-real-estate-crippling-for-start-ups-922618",
+        "date": "Today",
+        "url": "https://mumbrella.com.au/qms-expands-melbourne-network-with-new-digital-citylink-sites-923470",
         "imageQuery": "marketing agency business"
       },
       {
-        "headline": "Wesley Hawes leaves 72andSunny Sydney after 17 months",
-        "summary": "72andSunny Sydney chief creative officer Wesley Hawes has exited the agency after starting the job at the beginning of last year. The independent agency has replaced his creativ...",
+        "headline": "Initiative CEO Jo McAlister jumps to News Corp",
+        "summary": "Initiative Australia CEO Jo McAlister has resigned from the agency after seven years to join News Corp. McAlister will now launch and lead Storyx, a revamped content and sponsor...",
         "category": "industry",
         "source": "Mumbrella",
-        "date": "3 days ago",
-        "url": "https://mumbrella.com.au/wesley-hawes-leaves-72andsunny-sydney-after-just-17-months-922631",
+        "date": "Today",
+        "url": "https://mumbrella.com.au/initiative-ceo-jo-mcalister-jumps-to-news-corp-923484",
         "imageQuery": "marketing agency business"
       },
       {
-        "headline": "Ticker: Fox News Debuts New Promo Campaign Celebrating America&#8217;s 250th Birthday",
-        "summary": "Fox Business Network is also celebrating the milestone.",
+        "headline": "Publicis Group snaps up LiveRamp for US$2.2bn",
+        "summary": "Publicis Group is set to acquire data connectivity firm LiveRamp for US$2.2 billion (A$3.25 billion) in what it describes as a further push into the “agentic era” of marketing. ...",
         "category": "industry",
-        "source": "Adweek",
-        "date": "2 days ago",
-        "url": "https://www.adweek.com/tvnewser/ticker-fox-news-debuts-new-promo-campaign-celebrating-americas-250th-birthday/",
+        "source": "Mumbrella",
+        "date": "Today",
+        "url": "https://mumbrella.com.au/publicis-group-snaps-up-liveramp-for-us2-2bn-923433",
         "imageQuery": "marketing agency business"
+      },
+      {
+        "headline": "Australia the lab for Linkby’s global ambitions",
+        "summary": "Linkby&#8217;s Pete Richardson says the performance adtech platform is using Australia as its global ideas laboratory as it continues to expand internationally. Richardson, Link...",
+        "category": "digital",
+        "source": "Mumbrella",
+        "date": "Today",
+        "url": "https://mumbrella.com.au/australia-the-lab-for-linkbys-global-ambitions-923445",
+        "imageQuery": "digital advertising technology"
       }
     ],
     "Thailand": [
       {
-        "headline": "The bidding war begins as Ooh Media receives second takeover offer",
-        "summary": "Outdoor advertising company Ooh Media has received a second, higher bid for its company, following an unsolicited takeover bid late last month by Pacific Equity Partners. Ooh Me...",
+        "headline": "QMS expands Melbourne network with new digital Citylink sites",
+        "summary": "QMS has added and converted two large-format billboards on Melbourne&#8217;s CityLink to digital screens. The new sites are positioned near key commercial and entertainment venu...",
         "category": "industry",
         "source": "Mumbrella",
         "date": "Today",
-        "url": "https://mumbrella.com.au/the-bidding-war-begins-as-ooh-media-receives-second-takeover-offer-922783",
+        "url": "https://mumbrella.com.au/qms-expands-melbourne-network-with-new-digital-citylink-sites-923470",
         "imageQuery": "marketing agency business"
       },
       {
-        "headline": "‘Agencies must drop their sense of entitlement’: Momentum’s Jen Peace",
-        "summary": "As someone who has barely spoken publicly for the past two years, Momentum Worldwide Australia leader Jen Peace is certainly making up for lost time. Since becoming the agency’s...",
+        "headline": "Initiative CEO Jo McAlister jumps to News Corp",
+        "summary": "Initiative Australia CEO Jo McAlister has resigned from the agency after seven years to join News Corp. McAlister will now launch and lead Storyx, a revamped content and sponsor...",
         "category": "industry",
         "source": "Mumbrella",
         "date": "Today",
-        "url": "https://mumbrella.com.au/agencies-must-drop-their-sense-of-entitlement-momentums-jen-peace-922165",
+        "url": "https://mumbrella.com.au/initiative-ceo-jo-mcalister-jumps-to-news-corp-923484",
         "imageQuery": "marketing agency business"
       },
       {
-        "headline": "QMS appoints Hannah Pritchard as NSW agency sales director",
-        "summary": "QMS has appointed Hannah Pritchard as NSW Sales Director – Agency, effective immediately. Pritchard brings over 18 years of experience in the media industry, previously holding ...",
+        "headline": "Publicis Group snaps up LiveRamp for US$2.2bn",
+        "summary": "Publicis Group is set to acquire data connectivity firm LiveRamp for US$2.2 billion (A$3.25 billion) in what it describes as a further push into the “agentic era” of marketing. ...",
         "category": "industry",
         "source": "Mumbrella",
         "date": "Today",
-        "url": "https://mumbrella.com.au/qms-appoints-hannah-pritchard-as-nsw-agency-sales-director-922770",
+        "url": "https://mumbrella.com.au/publicis-group-snaps-up-liveramp-for-us2-2bn-923433",
         "imageQuery": "marketing agency business"
       },
       {
-        "headline": "Mumbrella Publish catchup: Deep diving into Taboola’s DeeperDive",
-        "summary": "Session A deep dive Into DeeperDive: What we’ve learned experimenting with agentic experiences on traditional publisher websites Date 28 October 2025 &#124; State Library of NSW...",
+        "headline": "Australia the lab for Linkby’s global ambitions",
+        "summary": "Linkby&#8217;s Pete Richardson says the performance adtech platform is using Australia as its global ideas laboratory as it continues to expand internationally. Richardson, Link...",
+        "category": "digital",
+        "source": "Mumbrella",
+        "date": "Today",
+        "url": "https://mumbrella.com.au/australia-the-lab-for-linkbys-global-ambitions-923445",
+        "imageQuery": "digital advertising technology"
+      },
+      {
+        "headline": "The 2.5 second survival guide for advertisers",
+        "summary": "It’s the ultimate party nightmare. You’re standing in a crowded room, music pumping, dozens of voices competing for your focus, and you’re trying to tell a story. You think you’...",
+        "category": "industry",
+        "source": "Mumbrella",
+        "date": "Today",
+        "url": "https://mumbrella.com.au/the-2-5-second-survival-guide-for-advertisers-923432",
+        "imageQuery": "marketing agency business"
+      },
+      {
+        "headline": "Enero price improves despite BMF client loss",
+        "summary": "The Unmade Index finished the week on a positive note, with Australia&#8217;s listed media and marketing stocks up by a collective 0.55% for the day. That was despite the wider ...",
         "category": "industry",
         "source": "Mumbrella",
         "date": "2 days ago",
-        "url": "https://mumbrella.com.au/mumbrella-publish-catchup-deep-diving-into-taboolas-deeperdive-922724",
-        "imageQuery": "marketing agency business"
-      },
-      {
-        "headline": "Allianz debuts fully generative AI campaign",
-        "summary": "Allianz Australia has launched its first fully generative AI–created advertising campaign. The insurance brand tapped its creative agency Howatson and Company to develop a serie...",
-        "category": "creative",
-        "source": "Mumbrella",
-        "date": "3 days ago",
-        "url": "https://mumbrella.com.au/allianz-debuts-fully-generative-ai-campaign-922649",
-        "imageQuery": "creative advertising campaign"
-      },
-      {
-        "headline": "Ali Wong takes aim at Telstra in new Vodafone commercial",
-        "summary": "The next iteration of Vodafone&#8217;s controversial new campaign starring US comedian Ali Wong shows the comedian repeatedly saying that Vodafone is cheaper than Telstra, with ...",
-        "category": "industry",
-        "source": "Mumbrella",
-        "date": "3 days ago",
-        "url": "https://mumbrella.com.au/ali-wong-takes-aim-at-telstra-in-new-vodafone-commercial-922679",
+        "url": "https://mumbrella.com.au/enero-price-improves-despite-bmf-client-loss-923415",
         "imageQuery": "marketing agency business"
       }
     ],
     "Vietnam": [
       {
-        "headline": "Wesley Hawes leaves 72andSunny Sydney after 17 months",
-        "summary": "72andSunny Sydney chief creative officer Wesley Hawes has exited the agency after starting the job at the beginning of last year. The independent agency has replaced his creativ...",
+        "headline": "OMD elevates planning leadership with two key promotions",
+        "summary": "OMD Australia has promoted Thad King to Chief Planning Officer and Richard Garratt to National Head of Planning. The changes are part of the agency&#8217;s effort to enhance its...",
+        "category": "industry",
+        "source": "Mumbrella",
+        "date": "2 days ago",
+        "url": "https://mumbrella.com.au/omd-elevates-planning-leadership-with-two-key-promotions-923328",
+        "imageQuery": "marketing agency business"
+      },
+      {
+        "headline": "Women’s State of Origin draws bigger viewership than AFL and Budget reply",
+        "summary": "More than two million Australians tuned into Nine to watch NSW clinch the Women&#8217;s State of Origin series, with the game drawing a larger national audience than the Thursda...",
+        "category": "media",
+        "source": "Mumbrella",
+        "date": "3 days ago",
+        "url": "https://mumbrella.com.au/womens-state-of-origin-draws-bigger-viewership-than-afl-and-budget-reply-923344",
+        "imageQuery": "media broadcasting publishing"
+      },
+      {
+        "headline": "Court verdict drags Coles ‘Down Down’ into a PR crisis",
+        "summary": "The recent court verdict against Coles Group, over its “Down Down” pricing campaign, should be ringing alarm bells for many PR and marketing types across Australia. But how many...",
         "category": "industry",
         "source": "Mumbrella",
         "date": "3 days ago",
-        "url": "https://mumbrella.com.au/wesley-hawes-leaves-72andsunny-sydney-after-just-17-months-922631",
+        "url": "https://mumbrella.com.au/court-verdict-drags-coles-down-down-into-a-pr-crisis-923306",
         "imageQuery": "marketing agency business"
       },
       {
-        "headline": "Ticker: Fox News Debuts New Promo Campaign Celebrating America&#8217;s 250th Birthday",
-        "summary": "Fox Business Network is also celebrating the milestone.",
-        "category": "industry",
-        "source": "Adweek",
-        "date": "2 days ago",
-        "url": "https://www.adweek.com/tvnewser/ticker-fox-news-debuts-new-promo-campaign-celebrating-americas-250th-birthday/",
-        "imageQuery": "marketing agency business"
-      },
-      {
-        "headline": "How Keisha Taylor Starr Turned ION Into a Women&#8217;s Sports Powerhouse in 24 Months",
-        "summary": "The Scripps Networks leader on balancing creative ambition with financial rigor as a CMO.",
-        "category": "industry",
-        "source": "Adweek",
-        "date": "2 days ago",
-        "url": "https://www.adweek.com/brand-marketing/how-keisha-taylor-starr-turned-ion-into-a-womens-sports-powerhouse-in-24-months/",
-        "imageQuery": "marketing agency business"
-      },
-      {
-        "headline": "Amazon Data Will Be Available on Netflix Inventory in the UK May 18",
-        "summary": "The integration, in tandem with a LinkedIn tie-up unveiled this week, further underscores Amazon's ambition to dominate CTV ad buying.",
+        "headline": "Tiktok launches suite of AI advertising tools",
+        "summary": "Tiktok has launched a suite of AI-powered tools for creating video advertising &#8220;without the manual fixes that slow down production&#8221;. That was the promise at the TikT...",
         "category": "digital",
-        "source": "Adweek",
-        "date": "2 days ago",
-        "url": "https://www.adweek.com/convergent-tv/amazon-data-netflix-ads-uk-emea/",
+        "source": "Mumbrella",
+        "date": "3 days ago",
+        "url": "https://mumbrella.com.au/tiktok-launches-suite-of-ai-advertising-tools-923304",
         "imageQuery": "digital advertising technology"
       },
       {
-        "headline": "Marketers on the Move: Hires and Exits at GM, Old Navy, Canva, and More",
+        "headline": "Going back on your word is riskier in an AI world",
+        "summary": "When is a lie not a lie? In the wake of the Federal Budget on 12 May, the answer matters because your audience gets to decide if you’re speaking the truth. Not you. The governme...",
+        "category": "industry",
+        "source": "Mumbrella",
+        "date": "3 days ago",
+        "url": "https://mumbrella.com.au/going-back-on-your-word-is-riskier-in-an-ai-world-923302",
+        "imageQuery": "marketing agency business"
+      },
+      {
+        "headline": "Marketers on the Move: Hires at Gap, Saucony, Fanatics, and More",
         "summary": "A weekly roundup of the biggest U.S. and global brand leadership appointments.",
         "category": "industry",
         "source": "Adweek",
         "date": "2 days ago",
-        "url": "https://www.adweek.com/brand-marketing/marketers-on-the-move-hires-and-exits-at-gm-old-navy-canva-and-more/",
-        "imageQuery": "marketing agency business"
-      },
-      {
-        "headline": "The New York Times Grew Digital Ad Revenue 32% in Q1. Here&#8217;s How to Copy It",
-        "summary": "The Times' chief advertising officer Joy Robins shares the strategy behind two straight quarters of outsized growth.",
-        "category": "industry",
-        "source": "Adweek",
-        "date": "2 days ago",
-        "url": "https://www.adweek.com/media/new-york-times-digital-ad-growth-q1-2026-copy/",
+        "url": "https://www.adweek.com/brand-marketing/marketers-on-the-move-hires-at-gap-saucony-fanatics-and-more/",
         "imageQuery": "marketing agency business"
       }
     ],
     "Malaysia": [
       {
-        "headline": "Allianz debuts fully generative AI campaign",
-        "summary": "Allianz Australia has launched its first fully generative AI–created advertising campaign. The insurance brand tapped its creative agency Howatson and Company to develop a serie...",
-        "category": "creative",
-        "source": "Mumbrella",
-        "date": "3 days ago",
-        "url": "https://mumbrella.com.au/allianz-debuts-fully-generative-ai-campaign-922649",
-        "imageQuery": "creative advertising campaign"
-      },
-      {
-        "headline": "Ali Wong takes aim at Telstra in new Vodafone commercial",
-        "summary": "The next iteration of Vodafone&#8217;s controversial new campaign starring US comedian Ali Wong shows the comedian repeatedly saying that Vodafone is cheaper than Telstra, with ...",
+        "headline": "RSPCA Pet Insurance appointed Alex Taljaard as head of marketing and comms",
+        "summary": "RSPCA Pet Insurance appointed Alex Taljaard as Head of Marketing &#38; Communications to enhance its market presence. The brand aims to increase pet insurance uptake among Austr...",
         "category": "industry",
         "source": "Mumbrella",
-        "date": "3 days ago",
-        "url": "https://mumbrella.com.au/ali-wong-takes-aim-at-telstra-in-new-vodafone-commercial-922679",
+        "date": "2 days ago",
+        "url": "https://mumbrella.com.au/rspca-pet-insurance-appointed-alex-taljaard-as-head-of-marketing-and-comms-923298",
         "imageQuery": "marketing agency business"
       },
       {
-        "headline": "Dentsu Creative steps aside as the Iconic calls pitch",
-        "summary": "The Iconic has launched a creative pitch, with its four-year incumbent Dentsu Creative opting not to defend the account. The Australian and New Zealand fashion and lifestyle ret...",
-        "category": "creative",
-        "source": "Mumbrella",
-        "date": "3 days ago",
-        "url": "https://mumbrella.com.au/dentsu-creative-steps-aside-as-the-iconic-calls-pitch-922653",
-        "imageQuery": "creative advertising campaign"
-      },
-      {
-        "headline": "‘Baleful bad-boy bots’: News Corp news takes a hit as ‘woo or sue’ campaign continues",
-        "summary": "News Corp&#8217;s news media division saw a 5% revenue rise, but a 55% EBITDA dive for the March quarter, with set-up costs for the California Post and a weak performance from i...",
+        "headline": "OMD elevates planning leadership with two key promotions",
+        "summary": "OMD Australia has promoted Thad King to Chief Planning Officer and Richard Garratt to National Head of Planning. The changes are part of the agency&#8217;s effort to enhance its...",
         "category": "industry",
         "source": "Mumbrella",
-        "date": "3 days ago",
-        "url": "https://mumbrella.com.au/baleful-bad-boy-bots-news-corp-news-takes-a-hit-as-woo-or-sue-campaign-continues-922646",
+        "date": "2 days ago",
+        "url": "https://mumbrella.com.au/omd-elevates-planning-leadership-with-two-key-promotions-923328",
         "imageQuery": "marketing agency business"
       },
       {
-        "headline": "Agencies push Video Futures Collective to simplify buying and unify data",
-        "summary": "Agencies are telling the Video Futures Collective (VFC) to fix two core problems – complexity and inconsistent data – or risk losing advertising dollars to simpler channels like...",
+        "headline": "Women’s State of Origin draws bigger viewership than AFL and Budget reply",
+        "summary": "More than two million Australians tuned into Nine to watch NSW clinch the Women&#8217;s State of Origin series, with the game drawing a larger national audience than the Thursda...",
+        "category": "media",
+        "source": "Mumbrella",
+        "date": "3 days ago",
+        "url": "https://mumbrella.com.au/womens-state-of-origin-draws-bigger-viewership-than-afl-and-budget-reply-923344",
+        "imageQuery": "media broadcasting publishing"
+      },
+      {
+        "headline": "Court verdict drags Coles ‘Down Down’ into a PR crisis",
+        "summary": "The recent court verdict against Coles Group, over its “Down Down” pricing campaign, should be ringing alarm bells for many PR and marketing types across Australia. But how many...",
         "category": "industry",
         "source": "Mumbrella",
         "date": "3 days ago",
-        "url": "https://mumbrella.com.au/agencies-push-video-futures-collective-to-simplify-buying-and-unify-data-922658",
+        "url": "https://mumbrella.com.au/court-verdict-drags-coles-down-down-into-a-pr-crisis-923306",
         "imageQuery": "marketing agency business"
       },
       {
-        "headline": "Removing the CGT discount could cripple Australian startups",
-        "summary": "Let me be upfront about two things. First: I have an obvious vested interest here. Mutinex is a venture-backed martech business I&#8217;ve built for several years at a salary we...",
+        "headline": "Tiktok launches suite of AI advertising tools",
+        "summary": "Tiktok has launched a suite of AI-powered tools for creating video advertising &#8220;without the manual fixes that slow down production&#8221;. That was the promise at the TikT...",
+        "category": "digital",
+        "source": "Mumbrella",
+        "date": "3 days ago",
+        "url": "https://mumbrella.com.au/tiktok-launches-suite-of-ai-advertising-tools-923304",
+        "imageQuery": "digital advertising technology"
+      },
+      {
+        "headline": "Going back on your word is riskier in an AI world",
+        "summary": "When is a lie not a lie? In the wake of the Federal Budget on 12 May, the answer matters because your audience gets to decide if you’re speaking the truth. Not you. The governme...",
         "category": "industry",
         "source": "Mumbrella",
         "date": "3 days ago",
-        "url": "https://mumbrella.com.au/capital-gains-whack-spot-on-for-real-estate-crippling-for-start-ups-922618",
+        "url": "https://mumbrella.com.au/going-back-on-your-word-is-riskier-in-an-ai-world-923302",
         "imageQuery": "marketing agency business"
       }
     ],
     "Taiwan": [
       {
-        "headline": "Dentsu Creative steps aside as the Iconic calls pitch",
-        "summary": "The Iconic has launched a creative pitch, with its four-year incumbent Dentsu Creative opting not to defend the account. The Australian and New Zealand fashion and lifestyle ret...",
-        "category": "creative",
+        "headline": "Women’s State of Origin draws bigger viewership than AFL and Budget reply",
+        "summary": "More than two million Australians tuned into Nine to watch NSW clinch the Women&#8217;s State of Origin series, with the game drawing a larger national audience than the Thursda...",
+        "category": "media",
         "source": "Mumbrella",
         "date": "3 days ago",
-        "url": "https://mumbrella.com.au/dentsu-creative-steps-aside-as-the-iconic-calls-pitch-922653",
-        "imageQuery": "creative advertising campaign"
+        "url": "https://mumbrella.com.au/womens-state-of-origin-draws-bigger-viewership-than-afl-and-budget-reply-923344",
+        "imageQuery": "media broadcasting publishing"
       },
       {
-        "headline": "‘Baleful bad-boy bots’: News Corp news takes a hit as ‘woo or sue’ campaign continues",
-        "summary": "News Corp&#8217;s news media division saw a 5% revenue rise, but a 55% EBITDA dive for the March quarter, with set-up costs for the California Post and a weak performance from i...",
+        "headline": "Court verdict drags Coles ‘Down Down’ into a PR crisis",
+        "summary": "The recent court verdict against Coles Group, over its “Down Down” pricing campaign, should be ringing alarm bells for many PR and marketing types across Australia. But how many...",
         "category": "industry",
         "source": "Mumbrella",
         "date": "3 days ago",
-        "url": "https://mumbrella.com.au/baleful-bad-boy-bots-news-corp-news-takes-a-hit-as-woo-or-sue-campaign-continues-922646",
+        "url": "https://mumbrella.com.au/court-verdict-drags-coles-down-down-into-a-pr-crisis-923306",
         "imageQuery": "marketing agency business"
       },
       {
-        "headline": "Agencies push Video Futures Collective to simplify buying and unify data",
-        "summary": "Agencies are telling the Video Futures Collective (VFC) to fix two core problems – complexity and inconsistent data – or risk losing advertising dollars to simpler channels like...",
+        "headline": "Tiktok launches suite of AI advertising tools",
+        "summary": "Tiktok has launched a suite of AI-powered tools for creating video advertising &#8220;without the manual fixes that slow down production&#8221;. That was the promise at the TikT...",
+        "category": "digital",
+        "source": "Mumbrella",
+        "date": "3 days ago",
+        "url": "https://mumbrella.com.au/tiktok-launches-suite-of-ai-advertising-tools-923304",
+        "imageQuery": "digital advertising technology"
+      },
+      {
+        "headline": "Going back on your word is riskier in an AI world",
+        "summary": "When is a lie not a lie? In the wake of the Federal Budget on 12 May, the answer matters because your audience gets to decide if you’re speaking the truth. Not you. The governme...",
         "category": "industry",
         "source": "Mumbrella",
         "date": "3 days ago",
-        "url": "https://mumbrella.com.au/agencies-push-video-futures-collective-to-simplify-buying-and-unify-data-922658",
+        "url": "https://mumbrella.com.au/going-back-on-your-word-is-riskier-in-an-ai-world-923302",
         "imageQuery": "marketing agency business"
       },
       {
-        "headline": "Removing the CGT discount could cripple Australian startups",
-        "summary": "Let me be upfront about two things. First: I have an obvious vested interest here. Mutinex is a venture-backed martech business I&#8217;ve built for several years at a salary we...",
-        "category": "industry",
-        "source": "Mumbrella",
-        "date": "3 days ago",
-        "url": "https://mumbrella.com.au/capital-gains-whack-spot-on-for-real-estate-crippling-for-start-ups-922618",
-        "imageQuery": "marketing agency business"
-      },
-      {
-        "headline": "Wesley Hawes leaves 72andSunny Sydney after 17 months",
-        "summary": "72andSunny Sydney chief creative officer Wesley Hawes has exited the agency after starting the job at the beginning of last year. The independent agency has replaced his creativ...",
-        "category": "industry",
-        "source": "Mumbrella",
-        "date": "3 days ago",
-        "url": "https://mumbrella.com.au/wesley-hawes-leaves-72andsunny-sydney-after-just-17-months-922631",
-        "imageQuery": "marketing agency business"
-      },
-      {
-        "headline": "Ticker: Fox News Debuts New Promo Campaign Celebrating America&#8217;s 250th Birthday",
-        "summary": "Fox Business Network is also celebrating the milestone.",
+        "headline": "Marketers on the Move: Hires at Gap, Saucony, Fanatics, and More",
+        "summary": "A weekly roundup of the biggest U.S. and global brand leadership appointments.",
         "category": "industry",
         "source": "Adweek",
         "date": "2 days ago",
-        "url": "https://www.adweek.com/tvnewser/ticker-fox-news-debuts-new-promo-campaign-celebrating-americas-250th-birthday/",
+        "url": "https://www.adweek.com/brand-marketing/marketers-on-the-move-hires-at-gap-saucony-fanatics-and-more/",
+        "imageQuery": "marketing agency business"
+      },
+      {
+        "headline": "Ads of the Week: 10 Campaigns That Caught Our Eye, From Dove to Hinge",
+        "summary": "Dove, Apple Mac, TJ Maxx, CeraVe, and more are among the week's standout ads",
+        "category": "industry",
+        "source": "Adweek",
+        "date": "2 days ago",
+        "url": "https://www.adweek.com/creativity/ads-of-the-week-10-campaigns-that-caught-our-eye-from-dove-to-hinge/",
         "imageQuery": "marketing agency business"
       }
     ]
