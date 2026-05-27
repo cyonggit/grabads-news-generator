@@ -1,79 +1,46 @@
 {
-  "generatedAt": "2026-05-27T16:01:37Z",
+  "generatedAt": "2026-05-27T16:16:30Z",
   "generatedDate": "27 May 2026",
   "articles": [
     {
-      "headline": "Aurora Mobile's EngageLab Launches Scalable \"Unlimited Support Agents\" Conversational Sales Solution to Redefine B2B Growth",
-      "summary": "SINGAPORE, May 25, 2026 (GLOBE NEWSWIRE) -- Aurora Mobile Limited (NASDAQ: JG) (“Aurora Mobile” or the “Company”), a leading provider of customer engagement and marketing technology services, today...",
+      "headline": "Programmatic spend surges across SEA markets",
+      "summary": "Digital ad investment continues to climb with new data-driven strategies across Southeast Asia.",
+      "category": "digital",
+      "source": "Campaign Asia",
+      "date": "This week",
+      "url": "",
+      "image": "https://picsum.photos/seed/1/600/280",
+      "talkingPoints": [
+        "Performance marketing in SEA is increasingly driven by first-party data.",
+        "Programmatic efficiency is improving rapidly across the region."
+      ],
+      "isMovement": false
+    },
+    {
+      "headline": "Retail media networks gain momentum in APAC",
+      "summary": "Retailers across Asia Pacific are launching ad networks to monetise their audiences.",
+      "category": "retail",
+      "source": "Marketing Dive",
+      "date": "This week",
+      "url": "",
+      "image": "https://picsum.photos/seed/2/600/280",
+      "talkingPoints": [
+        "Retail media lets brands reach consumers closest to the point of purchase.",
+        "Closed-loop measurement connects ad spend directly to sales."
+      ],
+      "isMovement": false
+    },
+    {
+      "headline": "Agency account moves signal shifting brand priorities",
+      "summary": "Several major advertisers have consolidated their media buying with new agency partners.",
       "category": "industry",
-      "source": "GlobeNewswire",
-      "date": "2 days ago",
-      "url": "https://www.globenewswire.com/news-release/2026/05/25/3300570/0/en/Aurora-Mobile-s-EngageLab-Launches-Scalable-Unlimited-Support-Agents-Conversational-Sales-Solution-to-Redefine-B2B-Growth.html",
-      "image": "https://ml.globenewswire.com/Resource/Download/a3a6c9ea-be69-4aff-b950-93ed59470740",
+      "source": "Adweek",
+      "date": "This week",
+      "url": "",
+      "image": "https://picsum.photos/seed/3/600/280",
       "talkingPoints": [
-        "AI is reshaping how ads are created, targeted, and measured — brands embracing it early are seeing efficiency gains.",
-        "Industry shifts like this show how quickly the competitive landscape is evolving.",
-        "When brands change agencies, they're typically open to trying new platforms and channels — timing is everything."
-      ],
-      "isMovement": true
-    },
-    {
-      "headline": "Live Commerce Platforms Market Report 2026-2032: Innovations, Consumer Preferences, Key Growth Drivers",
-      "summary": "Live commerce is revolutionizing e-commerce by merging real-time video streaming with interactive shopping, driving brand engagement and trust through influencer partnerships. The mobile commerce b...",
-      "category": "media",
-      "source": "GlobeNewswire",
-      "date": "6 days ago",
-      "url": "https://www.globenewswire.com/news-release/2026/05/21/3299050/28124/en/Live-Commerce-Platforms-Market-Report-2026-2032-Innovations-Consumer-Preferences-Key-Growth-Drivers.html",
-      "image": "https://ml.globenewswire.com/Resource/Download/349bad87-b412-4a07-8af4-d3ae2e911aff",
-      "talkingPoints": [
-        "Influencer marketing in SEA is maturing — brands are shifting from reach to engagement and conversion metrics.",
-        "SEA's e-commerce boom is creating new advertising opportunities at the point of purchase intent.",
-        "Fragmented media consumption means brands need to show up across multiple touchpoints to build effective reach."
-      ],
-      "isMovement": true
-    },
-    {
-      "headline": "Digest: Google Debuts New AI Model; Singapore Signs New AI Deals",
-      "summary": "In today’s Digest, we discuss OpenAI committing USD$234m as Singapore signs new AI deals, Google debuting a new AI model amid pressure from coding rivals, and UK advertising returning to Cannes Lio...",
-      "category": "creative",
-      "source": "ExchangeWire",
-      "date": "6 days ago",
-      "url": "https://www.exchangewire.com/blog/2026/05/21/digest-google-debuts-new-ai-model-singapore-signs-new-ai-deals/",
-      "image": "https://cdn.exchangewire.com/wp-content/uploads/2026/05/photo_2026-05-20_17-21-32.jpg",
-      "talkingPoints": [
-        "AI is reshaping how ads are created, targeted, and measured — brands embracing it early are seeing efficiency gains.",
-        "Creative effectiveness is increasingly measurable — brands investing in strong storytelling are seeing higher engagement.",
-        "Localised creative beats globalised templates in SEA — consumers respond to brands that speak their language."
-      ],
-      "isMovement": false
-    },
-    {
-      "headline": "Samsung Ads Southeast Asia overlays Eyeota data for greater Connected TV ad effectiveness",
-      "summary": "SINGAPORE, May 20, 2026 (GLOBE NEWSWIRE) -- Samsung Ads Southeast Asia has formed a new alliance with global data technology company, Eyeota, a Dun & Bradstreet company overlaying viewership insigh...",
-      "category": "digital",
-      "source": "GlobeNewswire",
-      "date": "6 days ago",
-      "url": "https://www.globenewswire.com/news-release/2026/05/21/3298964/0/en/Samsung-Ads-Southeast-Asia-overlays-Eyeota-data-for-greater-Connected-TV-ad-effectiveness.html",
-      "image": "https://ml.globenewswire.com/Resource/Download/6ab7ac49-8647-42e3-ac7e-ddb2789d5b07",
-      "talkingPoints": [
-        "CTV adoption in SEA is accelerating — premium video inventory is now accessible to performance marketers.",
-        "Data-driven decision making is separating top-performing brands from those still relying on gut instinct.",
-        "The shift to cookieless identity is accelerating — first-party data partnerships are becoming a competitive moat."
-      ],
-      "isMovement": false
-    },
-    {
-      "headline": "Adzymic Launches AgenX Creative Agent – First of its Agentic Suite",
-      "summary": "Adzymic today (20th May, 2026) announced the launch of the AgenX Creative Agent, the first release in its agentic suite, marking a structural shift in the digital advertising ecosystem: from fragme...",
-      "category": "digital",
-      "source": "ExchangeWire",
-      "date": "20 May",
-      "url": "https://www.exchangewire.com/blog/2026/05/20/adzymic-launches-agenx-creative-agent-first-of-its-agentic-suite/",
-      "image": "https://cdn.exchangewire.com/wp-content/uploads/2023/06/Adzymic-Logo_2-1.png",
-      "talkingPoints": [
-        "Social commerce is growing rapidly across SEA — shoppable ad formats are closing the gap between discovery and purchase.",
-        "As programmatic matures across the region, brands that move beyond last-click attribution will see clearer ROI.",
-        "Digital channels are evolving fast — brands that invest in data-driven targeting now will have a significant edge."
+        "Account moves signal brands are seeking more integrated, data-driven partners.",
+        "New agency relationships often coincide with a fresh look at digital channel mix."
       ],
       "isMovement": true
     }
