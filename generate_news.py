@@ -1,13 +1,10 @@
 """
-GrabAds News Widget -- Weekly News Generator (NewsAPI Version)
-==============================================================
-Fetches SEA + global ad industry news from NewsAPI.
-No RSS feeds required.
+GrabAds News Widget -- Weekly News Generator
+=============================================
+Fetches SEA + global ad industry news from verified RSS feeds.
+Run by GitHub Actions every Monday. Outputs news.json for the widget.
 
-Run by GitHub Actions every Monday.
-Outputs news.json for the widget.
-
-Dependencies: requests
+Dependencies: feedparser, python-dateutil, requests
 """
 
 import json
@@ -16,60 +13,28 @@ import re
 import hashlib
 import random
 import requests
-from datetime import datetime, timezone, timedelta
+import feedparser
+from datetime import datetime, timezone
+from dateutil import parser as dateparser
 
-
-NEWS_API_KEY = os.environ.get("NEWS_API_KEY", "")
-NEWS_API_URL = "https://newsapi.org/v2/everything"
-
-# ── Search queries -- all geo-anchored to SEA/APAC
-# Two sets: SEA-specific and global industry movements worth flagging
-SEARCH_QUERIES = [
-    # SEA market-specific
-    "advertising marketing Singapore",
-    "advertising marketing Malaysia",
-    "advertising marketing Indonesia",
-    "advertising marketing Philippines",
-    "advertising marketing Thailand Vietnam",
-    "advertising marketing Taiwan",
-    "digital marketing APAC Southeast Asia",
-    "media agency APAC campaign",
-    # Global industry movements always relevant to SEA sales teams
-    "advertising agency account win Southeast Asia",
-    "brand campaign launch Asia Pacific",
-    "retail media network Asia",
-    "programmatic advertising Southeast Asia",
-    "ad tech adtech Asia Pacific",
-    "social media advertising Asia TikTok Meta",
+# ── Verified RSS feeds as of May 2026
+RSS_FEEDS = [
+    # SEA-focused publications (trusted as inherently relevant)
+    {"name": "Campaign Asia",         "url": "https://www.campaignasia.com/rss/rss.ashx",         "sea_trusted": True},
+    {"name": "Marketing Interactive", "url": "https://www.marketing-interactive.com/feed/",        "sea_trusted": True},
+    {"name": "MARKETECH APAC",        "url": "https://marketech-apac.com/feed/",                   "sea_trusted": True},
+    {"name": "Campaign Brief Asia",   "url": "https://campaignbriefasia.com/feed/",                "sea_trusted": True},
+    # Global ad industry publications (require SEA keyword match)
+    {"name": "Adweek",                "url": "https://www.adweek.com/feed/",                       "sea_trusted": False},
+    {"name": "The Drum",              "url": "https://www.thedrum.com/rss.xml",                    "sea_trusted": False},
+    {"name": "Digiday",               "url": "https://digiday.com/feed/",                          "sea_trusted": False},
+    {"name": "AdExchanger",           "url": "https://adexchanger.com/feed/",                      "sea_trusted": False},
+    {"name": "Marketing Dive",        "url": "https://www.marketingdive.com/feeds/news/",          "sea_trusted": False},
+    {"name": "Social Media Today",    "url": "https://www.socialmediatoday.com/feeds/news/",       "sea_trusted": False},
+    {"name": "Mumbrella",             "url": "https://mumbrella.com.au/feed/",                     "sea_trusted": False},
 ]
 
-# ── Sources we trust as inherently SEA/APAC relevant
-# Articles from these don't need explicit SEA keywords to qualify
-SEA_TRUSTED_DOMAINS = [
-    "campaignasia.com",
-    "marketing-interactive.com",
-    "marketech-apac.com",
-    "campaignbriefasia.com",
-    "mumbrella.com.au",
-]
-
-# ── All preferred domains -- NewsAPI restricts results to these only
-PREFERRED_DOMAINS = ",".join([
-    "campaignasia.com",
-    "marketing-interactive.com",
-    "marketech-apac.com",
-    "digiday.com",
-    "adexchanger.com",
-    "adweek.com",
-    "warc.com",
-    "marketingdive.com",
-    "thedrum.com",
-    "mumbrella.com.au",
-    "socialmediatoday.com",
-    "campaignbriefasia.com",
-])
-
-# ── SEA/Taiwan relevance keywords
+# ── SEA/Taiwan keywords for non-trusted sources
 SEA_KEYWORDS = [
     "singapore", "singaporean",
     "philippines", "philippine", "filipino", "manila",
@@ -84,11 +49,11 @@ SEA_KEYWORDS = [
 
 # ── Industry movement keywords
 INDUSTRY_MOVEMENT_KEYWORDS = [
-    "account win", "agency win", "pitch win", "wins account",
-    "wins pitch", "appointed", "appoints", "new ceo", "new chief",
+    "account win", "agency win", "pitch win", "wins account", "wins pitch",
+    "appointed", "appoints", "new ceo", "new chief",
     "merger", "acquisition", "acquires", "acquired by",
     "rebranding", "rebrand", "launches", "expands into",
-    "partnership", "joint venture", "investment", "funding",
+    "partnership", "joint venture",
 ]
 
 # ── Strict ads relevance filter
@@ -111,8 +76,7 @@ CATEGORY_KEYWORDS = {
         "ad tech", "adtech", "google ads", "meta ads", "tiktok", "youtube ads",
         "search advertising", "display advertising", "rtb", "dsp", "ssp",
         "first-party data", "mobile advertising", "retail media", "retail media network",
-        "ecommerce advertising", "connected tv", "ctv", "streaming ads",
-        "shoppable", "commerce media",
+        "ecommerce advertising", "connected tv", "ctv", "streaming ads", "commerce media",
     ],
     "creative": [
         "creative campaign", "ad campaign", "cannes lions", "spikes asia",
@@ -128,8 +92,7 @@ CATEGORY_KEYWORDS = {
     ],
     "retail": [
         "retail media", "retail media network", "commerce media", "shoppable",
-        "in-store advertising", "shopper marketing", "ecommerce ads",
-        "retail advertising", "grocery media",
+        "in-store advertising", "shopper marketing", "ecommerce ads", "retail advertising",
     ],
     "industry": [
         "agency wins", "account win", "new business", "merger", "acquisition",
@@ -139,7 +102,7 @@ CATEGORY_KEYWORDS = {
     ],
 }
 
-# ── Rule-based talking point templates
+# ── Rule-based talking point templates per category
 TALKING_POINT_TEMPLATES = {
     "digital": [
         "Digital channels are evolving fast — brands that invest in data-driven targeting now will have a significant edge.",
@@ -165,108 +128,85 @@ TALKING_POINT_TEMPLATES = {
     ],
     "retail": [
         "Retail media networks offer brands unmatched purchase-intent signals — your ads reach consumers when they're ready to buy.",
-        "Closed-loop retail media measurement finally connects ad spend directly to sales.",
+        "Closed-loop retail media measurement connects ad spend directly to sales — a major shift from traditional media.",
         "As e-commerce grows across SEA, brands that build retail media expertise now will have a lasting advantage.",
-        "First-party shopper data from retail platforms is among the most valuable targeting asset available today.",
+        "First-party shopper data from retail platforms is among the most valuable targeting assets available today.",
         "Retail media is the fastest-growing ad channel globally — brands not investing risk ceding ground to competitors.",
     ],
     "industry": [
         "Agency consolidation signals brands are seeking more integrated partners who can connect media, data, and creative.",
         "Account moves often signal a brand is ready to rethink its media strategy — an opportunity to present new solutions.",
         "When brands change agencies, they're typically open to trying new platforms and channels — timing is everything.",
-        "Industry shifts like this show how quickly the competitive landscape is evolving.",
+        "Industry shifts like this show how quickly the competitive landscape is evolving — staying close to market news is key.",
         "Leadership changes at brands often accelerate marketing transformation — a great moment to open new conversations.",
     ],
 }
 
 TOPIC_TALKING_POINTS = {
-    "tiktok":        "TikTok's explosive growth across SEA makes short-form video a must-have in any brand's media mix.",
-    "influencer":    "Influencer marketing in SEA is maturing — brands are shifting from reach to engagement and conversion metrics.",
-    "retail media":  "Retail media is the fastest-growing ad channel globally — brands not investing risk ceding ground to competitors.",
-    "programmatic":  "Programmatic efficiency is improving rapidly — smarter bidding and better data are reducing wasted impressions.",
-    "first-party":   "First-party data is the new currency of digital advertising — brands building their data assets now are ahead.",
-    "connected tv":  "CTV adoption in SEA is accelerating — premium video inventory is now accessible to performance marketers.",
-    "out-of-home":   "Digital OOH in SEA is growing fast — contextual, location-based placements are driving real-world outcomes.",
-    "social media":  "Social platforms in SEA have among the highest engagement rates globally — critical for brand building.",
-    "ai":            "AI is reshaping how ads are created, targeted, and measured — brands embracing it early are seeing efficiency gains.",
-    "e-commerce":    "SEA's e-commerce boom is creating new advertising opportunities at the point of purchase intent.",
-    "streaming":     "Streaming audiences in SEA are growing rapidly — ad-supported tiers are opening new premium placements.",
-    "data":          "Data-driven decision making is separating top-performing brands from those still relying on gut instinct.",
-    "measurement":   "As attribution models evolve, brands investing in robust measurement frameworks will have clearer proof of impact.",
+    "tiktok":       "TikTok's explosive growth across SEA makes short-form video a must-have in any brand's media mix.",
+    "influencer":   "Influencer marketing in SEA is maturing — brands are shifting from reach to engagement and conversion metrics.",
+    "retail media": "Retail media is the fastest-growing ad channel globally — brands not investing risk ceding ground to competitors.",
+    "programmatic": "Programmatic efficiency is improving rapidly — smarter bidding and better data are reducing wasted impressions.",
+    "first-party":  "First-party data is the new currency of digital advertising — brands building their data assets now are ahead.",
+    "connected tv": "CTV adoption in SEA is accelerating — premium video inventory is now accessible to performance marketers.",
+    "out-of-home":  "Digital OOH in SEA is growing fast — contextual, location-based placements are driving real-world outcomes.",
+    "social media": "Social platforms in SEA have among the highest engagement rates globally — critical for brand building.",
+    "ai":           "AI is reshaping how ads are created, targeted, and measured — brands embracing it early are seeing efficiency gains.",
+    "e-commerce":   "SEA's e-commerce boom is creating new advertising opportunities at the point of purchase intent.",
+    "streaming":    "Streaming audiences in SEA are growing rapidly — ad-supported tiers are opening new premium placements.",
+    "measurement":  "As attribution models evolve, brands investing in robust measurement frameworks will have clearer proof of impact.",
 }
 
 
-def fetch_articles_for_query(query: str, from_date: str) -> list:
-    """Fetch articles from NewsAPI for a single query."""
-    try:
-        params = {
-            "q":          query,
-            "from":       from_date,
-            "language":   "en",
-            "sortBy":     "publishedAt",
-            "pageSize":   20,
-            "domains":    PREFERRED_DOMAINS,
-            "apiKey":     NEWS_API_KEY,
-        }
-        resp = requests.get(NEWS_API_URL, params=params, timeout=15)
-        resp.raise_for_status()
-        data = resp.json()
-        return data.get("articles", [])
-    except Exception as e:
-        print(f"    Failed query '{query}': {e}")
-        return []
-
-
 def fetch_all_articles() -> list:
-    """Run all search queries and return deduplicated, filtered articles."""
     seen_urls    = set()
     all_articles = []
 
-    # Only fetch articles from the past 7 days
-    from_date = (datetime.utcnow() - timedelta(days=7)).strftime("%Y-%m-%d")
+    for feed_info in RSS_FEEDS:
+        source      = feed_info["name"]
+        sea_trusted = feed_info["sea_trusted"]
+        try:
+            headers  = {"User-Agent": "Mozilla/5.0 (compatible; GrabAds-NewsBot/1.0; +https://grab.com)"}
+            response = requests.get(feed_info["url"], headers=headers, timeout=15)
+            response.raise_for_status()
+            feed     = feedparser.parse(response.content)
 
-    for query in SEARCH_QUERIES:
-        print(f"  Querying: '{query}'...")
-        raw = fetch_articles_for_query(query, from_date)
-        count    = 0
-        filtered = 0
+            count    = 0
+            filtered = 0
+            for entry in feed.entries:
+                title   = entry.get("title", "").strip()
+                url     = entry.get("link", "")
+                summary = clean_html(entry.get("summary", entry.get("description", "")))
 
-        for item in raw:
-            url     = (item.get("url") or "").strip()
-            title   = (item.get("title") or "").strip()
-            summary = clean_html(item.get("description") or item.get("content") or "")
-            source  = item.get("source", {}).get("name", "Unknown")
-            pub_at  = item.get("publishedAt", "")
+                if not title or not url or url in seen_urls:
+                    continue
 
-            # Skip removed articles, duplicates, missing titles or URLs
-            if not title or not url or url in seen_urls:
-                continue
-            if "[Removed]" in title or "removed" in url.lower():
-                continue
+                raw_text = (title + " " + summary).lower()
+                article  = {
+                    "title":       title,
+                    "summary":     summary,
+                    "url":         url,
+                    "source":      source,
+                    "published":   parse_date(entry),
+                    "raw_text":    raw_text,
+                    "sea_trusted": sea_trusted,
+                    "image":       "",
+                }
 
-            raw_text = (title + " " + summary).lower()
-            article  = {
-                "title":     title,
-                "summary":   summary,
-                "url":       url,
-                "source":    source,
-                "published": parse_date(pub_at),
-                "raw_text":  raw_text,
-                "image":     item.get("urlToImage", ""),
-            }
+                if not is_ads_relevant(article):
+                    filtered += 1
+                    continue
 
-            # Apply ads relevance filter
-            if not is_ads_relevant(article):
-                filtered += 1
-                continue
+                seen_urls.add(url)
+                all_articles.append(article)
+                count += 1
 
-            seen_urls.add(url)
-            all_articles.append(article)
-            count += 1
+            print(f"    {count} relevant articles from {source} ({filtered} filtered out)")
 
-        print(f"    {count} relevant articles ({filtered} filtered out)")
+        except Exception as e:
+            print(f"    Failed {source} ({feed_info['url']}): {e}")
 
-    print(f"  Total unique relevant articles: {len(all_articles)}")
+    print(f"  Total relevant articles: {len(all_articles)}")
     return all_articles
 
 
@@ -275,9 +215,8 @@ def is_ads_relevant(article: dict) -> bool:
 
 
 def is_sea_relevant(article: dict) -> bool:
-    # Trust articles from SEA-focused publications without needing keywords
-    source_url = article.get("url", "").lower()
-    if any(domain in source_url for domain in SEA_TRUSTED_DOMAINS):
+    # SEA-trusted sources are always relevant
+    if article.get("sea_trusted"):
         return True
     return any(kw in article["raw_text"] for kw in SEA_KEYWORDS)
 
@@ -298,19 +237,16 @@ def classify_category(article: dict) -> str:
 
 
 def generate_talking_points(article: dict) -> list:
-    """Generate 2-3 talking points using rule-based keyword matching."""
     text     = article["raw_text"]
     category = article.get("category", "industry")
     points   = []
 
-    # Topic-specific points first
     for keyword, point in TOPIC_TALKING_POINTS.items():
         if keyword in text and point not in points:
             points.append(point)
         if len(points) >= 2:
             break
 
-    # Fill with category templates
     seed      = int(hashlib.md5((article.get("url", "") + article.get("title", "")).encode()).hexdigest(), 16)
     rng       = random.Random(seed)
     templates = TALKING_POINT_TEMPLATES.get(category, TALKING_POINT_TEMPLATES["industry"])[:]
@@ -326,30 +262,21 @@ def generate_talking_points(article: dict) -> list:
 
 
 def select_top_articles(all_articles: list, max_articles: int = 12) -> list:
-    """
-    Only include:
-    1. Articles that explicitly mention SEA/APAC markets
-    2. Global industry movements (account wins, mergers etc) as they
-       are always relevant talking points for SEA sales teams
-    No generic global ads news unless it mentions SEA/APAC.
-    """
     sea       = [a for a in all_articles if is_sea_relevant(a)]
-    movements = [a for a in all_articles
-                 if is_industry_movement(a) and not is_sea_relevant(a)]
+    movements = [a for a in all_articles if is_industry_movement(a) and not is_sea_relevant(a)]
 
-    print(f"  SEA-specific: {len(sea)}")
+    print(f"  SEA/trusted: {len(sea)}")
     print(f"  Global industry movements: {len(movements)}")
 
-    # SEA articles first, then industry movements to fill
     combined = sea[:max_articles]
     if len(combined) < max_articles:
         combined += movements[:(max_articles - len(combined))]
 
     # Sort by recency
-    combined.sort(
-        key=lambda a: a["published"] or datetime.min.replace(tzinfo=timezone.utc),
-        reverse=True
-    )
+    def sort_key(a):
+        d = format_date(a["published"])
+        return {"Today": 0, "Yesterday": 1}.get(d, 2)
+    combined.sort(key=sort_key)
 
     return combined[:max_articles]
 
@@ -361,9 +288,8 @@ def format_article(article: dict) -> dict:
     if len(summary) > 200:
         summary = summary[:197] + "..."
 
-    # Use real image from NewsAPI if available, else fall back to Picsum
-    seed     = int(hashlib.md5(article.get("url", "").encode()).hexdigest(), 16) % 1000
-    image    = article.get("image") or f"https://picsum.photos/seed/{seed}/600/280"
+    seed  = int(hashlib.md5(article.get("url", "").encode()).hexdigest(), 16) % 1000
+    image = article.get("image") or f"https://picsum.photos/seed/{seed}/600/280"
 
     return {
         "headline":      article["title"],
@@ -395,13 +321,15 @@ def format_date(published: datetime) -> str:
         return published.strftime("%-d %b")
 
 
-def parse_date(date_str: str) -> datetime:
-    if not date_str:
-        return None
-    try:
-        return datetime.fromisoformat(date_str.replace("Z", "+00:00"))
-    except Exception:
-        return None
+def parse_date(entry) -> datetime:
+    for field in ["published", "updated", "created"]:
+        val = entry.get(field)
+        if val:
+            try:
+                return dateparser.parse(val)
+            except Exception:
+                pass
+    return None
 
 
 def clean_html(text: str) -> str:
@@ -413,30 +341,25 @@ def clean_html(text: str) -> str:
 def fallback() -> list:
     return [
         {"headline": "Programmatic spend surges across SEA markets", "summary": "Digital ad investment continues to climb with new data-driven strategies across Southeast Asia.", "category": "digital", "source": "Campaign Asia", "date": "This week", "url": "", "image": "https://picsum.photos/seed/1/600/280", "talkingPoints": ["Performance marketing in SEA is increasingly driven by first-party data.", "Programmatic efficiency is improving rapidly across the region."], "isMovement": False},
-        {"headline": "Retail media networks gain momentum in APAC", "summary": "Retailers across Asia Pacific are launching ad networks to monetise their audiences.", "category": "retail", "source": "Marketing Dive", "date": "This week", "url": "", "image": "https://picsum.photos/seed/2/600/280", "talkingPoints": ["Retail media lets brands reach consumers closest to the point of purchase.", "Closed-loop measurement connects ad spend directly to sales."], "isMovement": False},
+        {"headline": "Retail media networks gain momentum in APAC", "summary": "Retailers across Asia Pacific are launching ad networks to monetise their audiences.", "category": "retail", "source": "MARKETECH APAC", "date": "This week", "url": "", "image": "https://picsum.photos/seed/2/600/280", "talkingPoints": ["Retail media lets brands reach consumers closest to the point of purchase.", "Closed-loop measurement connects ad spend directly to sales."], "isMovement": False},
         {"headline": "Agency account moves signal shifting brand priorities", "summary": "Several major advertisers have consolidated their media buying with new agency partners.", "category": "industry", "source": "Adweek", "date": "This week", "url": "", "image": "https://picsum.photos/seed/3/600/280", "talkingPoints": ["Account moves signal brands are seeking more integrated, data-driven partners.", "New agency relationships often coincide with a fresh look at digital channel mix."], "isMovement": True},
     ]
 
 
 def main():
     print("=" * 50)
-    print("GrabAds Weekly News Generator (NewsAPI Version)")
+    print("GrabAds Weekly News Generator (RSS Version)")
     print(f"Running at: {datetime.utcnow().strftime('%Y-%m-%d %H:%M UTC')}")
     print("=" * 50)
 
-    if not NEWS_API_KEY:
-        print("ERROR: NEWS_API_KEY environment variable not set!")
-        print("Add it as a GitHub secret named NEWS_API_KEY")
-        exit(1)
-
-    print("\nFetching articles from NewsAPI...")
+    print("\nFetching RSS feeds...")
     all_articles = fetch_all_articles()
 
     print("\nSelecting top articles...")
     top_articles = select_top_articles(all_articles, max_articles=12)
     print(f"  Selected {len(top_articles)} articles")
 
-    print("\nFormatting articles and generating talking points...")
+    print("\nFormatting and generating talking points...")
     formatted = [format_article(a) for a in top_articles]
 
     if not formatted:
@@ -453,9 +376,9 @@ def main():
     with open(output_path, "w", encoding="utf-8") as f:
         json.dump(output, f, ensure_ascii=False, indent=2)
 
+    total = sum(1 for _ in formatted)
     print("\n" + "=" * 50)
-    print(f"news.json written successfully")
-    print(f"Total articles: {len(formatted)}")
+    print(f"news.json written successfully — {total} articles")
     print("=" * 50)
 
 
