@@ -1,398 +1,186 @@
 {
-  "generatedAt": "2026-05-25T04:22:59Z",
-  "generatedDate": "25 May 2026",
-  "countries": {
-    "Singapore": [
-      {
-        "headline": "MC&V adds Canva and Canteen to client list",
-        "summary": "AI-native production company MC&#38;V has secured Canva and Canteen as clients, two big wins for an agency that launched a little over three months ago. MC&#38;V was founded in ...",
-        "category": "creative",
-        "source": "Mumbrella",
-        "date": "Today",
-        "url": "https://mumbrella.com.au/mcv-adds-canva-and-canteen-to-client-list-924111",
-        "imageQuery": "creative advertising campaign"
-      },
-      {
-        "headline": "Defence Housing Australia kicks off agency search to woo property investors",
-        "summary": "Defence Housing Australia is gearing up for a major marketing push to lure property investors, kicking off an agency search for creative and media services. The government agenc...",
-        "category": "industry",
-        "source": "Mumbrella",
-        "date": "Today",
-        "url": "https://mumbrella.com.au/defence-housing-australia-kicks-off-agency-search-to-woo-property-investors-924036",
-        "imageQuery": "marketing agency business"
-      },
-      {
-        "headline": "Optus appoints Lauren Dawber Executive General Manager of Marketing",
-        "summary": "Optus has appointed Lauren Dawber as Executive General Manager of Marketing. The move follows her previous leadership roles within the company and comes as Optus aims to enhance...",
-        "category": "industry",
-        "source": "Mumbrella",
-        "date": "2 days ago",
-        "url": "https://mumbrella.com.au/optus-appoints-lauren-dawber-executive-general-manager-of-marketing-924035",
-        "imageQuery": "marketing agency business"
-      },
-      {
-        "headline": "I was made redundant twice in my 20s — maybe it is personal",
-        "summary": "Yesterday, I was made redundant from a boutique PR agency. A major client gave us the news that the contract wasn&#8217;t being renewed in the new financial year. Thirty minutes...",
-        "category": "industry",
-        "source": "Mumbrella",
-        "date": "3 days ago",
-        "url": "https://mumbrella.com.au/i-was-made-redundant-twice-in-my-20s-maybe-it-is-personal-924021",
-        "imageQuery": "marketing agency business"
-      },
-      {
-        "headline": "‘It felt very smooth’: Paris Raine on launching the Hollywood Reporter in Australia",
-        "summary": "The Hollywood Reporter is launching an Australian print and digital edition with untested publisher Raine Media. The Australian edition of the Californian entertainment title wi...",
-        "category": "industry",
-        "source": "Mumbrella",
-        "date": "3 days ago",
-        "url": "https://mumbrella.com.au/it-felt-very-smooth-paris-raine-on-launching-the-hollywood-reporter-in-australia-923978",
-        "imageQuery": "marketing agency business"
-      },
-      {
-        "headline": "Cost-of-living crisis forces marketers from persuasion to proof: Ipsos",
-        "summary": "Australian marketers will need to move from persuasion to proof as cost-of-living pressures turn consumers into hard-nosed value hunters, according to new Ipsos findings. Data f...",
-        "category": "industry",
-        "source": "Mumbrella",
-        "date": "3 days ago",
-        "url": "https://mumbrella.com.au/cost-of-living-crisis-forces-marketers-from-persuasion-to-proof-ipsos-923989",
-        "imageQuery": "marketing agency business"
-      }
-    ],
-    "Philippines": [
-      {
-        "headline": "Toyota publishing kids’ books with ‘unbreakable’ message",
-        "summary": "Toyota Australia has extended its “Unbreakable” brand platform into children’s publishing, launching a six-part storybook series plugging its Hilux into News Corp Australia’s au...",
-        "category": "media",
-        "source": "Mumbrella",
-        "date": "Today",
-        "url": "https://mumbrella.com.au/toyota-publishing-kids-books-with-unbreakable-message-924089",
-        "imageQuery": "media broadcasting publishing"
-      },
-      {
-        "headline": "Iconoclast Piers Morgan in talks to return to Australian TV",
-        "summary": "British firebrand broadcaster Piers Morgan has told Mumbrella he is in talks to bring a version of his Uncensored show to Australian TV. Speaking after his appearing on stage at...",
-        "category": "media",
-        "source": "Mumbrella",
-        "date": "Today",
-        "url": "https://mumbrella.com.au/iconclast-piers-morgan-in-talks-to-return-to-australian-tv-924127",
-        "imageQuery": "media broadcasting publishing"
-      },
-      {
-        "headline": "Sports TV Ad Spending to Top $20 Billion in 2027, As Live Games Defy Cord-Cutting",
-        "summary": "According to exclusive eMarketer data, the market will grow nearly four times faster than TV overall and linear will keep most of the money.",
-        "category": "industry",
-        "source": "Adweek",
-        "date": "2 days ago",
-        "url": "https://www.adweek.com/convergent-tv/sports-tv-ad-spend-20-billion-live-games/",
-        "imageQuery": "marketing agency business"
-      },
-      {
-        "headline": "OpenAI Is Hiring for a Top Marketing Exec To Promote Its Ads Business",
-        "summary": "A new job posting aims to position the company as “a leading voice on the future of advertising.\"",
-        "category": "industry",
-        "source": "Adweek",
-        "date": "2 days ago",
-        "url": "https://www.adweek.com/media/openai-is-hiring-for-a-top-marketing-exec-to-promote-its-ads-business/",
-        "imageQuery": "marketing agency business"
-      },
-      {
-        "headline": "Ads of the Week: 9 Campaigns That Caught Our Eye, From Visa to Guinness",
-        "summary": "Visa, Guinness, Under Armour, Dr Pepper, and more are behind the week's standout ads.",
-        "category": "industry",
-        "source": "Adweek",
-        "date": "2 days ago",
-        "url": "https://www.adweek.com/creativity/ads-of-the-week-9-campaigns-that-caught-our-eye-from-visa-to-guinness/",
-        "imageQuery": "marketing agency business"
-      },
-      {
-        "headline": "Penske Media Is in Talks to Acquire Unsold Vox Media Brands",
-        "summary": "The deal would transfer the entire Remain Co. group as a single package, with president Ryan Pauley moving to PMC.",
-        "category": "industry",
-        "source": "Adweek",
-        "date": "3 days ago",
-        "url": "https://www.adweek.com/media/penske-media-acquires-vox-media-brands/",
-        "imageQuery": "marketing agency business"
-      }
-    ],
-    "Indonesia": [
-      {
-        "headline": "Defence Housing Australia kicks off agency search to woo property investors",
-        "summary": "Defence Housing Australia is gearing up for a major marketing push to lure property investors, kicking off an agency search for creative and media services. The government agenc...",
-        "category": "industry",
-        "source": "Mumbrella",
-        "date": "Today",
-        "url": "https://mumbrella.com.au/defence-housing-australia-kicks-off-agency-search-to-woo-property-investors-924036",
-        "imageQuery": "marketing agency business"
-      },
-      {
-        "headline": "Optus appoints Lauren Dawber Executive General Manager of Marketing",
-        "summary": "Optus has appointed Lauren Dawber as Executive General Manager of Marketing. The move follows her previous leadership roles within the company and comes as Optus aims to enhance...",
-        "category": "industry",
-        "source": "Mumbrella",
-        "date": "2 days ago",
-        "url": "https://mumbrella.com.au/optus-appoints-lauren-dawber-executive-general-manager-of-marketing-924035",
-        "imageQuery": "marketing agency business"
-      },
-      {
-        "headline": "I was made redundant twice in my 20s — maybe it is personal",
-        "summary": "Yesterday, I was made redundant from a boutique PR agency. A major client gave us the news that the contract wasn&#8217;t being renewed in the new financial year. Thirty minutes...",
-        "category": "industry",
-        "source": "Mumbrella",
-        "date": "3 days ago",
-        "url": "https://mumbrella.com.au/i-was-made-redundant-twice-in-my-20s-maybe-it-is-personal-924021",
-        "imageQuery": "marketing agency business"
-      },
-      {
-        "headline": "‘It felt very smooth’: Paris Raine on launching the Hollywood Reporter in Australia",
-        "summary": "The Hollywood Reporter is launching an Australian print and digital edition with untested publisher Raine Media. The Australian edition of the Californian entertainment title wi...",
-        "category": "industry",
-        "source": "Mumbrella",
-        "date": "3 days ago",
-        "url": "https://mumbrella.com.au/it-felt-very-smooth-paris-raine-on-launching-the-hollywood-reporter-in-australia-923978",
-        "imageQuery": "marketing agency business"
-      },
-      {
-        "headline": "Cost-of-living crisis forces marketers from persuasion to proof: Ipsos",
-        "summary": "Australian marketers will need to move from persuasion to proof as cost-of-living pressures turn consumers into hard-nosed value hunters, according to new Ipsos findings. Data f...",
-        "category": "industry",
-        "source": "Mumbrella",
-        "date": "3 days ago",
-        "url": "https://mumbrella.com.au/cost-of-living-crisis-forces-marketers-from-persuasion-to-proof-ipsos-923989",
-        "imageQuery": "marketing agency business"
-      },
-      {
-        "headline": "Tahiti Tourisme reappoints Circul8 as Creative Strategy Partner after a global competitive pitch",
-        "summary": "Circul8 has been reappointed by Tahiti Tourisme to manage its global creative account following a competitive pitch. The agency&#8217;s ongoing partnership aims to enhance the d...",
-        "category": "industry",
-        "source": "Mumbrella",
-        "date": "3 days ago",
-        "url": "https://mumbrella.com.au/tahiti-tourisme-reappoints-circul8-as-creative-strategy-partner-after-a-global-competitive-pitch-923976",
-        "imageQuery": "marketing agency business"
-      }
-    ],
-    "Thailand": [
-      {
-        "headline": "Optus appoints Lauren Dawber Executive General Manager of Marketing",
-        "summary": "Optus has appointed Lauren Dawber as Executive General Manager of Marketing. The move follows her previous leadership roles within the company and comes as Optus aims to enhance...",
-        "category": "industry",
-        "source": "Mumbrella",
-        "date": "2 days ago",
-        "url": "https://mumbrella.com.au/optus-appoints-lauren-dawber-executive-general-manager-of-marketing-924035",
-        "imageQuery": "marketing agency business"
-      },
-      {
-        "headline": "I was made redundant twice in my 20s — maybe it is personal",
-        "summary": "Yesterday, I was made redundant from a boutique PR agency. A major client gave us the news that the contract wasn&#8217;t being renewed in the new financial year. Thirty minutes...",
-        "category": "industry",
-        "source": "Mumbrella",
-        "date": "3 days ago",
-        "url": "https://mumbrella.com.au/i-was-made-redundant-twice-in-my-20s-maybe-it-is-personal-924021",
-        "imageQuery": "marketing agency business"
-      },
-      {
-        "headline": "‘It felt very smooth’: Paris Raine on launching the Hollywood Reporter in Australia",
-        "summary": "The Hollywood Reporter is launching an Australian print and digital edition with untested publisher Raine Media. The Australian edition of the Californian entertainment title wi...",
-        "category": "industry",
-        "source": "Mumbrella",
-        "date": "3 days ago",
-        "url": "https://mumbrella.com.au/it-felt-very-smooth-paris-raine-on-launching-the-hollywood-reporter-in-australia-923978",
-        "imageQuery": "marketing agency business"
-      },
-      {
-        "headline": "Cost-of-living crisis forces marketers from persuasion to proof: Ipsos",
-        "summary": "Australian marketers will need to move from persuasion to proof as cost-of-living pressures turn consumers into hard-nosed value hunters, according to new Ipsos findings. Data f...",
-        "category": "industry",
-        "source": "Mumbrella",
-        "date": "3 days ago",
-        "url": "https://mumbrella.com.au/cost-of-living-crisis-forces-marketers-from-persuasion-to-proof-ipsos-923989",
-        "imageQuery": "marketing agency business"
-      },
-      {
-        "headline": "Tahiti Tourisme reappoints Circul8 as Creative Strategy Partner after a global competitive pitch",
-        "summary": "Circul8 has been reappointed by Tahiti Tourisme to manage its global creative account following a competitive pitch. The agency&#8217;s ongoing partnership aims to enhance the d...",
-        "category": "industry",
-        "source": "Mumbrella",
-        "date": "3 days ago",
-        "url": "https://mumbrella.com.au/tahiti-tourisme-reappoints-circul8-as-creative-strategy-partner-after-a-global-competitive-pitch-923976",
-        "imageQuery": "marketing agency business"
-      },
-      {
-        "headline": "James Greet tapped to head Purpose Disruptors’ ANZ expansion",
-        "summary": "Australian advertising veteran James Greet has joined UK sustainability nonprofit Purpose Disruptors to lead its expansion into Australia and New Zealand. The former CEO of OMD ...",
-        "category": "industry",
-        "source": "Mumbrella",
-        "date": "3 days ago",
-        "url": "https://mumbrella.com.au/james-greet-tapped-to-head-purpose-disruptors-anz-expansion-923954",
-        "imageQuery": "marketing agency business"
-      }
-    ],
-    "Vietnam": [
-      {
-        "headline": "Toyota publishing kids’ books with ‘unbreakable’ message",
-        "summary": "Toyota Australia has extended its “Unbreakable” brand platform into children’s publishing, launching a six-part storybook series plugging its Hilux into News Corp Australia’s au...",
-        "category": "media",
-        "source": "Mumbrella",
-        "date": "Today",
-        "url": "https://mumbrella.com.au/toyota-publishing-kids-books-with-unbreakable-message-924089",
-        "imageQuery": "media broadcasting publishing"
-      },
-      {
-        "headline": "If You Can Sell Insurance, You Can Sell Anything ft. Tory Pachis of Amica Insurance",
-        "summary": "How a 119-year-old insurance company wins with a contrarian creative strategy.",
-        "category": "industry",
-        "source": "Adweek",
-        "date": "2 days ago",
-        "url": "https://www.adweek.com/brand-marketing/if-you-can-sell-insurance-you-can-sell-anything-ft-tory-pachis-of-amica-insurance/",
-        "imageQuery": "marketing agency business"
-      },
-      {
-        "headline": "Sports TV Ad Spending to Top $20 Billion in 2027, As Live Games Defy Cord-Cutting",
-        "summary": "According to exclusive eMarketer data, the market will grow nearly four times faster than TV overall and linear will keep most of the money.",
-        "category": "industry",
-        "source": "Adweek",
-        "date": "2 days ago",
-        "url": "https://www.adweek.com/convergent-tv/sports-tv-ad-spend-20-billion-live-games/",
-        "imageQuery": "marketing agency business"
-      },
-      {
-        "headline": "OpenAI Is Hiring for a Top Marketing Exec To Promote Its Ads Business",
-        "summary": "A new job posting aims to position the company as “a leading voice on the future of advertising.\"",
-        "category": "industry",
-        "source": "Adweek",
-        "date": "2 days ago",
-        "url": "https://www.adweek.com/media/openai-is-hiring-for-a-top-marketing-exec-to-promote-its-ads-business/",
-        "imageQuery": "marketing agency business"
-      },
-      {
-        "headline": "Ads of the Week: 9 Campaigns That Caught Our Eye, From Visa to Guinness",
-        "summary": "Visa, Guinness, Under Armour, Dr Pepper, and more are behind the week's standout ads.",
-        "category": "industry",
-        "source": "Adweek",
-        "date": "2 days ago",
-        "url": "https://www.adweek.com/creativity/ads-of-the-week-9-campaigns-that-caught-our-eye-from-visa-to-guinness/",
-        "imageQuery": "marketing agency business"
-      },
-      {
-        "headline": "Penske Media Is in Talks to Acquire Unsold Vox Media Brands",
-        "summary": "The deal would transfer the entire Remain Co. group as a single package, with president Ryan Pauley moving to PMC.",
-        "category": "industry",
-        "source": "Adweek",
-        "date": "3 days ago",
-        "url": "https://www.adweek.com/media/penske-media-acquires-vox-media-brands/",
-        "imageQuery": "marketing agency business"
-      }
-    ],
-    "Malaysia": [
-      {
-        "headline": "Toyota publishing kids’ books with ‘unbreakable’ message",
-        "summary": "Toyota Australia has extended its “Unbreakable” brand platform into children’s publishing, launching a six-part storybook series plugging its Hilux into News Corp Australia’s au...",
-        "category": "media",
-        "source": "Mumbrella",
-        "date": "Today",
-        "url": "https://mumbrella.com.au/toyota-publishing-kids-books-with-unbreakable-message-924089",
-        "imageQuery": "media broadcasting publishing"
-      },
-      {
-        "headline": "If You Can Sell Insurance, You Can Sell Anything ft. Tory Pachis of Amica Insurance",
-        "summary": "How a 119-year-old insurance company wins with a contrarian creative strategy.",
-        "category": "industry",
-        "source": "Adweek",
-        "date": "2 days ago",
-        "url": "https://www.adweek.com/brand-marketing/if-you-can-sell-insurance-you-can-sell-anything-ft-tory-pachis-of-amica-insurance/",
-        "imageQuery": "marketing agency business"
-      },
-      {
-        "headline": "Sports TV Ad Spending to Top $20 Billion in 2027, As Live Games Defy Cord-Cutting",
-        "summary": "According to exclusive eMarketer data, the market will grow nearly four times faster than TV overall and linear will keep most of the money.",
-        "category": "industry",
-        "source": "Adweek",
-        "date": "2 days ago",
-        "url": "https://www.adweek.com/convergent-tv/sports-tv-ad-spend-20-billion-live-games/",
-        "imageQuery": "marketing agency business"
-      },
-      {
-        "headline": "OpenAI Is Hiring for a Top Marketing Exec To Promote Its Ads Business",
-        "summary": "A new job posting aims to position the company as “a leading voice on the future of advertising.\"",
-        "category": "industry",
-        "source": "Adweek",
-        "date": "2 days ago",
-        "url": "https://www.adweek.com/media/openai-is-hiring-for-a-top-marketing-exec-to-promote-its-ads-business/",
-        "imageQuery": "marketing agency business"
-      },
-      {
-        "headline": "Ads of the Week: 9 Campaigns That Caught Our Eye, From Visa to Guinness",
-        "summary": "Visa, Guinness, Under Armour, Dr Pepper, and more are behind the week's standout ads.",
-        "category": "industry",
-        "source": "Adweek",
-        "date": "2 days ago",
-        "url": "https://www.adweek.com/creativity/ads-of-the-week-9-campaigns-that-caught-our-eye-from-visa-to-guinness/",
-        "imageQuery": "marketing agency business"
-      },
-      {
-        "headline": "Penske Media Is in Talks to Acquire Unsold Vox Media Brands",
-        "summary": "The deal would transfer the entire Remain Co. group as a single package, with president Ryan Pauley moving to PMC.",
-        "category": "industry",
-        "source": "Adweek",
-        "date": "3 days ago",
-        "url": "https://www.adweek.com/media/penske-media-acquires-vox-media-brands/",
-        "imageQuery": "marketing agency business"
-      }
-    ],
-    "Taiwan": [
-      {
-        "headline": "Cost-of-living crisis forces marketers from persuasion to proof: Ipsos",
-        "summary": "Australian marketers will need to move from persuasion to proof as cost-of-living pressures turn consumers into hard-nosed value hunters, according to new Ipsos findings. Data f...",
-        "category": "industry",
-        "source": "Mumbrella",
-        "date": "3 days ago",
-        "url": "https://mumbrella.com.au/cost-of-living-crisis-forces-marketers-from-persuasion-to-proof-ipsos-923989",
-        "imageQuery": "marketing agency business"
-      },
-      {
-        "headline": "Tahiti Tourisme reappoints Circul8 as Creative Strategy Partner after a global competitive pitch",
-        "summary": "Circul8 has been reappointed by Tahiti Tourisme to manage its global creative account following a competitive pitch. The agency&#8217;s ongoing partnership aims to enhance the d...",
-        "category": "industry",
-        "source": "Mumbrella",
-        "date": "3 days ago",
-        "url": "https://mumbrella.com.au/tahiti-tourisme-reappoints-circul8-as-creative-strategy-partner-after-a-global-competitive-pitch-923976",
-        "imageQuery": "marketing agency business"
-      },
-      {
-        "headline": "James Greet tapped to head Purpose Disruptors’ ANZ expansion",
-        "summary": "Australian advertising veteran James Greet has joined UK sustainability nonprofit Purpose Disruptors to lead its expansion into Australia and New Zealand. The former CEO of OMD ...",
-        "category": "industry",
-        "source": "Mumbrella",
-        "date": "3 days ago",
-        "url": "https://mumbrella.com.au/james-greet-tapped-to-head-purpose-disruptors-anz-expansion-923954",
-        "imageQuery": "marketing agency business"
-      },
-      {
-        "headline": "As the AI Battle Rages, Yusuf Mehdi Becomes the Latest Microsoft Veteran to Walk",
-        "summary": "After 35 years with the company, the chief consumer marketing officer will leave next year.",
-        "category": "industry",
-        "source": "Adweek",
-        "date": "2 days ago",
-        "url": "https://www.adweek.com/brand-marketing/ai-battle-microsoft-yusuf-mehdi/",
-        "imageQuery": "marketing agency business"
-      },
-      {
-        "headline": "If You Can Sell Insurance, You Can Sell Anything ft. Tory Pachis of Amica Insurance",
-        "summary": "How a 119-year-old insurance company wins with a contrarian creative strategy.",
-        "category": "industry",
-        "source": "Adweek",
-        "date": "2 days ago",
-        "url": "https://www.adweek.com/brand-marketing/if-you-can-sell-insurance-you-can-sell-anything-ft-tory-pachis-of-amica-insurance/",
-        "imageQuery": "marketing agency business"
-      },
-      {
-        "headline": "Sports TV Ad Spending to Top $20 Billion in 2027, As Live Games Defy Cord-Cutting",
-        "summary": "According to exclusive eMarketer data, the market will grow nearly four times faster than TV overall and linear will keep most of the money.",
-        "category": "industry",
-        "source": "Adweek",
-        "date": "2 days ago",
-        "url": "https://www.adweek.com/convergent-tv/sports-tv-ad-spend-20-billion-live-games/",
-        "imageQuery": "marketing agency business"
-      }
-    ]
-  }
+  "generatedAt": "2026-05-27T15:53:48Z",
+  "generatedDate": "27 May 2026",
+  "articles": [
+    {
+      "headline": "Coach Foundation Launches Media On Demand to Bring Agency-Level PR Within Reach of Working Coaches",
+      "summary": "New done-for-you service places coaches, consultants, and authors across hundreds of authority outlets without the cost or commitment of a traditional PR retainer. New done-for-you service places c...",
+      "category": "industry",
+      "source": "GlobeNewswire",
+      "date": "Yesterday",
+      "url": "https://www.globenewswire.com/news-release/2026/05/26/3301215/0/en/Coach-Foundation-Launches-Media-On-Demand-to-Bring-Agency-Level-PR-Within-Reach-of-Working-Coaches.html",
+      "image": "https://ml.globenewswire.com/Resource/Download/899fdae4-cec5-4691-8bee-58b4fbb34e90",
+      "talkingPoints": [
+        "AI is reshaping how ads are created, targeted, and measured — brands embracing it early are seeing efficiency gains.",
+        "Account moves often signal a brand is ready to rethink its media strategy — an opportunity to present new solutions.",
+        "Agency consolidation signals brands are seeking more integrated partners who can connect media, data, and creative."
+      ],
+      "isMovement": true
+    },
+    {
+      "headline": "KERRYGOLD LAUNCHES \"MAKE IT GOLD WITH KERRYGOLD,\" A CAMPAIGN BUILT ON FLAVOR, CRAFT & IRISH HERITAGE",
+      "summary": "EVANSTON, Ill., May 26, 2026 /PRNewswire/ -- Kerrygold, the premium Irish butter and cheese brand from Ornua, today announced the launch of its new \"Make it gold with Kerrygold\" campaign, a global ...",
+      "category": "industry",
+      "source": "PRNewswire",
+      "date": "Yesterday",
+      "url": "https://www.prnewswire.com/news-releases/kerrygold-launches-make-it-gold-with-kerrygold-a-campaign-built-on-flavor-craft--irish-heritage-302779841.html",
+      "image": "https://mma.prnewswire.com/media/2985689/Kerrygold_Product_Photo.jpg?p=facebook",
+      "talkingPoints": [
+        "AI is reshaping how ads are created, targeted, and measured — brands embracing it early are seeing efficiency gains.",
+        "Agency consolidation signals brands are seeking more integrated partners who can connect media, data, and creative.",
+        "Industry shifts like this show how quickly the competitive landscape is evolving."
+      ],
+      "isMovement": true
+    },
+    {
+      "headline": "Primark Takes Its Boldest Shot Yet at Winning Over American Shoppers",
+      "summary": "On the heels of a splashy Manhattan opening, Primark launches first global campaign with a focus on winning over U.S. consumers.",
+      "category": "industry",
+      "source": "Adweek",
+      "date": "Yesterday",
+      "url": "https://www.adweek.com/creativity/primark-takes-its-boldest-shot-yet-at-winning-over-american-shoppers/",
+      "image": "https://static-www.adweek.com/wp-content/uploads/2026/05/PrimarkGetaway.jpg?w=600&h=315&crop=1",
+      "talkingPoints": [
+        "AI is reshaping how ads are created, targeted, and measured — brands embracing it early are seeing efficiency gains.",
+        "Agency consolidation signals brands are seeking more integrated partners who can connect media, data, and creative.",
+        "Industry shifts like this show how quickly the competitive landscape is evolving."
+      ],
+      "isMovement": true
+    },
+    {
+      "headline": "Winston Agency Launches AI Transformation Offering as Client Roster Expands Across Enterprise and Growth Brands",
+      "summary": "Independent LA agency scales AI-augmented creative across brands including AAA, NETGEAR, and SmartRecruiters LOS ANGELES, May 26, 2026 /PRNewswire/ -- Winston Agency, the Los Angeles-based independ...",
+      "category": "creative",
+      "source": "PRNewswire",
+      "date": "Yesterday",
+      "url": "https://www.prnewswire.com/news-releases/winston-agency-launches-ai-transformation-offering-as-client-roster-expands-across-enterprise-and-growth-brands-302780328.html",
+      "image": "https://mma.prnewswire.com/media/2985786/Winston_Agency_LLC_Logo.jpg?p=facebook",
+      "talkingPoints": [
+        "AI is reshaping how ads are created, targeted, and measured — brands embracing it early are seeing efficiency gains.",
+        "Creative quality directly impacts media efficiency — strong creatives lower CPMs and boost conversion rates.",
+        "With attention spans shrinking, the brands that win are those that lead with emotion before product."
+      ],
+      "isMovement": true
+    },
+    {
+      "headline": "How Dove and Vaseline Are Cultivating Creator Partnerships",
+      "summary": "According to executives from Unilever and Traackr, building loyal relationships is key to scaling influencer marketing.",
+      "category": "industry",
+      "source": "WWD",
+      "date": "Yesterday",
+      "url": "http://wwd.com/beauty-industry-news/beauty-features/scaling-influencer-marketing-unilever-dove-vaseline-traackr-1238978597/",
+      "image": "https://wwd.com/wp-content/uploads/2026/05/TraackrUnileverBCEO.jpg?w=1000&h=563&crop=1",
+      "talkingPoints": [
+        "Influencer marketing in SEA is maturing — brands are shifting from reach to engagement and conversion metrics.",
+        "Industry shifts like this show how quickly the competitive landscape is evolving.",
+        "Leadership changes at brands often accelerate marketing transformation — a great moment to open new conversations."
+      ],
+      "isMovement": true
+    },
+    {
+      "headline": "DemandBird Launches New B2B Social Media Management Platform",
+      "summary": "New DemandBird Platform Helps B2B Marketing Teams Manage Social Media Scheduling, Approvals, Analytics, and Client Reporting New DemandBird Platform Helps B2B Marketing Teams Manage Social Media Sc...",
+      "category": "digital",
+      "source": "GlobeNewswire",
+      "date": "2 days ago",
+      "url": "https://www.globenewswire.com/news-release/2026/05/25/3300645/0/en/DemandBird-Launches-New-B2B-Social-Media-Management-Platform.html",
+      "image": "https://picsum.photos/seed/971/600/280",
+      "talkingPoints": [
+        "Social platforms in SEA have among the highest engagement rates globally — critical for brand building.",
+        "Digital channels are evolving fast — brands that invest in data-driven targeting now will have a significant edge.",
+        "Performance marketing in SEA is increasingly driven by first-party data — how are you leveraging yours?"
+      ],
+      "isMovement": true
+    },
+    {
+      "headline": "Aurora Mobile's EngageLab Launches Scalable \"Unlimited Support Agents\" Conversational Sales Solution to Redefine B2B Growth",
+      "summary": "SINGAPORE, May 25, 2026 (GLOBE NEWSWIRE) -- Aurora Mobile Limited (NASDAQ: JG) (“Aurora Mobile” or the “Company”), a leading provider of customer engagement and marketing technology services, today...",
+      "category": "industry",
+      "source": "GlobeNewswire",
+      "date": "2 days ago",
+      "url": "https://www.globenewswire.com/news-release/2026/05/25/3300570/0/en/Aurora-Mobile-s-EngageLab-Launches-Scalable-Unlimited-Support-Agents-Conversational-Sales-Solution-to-Redefine-B2B-Growth.html",
+      "image": "https://ml.globenewswire.com/Resource/Download/a3a6c9ea-be69-4aff-b950-93ed59470740",
+      "talkingPoints": [
+        "AI is reshaping how ads are created, targeted, and measured — brands embracing it early are seeing efficiency gains.",
+        "Industry shifts like this show how quickly the competitive landscape is evolving.",
+        "When brands change agencies, they're typically open to trying new platforms and channels — timing is everything."
+      ],
+      "isMovement": true
+    },
+    {
+      "headline": "The SpaceX IPO Reveals What Really Happened to Twitter",
+      "summary": "Elon Musk’s pitch to investors provides new details about X’s finances and the steep cost of rebranding.",
+      "category": "industry",
+      "source": "New York Magazine",
+      "date": "4 days ago",
+      "url": "http://nymag.com/intelligencer/article/the-spacex-ipo-reveals-what-really-happened-to-twitter.html",
+      "image": "https://pyxis.nymag.com/v1/imgs/338/aa4/d83f9990410b1e8e0caa78a41554138f52-elon-.1x.rsocial.w1200.jpg",
+      "talkingPoints": [
+        "AI is reshaping how ads are created, targeted, and measured — brands embracing it early are seeing efficiency gains.",
+        "Industry shifts like this show how quickly the competitive landscape is evolving.",
+        "Leadership changes at brands often accelerate marketing transformation — a great moment to open new conversations."
+      ],
+      "isMovement": true
+    },
+    {
+      "headline": "Clear Channel Outdoor Introduces \"Clear Channel Impact,\" Transforming Advertising into Measurable Community Action",
+      "summary": "NEW YORK, May 21, 2026 /PRNewswire/ -- Clear Channel Outdoor (NYSE: CCO) today introduced Clear Channel Impact™, a new marketing solution that enables brands to turn their existing advertising inve...",
+      "category": "industry",
+      "source": "PRNewswire",
+      "date": "6 days ago",
+      "url": "https://www.prnewswire.com/news-releases/clear-channel-outdoor-introduces-clear-channel-impact-transforming-advertising-into-measurable-community-action-302778696.html",
+      "image": "https://mma.prnewswire.com/media/2984806/Clear_Channel_Outdoor_Clear_Channel_Impact_Image.jpg?p=facebook",
+      "talkingPoints": [
+        "When brands change agencies, they're typically open to trying new platforms and channels — timing is everything.",
+        "Industry shifts like this show how quickly the competitive landscape is evolving.",
+        "Agency consolidation signals brands are seeking more integrated partners who can connect media, data, and creative."
+      ],
+      "isMovement": true
+    },
+    {
+      "headline": "Digest: Google Debuts New AI Model; Singapore Signs New AI Deals",
+      "summary": "In today’s Digest, we discuss OpenAI committing USD$234m as Singapore signs new AI deals, Google debuting a new AI model amid pressure from coding rivals, and UK advertising returning to Cannes Lio...",
+      "category": "creative",
+      "source": "ExchangeWire",
+      "date": "6 days ago",
+      "url": "https://www.exchangewire.com/blog/2026/05/21/digest-google-debuts-new-ai-model-singapore-signs-new-ai-deals/",
+      "image": "https://cdn.exchangewire.com/wp-content/uploads/2026/05/photo_2026-05-20_17-21-32.jpg",
+      "talkingPoints": [
+        "AI is reshaping how ads are created, targeted, and measured — brands embracing it early are seeing efficiency gains.",
+        "Creative effectiveness is increasingly measurable — brands investing in strong storytelling are seeing higher engagement.",
+        "Localised creative beats globalised templates in SEA — consumers respond to brands that speak their language."
+      ],
+      "isMovement": false
+    },
+    {
+      "headline": "Samsung Ads Southeast Asia overlays Eyeota data for greater Connected TV ad effectiveness",
+      "summary": "SINGAPORE, May 20, 2026 (GLOBE NEWSWIRE) -- Samsung Ads Southeast Asia has formed a new alliance with global data technology company, Eyeota, a Dun & Bradstreet company overlaying viewership insigh...",
+      "category": "digital",
+      "source": "GlobeNewswire",
+      "date": "6 days ago",
+      "url": "https://www.globenewswire.com/news-release/2026/05/21/3298964/0/en/Samsung-Ads-Southeast-Asia-overlays-Eyeota-data-for-greater-Connected-TV-ad-effectiveness.html",
+      "image": "https://ml.globenewswire.com/Resource/Download/6ab7ac49-8647-42e3-ac7e-ddb2789d5b07",
+      "talkingPoints": [
+        "CTV adoption in SEA is accelerating — premium video inventory is now accessible to performance marketers.",
+        "Data-driven decision making is separating top-performing brands from those still relying on gut instinct.",
+        "The shift to cookieless identity is accelerating — first-party data partnerships are becoming a competitive moat."
+      ],
+      "isMovement": false
+    },
+    {
+      "headline": "Adzymic Launches AgenX Creative Agent – First of its Agentic Suite",
+      "summary": "Adzymic today (20th May, 2026) announced the launch of the AgenX Creative Agent, the first release in its agentic suite, marking a structural shift in the digital advertising ecosystem: from fragme...",
+      "category": "digital",
+      "source": "ExchangeWire",
+      "date": "20 May",
+      "url": "https://www.exchangewire.com/blog/2026/05/20/adzymic-launches-agenx-creative-agent-first-of-its-agentic-suite/",
+      "image": "https://cdn.exchangewire.com/wp-content/uploads/2023/06/Adzymic-Logo_2-1.png",
+      "talkingPoints": [
+        "Social commerce is growing rapidly across SEA — shoppable ad formats are closing the gap between discovery and purchase.",
+        "As programmatic matures across the region, brands that move beyond last-click attribution will see clearer ROI.",
+        "Digital channels are evolving fast — brands that invest in data-driven targeting now will have a significant edge."
+      ],
+      "isMovement": true
+    }
+  ]
 }
