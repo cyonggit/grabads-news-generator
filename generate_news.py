@@ -43,23 +43,22 @@ SEARCH_QUERIES = [
     "social media advertising Asia TikTok Meta",
 ]
 
-# ── Trusted ad industry sources to prioritise
-TRUSTED_SOURCES = [
-    "adweek.com",
-    "thedrum.com",
+# ── Preferred sources -- NewsAPI will only return results from these domains
+# Free tier supports up to 20 domains in a single query
+PREFERRED_DOMAINS = ",".join([
     "campaignasia.com",
     "marketing-interactive.com",
-    "marketingdive.com",
-    "socialmediatoday.com",
-    "mumbrella.com.au",
-    "adage.com",
-    "campaignlive.co.uk",
-    "mediapost.com",
+    "marketech-apac.com",
     "digiday.com",
-    "businessinsider.com",
-    "reuters.com",
-    "bloomberg.com",
-]
+    "adexchanger.com",
+    "adweek.com",
+    "warc.com",
+    "marketingdive.com",
+    "thedrum.com",
+    "mumbrella.com.au",
+    "socialmediatoday.com",
+    "campaignbriefasia.com",
+])
 
 # ── SEA/Taiwan relevance keywords
 SEA_KEYWORDS = [
@@ -197,6 +196,7 @@ def fetch_articles_for_query(query: str, from_date: str) -> list:
             "language":   "en",
             "sortBy":     "publishedAt",
             "pageSize":   20,
+            "domains":    PREFERRED_DOMAINS,
             "apiKey":     NEWS_API_KEY,
         }
         resp = requests.get(NEWS_API_URL, params=params, timeout=15)
@@ -448,3 +448,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+    
