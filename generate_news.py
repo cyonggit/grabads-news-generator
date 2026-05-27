@@ -43,8 +43,17 @@ SEARCH_QUERIES = [
     "social media advertising Asia TikTok Meta",
 ]
 
-# ── Preferred sources -- NewsAPI will only return results from these domains
-# Free tier supports up to 20 domains in a single query
+# ── Sources we trust as inherently SEA/APAC relevant
+# Articles from these don't need explicit SEA keywords to qualify
+SEA_TRUSTED_DOMAINS = [
+    "campaignasia.com",
+    "marketing-interactive.com",
+    "marketech-apac.com",
+    "campaignbriefasia.com",
+    "mumbrella.com.au",
+]
+
+# ── All preferred domains -- NewsAPI restricts results to these only
 PREFERRED_DOMAINS = ",".join([
     "campaignasia.com",
     "marketing-interactive.com",
@@ -223,16 +232,16 @@ def fetch_all_articles() -> list:
         filtered = 0
 
         for item in raw:
-            url     = item.get("url", "")
+            url     = (item.get("url") or "").strip()
             title   = (item.get("title") or "").strip()
             summary = clean_html(item.get("description") or item.get("content") or "")
             source  = item.get("source", {}).get("name", "Unknown")
             pub_at  = item.get("publishedAt", "")
 
-            # Skip removed articles, duplicates, missing titles
+            # Skip removed articles, duplicates, missing titles or URLs
             if not title or not url or url in seen_urls:
                 continue
-            if "[Removed]" in title or title == "":
+            if "[Removed]" in title or "removed" in url.lower():
                 continue
 
             raw_text = (title + " " + summary).lower()
@@ -266,6 +275,10 @@ def is_ads_relevant(article: dict) -> bool:
 
 
 def is_sea_relevant(article: dict) -> bool:
+    # Trust articles from SEA-focused publications without needing keywords
+    source_url = article.get("url", "").lower()
+    if any(domain in source_url for domain in SEA_TRUSTED_DOMAINS):
+        return True
     return any(kw in article["raw_text"] for kw in SEA_KEYWORDS)
 
 
@@ -448,4 +461,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-    
