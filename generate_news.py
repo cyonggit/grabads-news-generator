@@ -20,13 +20,13 @@ from dateutil import parser as dateparser
 # ── Verified RSS feeds as of May 2026
 RSS_FEEDS = [
     # SEA-focused publications (trusted as inherently relevant)
-    {"name": "Campaign Asia",         "url": "https://www.campaignasia.com/rss/rss.ashx",         "sea_trusted": True},
-    {"name": "Marketing Interactive", "url": "https://www.marketing-interactive.com/feed/",        "sea_trusted": True},
-    {"name": "MARKETECH APAC",        "url": "https://marketech-apac.com/feed/",                   "sea_trusted": True},
+    {"name": "Campaign Asia",         "url": "https://www.campaignasia.com/RSS/rss.ashx",          "sea_trusted": True},
+    {"name": "Marketing Interactive", "url": "https://www.marketing-interactive.com/?feed=rss2",   "sea_trusted": True},
+    {"name": "MARKETECH APAC",        "url": "https://marketech-apac.com/?feed=rss2",              "sea_trusted": True},
     {"name": "Campaign Brief Asia",   "url": "https://campaignbriefasia.com/feed/",                "sea_trusted": True},
     # Global ad industry publications (require SEA keyword match)
     {"name": "Adweek",                "url": "https://www.adweek.com/feed/",                       "sea_trusted": False},
-    {"name": "The Drum",              "url": "https://www.thedrum.com/rss.xml",                    "sea_trusted": False},
+    {"name": "The Drum",              "url": "https://www.thedrum.com/topics/rss",                 "sea_trusted": False},
     {"name": "Digiday",               "url": "https://digiday.com/feed/",                          "sea_trusted": False},
     {"name": "AdExchanger",           "url": "https://adexchanger.com/feed/",                      "sea_trusted": False},
     {"name": "Marketing Dive",        "url": "https://www.marketingdive.com/feeds/news/",          "sea_trusted": False},
@@ -158,15 +158,23 @@ TOPIC_TALKING_POINTS = {
 }
 
 
+USER_AGENTS = [
+    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+    "Mozilla/5.0 (compatible; GrabAds-NewsBot/1.0; +https://grab.com)",
+]
+
+
 def fetch_all_articles() -> list:
     seen_urls    = set()
     all_articles = []
 
-    for feed_info in RSS_FEEDS:
+    for i, feed_info in enumerate(RSS_FEEDS):
         source      = feed_info["name"]
         sea_trusted = feed_info["sea_trusted"]
+        # Rotate User-Agent per request
+        headers = {"User-Agent": USER_AGENTS[i % len(USER_AGENTS)]}
         try:
-            headers  = {"User-Agent": "Mozilla/5.0 (compatible; GrabAds-NewsBot/1.0; +https://grab.com)"}
             response = requests.get(feed_info["url"], headers=headers, timeout=15)
             response.raise_for_status()
             feed     = feedparser.parse(response.content)
