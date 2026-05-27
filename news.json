@@ -1,48 +1,186 @@
 {
-  "generatedAt": "2026-05-27T16:20:06Z",
+  "generatedAt": "2026-05-27T16:31:14Z",
   "generatedDate": "27 May 2026",
   "articles": [
     {
-      "headline": "Programmatic spend surges across SEA markets",
-      "summary": "Digital ad investment continues to climb with new data-driven strategies across Southeast Asia.",
-      "category": "digital",
-      "source": "Campaign Asia",
-      "date": "This week",
-      "url": "",
-      "image": "https://picsum.photos/seed/1/600/280",
-      "talkingPoints": [
-        "Performance marketing in SEA is increasingly driven by first-party data.",
-        "Programmatic efficiency is improving rapidly across the region."
-      ],
-      "isMovement": false
-    },
-    {
-      "headline": "Retail media networks gain momentum in APAC",
-      "summary": "Retailers across Asia Pacific are launching ad networks to monetise their audiences.",
-      "category": "retail",
-      "source": "Marketing Dive",
-      "date": "This week",
-      "url": "",
-      "image": "https://picsum.photos/seed/2/600/280",
-      "talkingPoints": [
-        "Retail media lets brands reach consumers closest to the point of purchase.",
-        "Closed-loop measurement connects ad spend directly to sales."
-      ],
-      "isMovement": false
-    },
-    {
-      "headline": "Agency account moves signal shifting brand priorities",
-      "summary": "Several major advertisers have consolidated their media buying with new agency partners.",
+      "headline": "Bestads Best TV / Film of the Week: Andrex’s ‘Push Like You’re Pooing’ via FCB, London",
+      "summary": "Each week Bestadsontv.com [the global arm of Campaign Brief] showcases standout global advertising work as reviewed by a...",
       "category": "industry",
-      "source": "Adweek",
-      "date": "This week",
-      "url": "",
-      "image": "https://picsum.photos/seed/3/600/280",
+      "source": "Campaign Brief Asia",
+      "date": "Today",
+      "url": "https://campaignbriefasia.com/2026/05/27/bestads-best-tv-film-of-the-week-andrexs-push-like-youre-pooing-via-fcb-london/",
+      "image": "https://picsum.photos/seed/116/600/280",
       "talkingPoints": [
-        "Account moves signal brands are seeking more integrated, data-driven partners.",
-        "New agency relationships often coincide with a fresh look at digital channel mix."
+        "AI is reshaping how ads are created, targeted, and measured — brands embracing it early are seeing efficiency gains.",
+        "Agency consolidation signals brands are seeking more integrated partners who can connect media, data, and creative.",
+        "When brands change agencies, they're typically open to trying new platforms and channels — timing is everything."
+      ],
+      "isMovement": false
+    },
+    {
+      "headline": "m25 Global Creative Series with Janath Gamage: “Asia Pacific’s creativity has always been there”",
+      "summary": "The latest episode of m25 Global Creative Series 2 catches up with Janath Gamage, Creative Director &#8211; Ogilvy SG/WP...",
+      "category": "creative",
+      "source": "Campaign Brief Asia",
+      "date": "Today",
+      "url": "https://campaignbriefasia.com/2026/05/27/m25-global-creative-series-with-janath-gamage-asia-pacifics-creativity-has-always-been-there/",
+      "image": "https://picsum.photos/seed/763/600/280",
+      "talkingPoints": [
+        "Localised creative beats globalised templates in SEA — consumers respond to brands that speak their language.",
+        "Creative effectiveness is increasingly measurable — brands investing in strong storytelling are seeing higher engagement.",
+        "Creative quality directly impacts media efficiency — strong creatives lower CPMs and boost conversion rates."
+      ],
+      "isMovement": false
+    },
+    {
+      "headline": "Final 2 weeks to enter Campaign Brief’s The Work 2026: Free to enter – Deadline June 5",
+      "summary": "Two weeks left to enter Campaign Brief’s The Work 2026. It’s FREE to enter with the final deadline for entries on Fr...",
+      "category": "industry",
+      "source": "Campaign Brief Asia",
+      "date": "Today",
+      "url": "https://campaignbriefasia.com/2026/05/27/campaign-briefs-the-work-2025-opens-for-entries-free-to-enter-deadline-may-20th-2/",
+      "image": "https://picsum.photos/seed/9/600/280",
+      "talkingPoints": [
+        "AI is reshaping how ads are created, targeted, and measured — brands embracing it early are seeing efficiency gains.",
+        "When brands change agencies, they're typically open to trying new platforms and channels — timing is everything.",
+        "Industry shifts like this show how quickly the competitive landscape is evolving — staying close to market news is key."
+      ],
+      "isMovement": false
+    },
+    {
+      "headline": "GIGIL Philippines turns Filipino stress expression into new campaign for GrabMart",
+      "summary": "GIGIL has launched a new campaign for GrabMart inspired by the Filipino expression &#8220;Tambling,&#8221; used to descr...",
+      "category": "industry",
+      "source": "Campaign Brief Asia",
+      "date": "Today",
+      "url": "https://campaignbriefasia.com/2026/05/27/gigil-philippines-turns-filipino-stress-expression-into-new-campaign-for-grabmart/",
+      "image": "https://picsum.photos/seed/675/600/280",
+      "talkingPoints": [
+        "AI is reshaping how ads are created, targeted, and measured — brands embracing it early are seeing efficiency gains.",
+        "Leadership changes at brands often accelerate marketing transformation — a great moment to open new conversations.",
+        "Account moves often signal a brand is ready to rethink its media strategy — an opportunity to present new solutions."
+      ],
+      "isMovement": false
+    },
+    {
+      "headline": "free.studio launches London operation with talent from BBH, adam&eveDDB + Glue Society",
+      "summary": "free.studio, the independent creative partnership founded by former adam&#38;eveDDB Managing Partner Michael McConville,...",
+      "category": "industry",
+      "source": "Campaign Brief Asia",
+      "date": "Today",
+      "url": "https://campaignbriefasia.com/2026/05/27/free-studio-launches-london-operation-with-talent-from-bbh-adameveddb-glue-society/",
+      "image": "https://picsum.photos/seed/852/600/280",
+      "talkingPoints": [
+        "Industry shifts like this show how quickly the competitive landscape is evolving — staying close to market news is key.",
+        "Agency consolidation signals brands are seeking more integrated partners who can connect media, data, and creative.",
+        "Account moves often signal a brand is ready to rethink its media strategy — an opportunity to present new solutions."
       ],
       "isMovement": true
+    },
+    {
+      "headline": "Cheil Worldwide launches “From Agency to Agentic” tech showcase in Seoul",
+      "summary": "Cheil moves forward to strengthen its position as the marketing tech solution partner by hosting a tech showcase highlig...",
+      "category": "industry",
+      "source": "Campaign Brief Asia",
+      "date": "Today",
+      "url": "https://campaignbriefasia.com/2026/05/27/cheil-worldwide-launches-from-agency-to-agentic-tech-showcase-in-seoul/",
+      "image": "https://picsum.photos/seed/212/600/280",
+      "talkingPoints": [
+        "When brands change agencies, they're typically open to trying new platforms and channels — timing is everything.",
+        "Leadership changes at brands often accelerate marketing transformation — a great moment to open new conversations.",
+        "Agency consolidation signals brands are seeking more integrated partners who can connect media, data, and creative."
+      ],
+      "isMovement": true
+    },
+    {
+      "headline": "India’s best creative and marketing work celebrated at 2026 Kyoorius Creative Awards and inaugural Kyoorius Marketing Awards",
+      "summary": "McCann, VML, Brand David Communications (Ogilvy India Group) and The Hindu Group were awarded prestigious Black Elephant...",
+      "category": "creative",
+      "source": "Campaign Brief Asia",
+      "date": "Today",
+      "url": "https://campaignbriefasia.com/2026/05/27/indias-best-creative-and-marketing-work-celebrated-at-2026-kyoorius-creative-awards-and-inaugural-kyoorius-marketing-awards/",
+      "image": "https://picsum.photos/seed/801/600/280",
+      "talkingPoints": [
+        "Award-winning work in APAC shows that culturally resonant campaigns outperform generic global adaptations.",
+        "With attention spans shrinking, the brands that win are those that lead with emotion before product.",
+        "Creative quality directly impacts media efficiency — strong creatives lower CPMs and boost conversion rates."
+      ],
+      "isMovement": false
+    },
+    {
+      "headline": "dentsu Hong Kong brings gaming culture and seafood together for Café de Coral",
+      "summary": "Café de Coral and dentsu Hong Kong launch &#8220;Go All In on Freshness-It&#8217;s a Must&#8221;, a campaign shaped by ...",
+      "category": "industry",
+      "source": "Campaign Brief Asia",
+      "date": "Today",
+      "url": "https://campaignbriefasia.com/2026/05/27/dentsu-hong-kong-brings-gaming-culture-and-seafood-together-for-cafe-de-coral/",
+      "image": "https://picsum.photos/seed/376/600/280",
+      "talkingPoints": [
+        "AI is reshaping how ads are created, targeted, and measured — brands embracing it early are seeing efficiency gains.",
+        "Account moves often signal a brand is ready to rethink its media strategy — an opportunity to present new solutions.",
+        "When brands change agencies, they're typically open to trying new platforms and channels — timing is everything."
+      ],
+      "isMovement": false
+    },
+    {
+      "headline": "Kinnect bags Burger King India creative account after competitive pitch",
+      "summary": "Kinnect has picked up the Burger King India creative account following a competitive multi-agency pitch involving severa...",
+      "category": "industry",
+      "source": "Campaign Brief Asia",
+      "date": "Yesterday",
+      "url": "https://campaignbriefasia.com/2026/05/26/kinnect-bags-burger-king-india-creative-account-after-competitive-pitch/",
+      "image": "https://picsum.photos/seed/12/600/280",
+      "talkingPoints": [
+        "Leadership changes at brands often accelerate marketing transformation — a great moment to open new conversations.",
+        "Account moves often signal a brand is ready to rethink its media strategy — an opportunity to present new solutions.",
+        "Industry shifts like this show how quickly the competitive landscape is evolving — staying close to market news is key."
+      ],
+      "isMovement": false
+    },
+    {
+      "headline": "Bestads Best of the Week Reviewed by Haylie Craig, Global ACD, Our LEGO Agency, LEGO Group, Denmark",
+      "summary": "Each week Bestadsontv.com [the global arm of Campaign Brief] picks the very best advertising in the world, in every medi...",
+      "category": "industry",
+      "source": "Campaign Brief Asia",
+      "date": "Yesterday",
+      "url": "https://campaignbriefasia.com/2026/05/26/bestads-best-of-the-week-reviewed-by-haylie-craig-global-acd-our-lego-agency-lego-group-denmark/",
+      "image": "https://picsum.photos/seed/91/600/280",
+      "talkingPoints": [
+        "AI is reshaping how ads are created, targeted, and measured — brands embracing it early are seeing efficiency gains.",
+        "Agency consolidation signals brands are seeking more integrated partners who can connect media, data, and creative.",
+        "Account moves often signal a brand is ready to rethink its media strategy — an opportunity to present new solutions."
+      ],
+      "isMovement": false
+    },
+    {
+      "headline": "MAD STARS issues final call for 2026 entries ahead of June 15 deadline",
+      "summary": "MAD STARS, the international marketing and advertising festival held annually in Busan, has announced the final call for...",
+      "category": "industry",
+      "source": "Campaign Brief Asia",
+      "date": "Yesterday",
+      "url": "https://campaignbriefasia.com/2026/05/26/mad-stars-issues-final-call-for-2026-entries-ahead-of-june-15-deadline/",
+      "image": "https://picsum.photos/seed/689/600/280",
+      "talkingPoints": [
+        "Account moves often signal a brand is ready to rethink its media strategy — an opportunity to present new solutions.",
+        "Industry shifts like this show how quickly the competitive landscape is evolving — staying close to market news is key.",
+        "When brands change agencies, they're typically open to trying new platforms and channels — timing is everything."
+      ],
+      "isMovement": false
+    },
+    {
+      "headline": "Imaginary Friends Malaysia and Directors Think Tank create new TikTok Shop campaign for when the deal is too good to notice chaos",
+      "summary": "In a category flooded by celebrity faces, fast paced edits and choreographed jingles, Imaginary Friends Malaysia wanted ...",
+      "category": "digital",
+      "source": "Campaign Brief Asia",
+      "date": "Yesterday",
+      "url": "https://campaignbriefasia.com/2026/05/26/imaginary-friends-malaysia-and-directors-think-tank-create-new-tiktok-shop-campaign-for-when-the-deal-is-too-good-to-notice-chaos/",
+      "image": "https://picsum.photos/seed/117/600/280",
+      "talkingPoints": [
+        "TikTok's explosive growth across SEA makes short-form video a must-have in any brand's media mix.",
+        "AI is reshaping how ads are created, targeted, and measured — brands embracing it early are seeing efficiency gains.",
+        "The shift to cookieless identity is accelerating — first-party data partnerships are becoming a competitive moat."
+      ],
+      "isMovement": false
     }
   ]
 }
