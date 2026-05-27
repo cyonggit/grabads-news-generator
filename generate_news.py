@@ -22,23 +22,25 @@ from datetime import datetime, timezone, timedelta
 NEWS_API_KEY = os.environ.get("NEWS_API_KEY", "")
 NEWS_API_URL = "https://newsapi.org/v2/everything"
 
-# ── Search queries to run against NewsAPI
-# Each query targets a specific angle of ad industry news
+# ── Search queries -- all geo-anchored to SEA/APAC
+# Two sets: SEA-specific and global industry movements worth flagging
 SEARCH_QUERIES = [
-    # SEA-specific
+    # SEA market-specific
     "advertising marketing Singapore",
-    "advertising marketing Malaysia Indonesia",
-    "advertising marketing Philippines Thailand Vietnam",
-    "advertising marketing Taiwan APAC",
-    # Global industry movements
-    "advertising agency account win pitch",
-    "brand marketing campaign launch",
-    "programmatic advertising digital marketing",
-    "retail media network advertising",
-    "social media advertising TikTok Meta",
-    "out-of-home advertising DOOH",
-    "ad tech adtech martech",
-    "creative campaign award advertising",
+    "advertising marketing Malaysia",
+    "advertising marketing Indonesia",
+    "advertising marketing Philippines",
+    "advertising marketing Thailand Vietnam",
+    "advertising marketing Taiwan",
+    "digital marketing APAC Southeast Asia",
+    "media agency APAC campaign",
+    # Global industry movements always relevant to SEA sales teams
+    "advertising agency account win Southeast Asia",
+    "brand campaign launch Asia Pacific",
+    "retail media network Asia",
+    "programmatic advertising Southeast Asia",
+    "ad tech adtech Asia Pacific",
+    "social media advertising Asia TikTok Meta",
 ]
 
 # ── Trusted ad industry sources to prioritise
@@ -311,23 +313,30 @@ def generate_talking_points(article: dict) -> list:
 
 
 def select_top_articles(all_articles: list, max_articles: int = 12) -> list:
-    """Prioritise SEA articles, then industry movements, then general ads."""
+    """
+    Only include:
+    1. Articles that explicitly mention SEA/APAC markets
+    2. Global industry movements (account wins, mergers etc) as they
+       are always relevant talking points for SEA sales teams
+    No generic global ads news unless it mentions SEA/APAC.
+    """
     sea       = [a for a in all_articles if is_sea_relevant(a)]
-    movements = [a for a in all_articles if is_industry_movement(a) and not is_sea_relevant(a)]
-    general   = [a for a in all_articles if not is_sea_relevant(a) and not is_industry_movement(a)]
+    movements = [a for a in all_articles
+                 if is_industry_movement(a) and not is_sea_relevant(a)]
 
     print(f"  SEA-specific: {len(sea)}")
-    print(f"  Industry movements: {len(movements)}")
-    print(f"  General ads: {len(general)}")
+    print(f"  Global industry movements: {len(movements)}")
 
+    # SEA articles first, then industry movements to fill
     combined = sea[:max_articles]
     if len(combined) < max_articles:
         combined += movements[:(max_articles - len(combined))]
-    if len(combined) < max_articles:
-        combined += general[:(max_articles - len(combined))]
 
     # Sort by recency
-    combined.sort(key=lambda a: a["published"] or datetime.min.replace(tzinfo=timezone.utc), reverse=True)
+    combined.sort(
+        key=lambda a: a["published"] or datetime.min.replace(tzinfo=timezone.utc),
+        reverse=True
+    )
 
     return combined[:max_articles]
 
