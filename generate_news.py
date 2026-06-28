@@ -22,6 +22,7 @@ RSS_FEEDS = [
     # SEA-focused publications (trusted as inherently relevant)
     {"name": "Campaign Asia",         "url": "https://rss.app/feeds/sBwZgWOqOWen0qHY.xml",        "sea_trusted": True},
     {"name": "Marketing Interactive", "url": "https://rss.app/feeds/Jd6qTo2o46Mxxe3D.xml",        "sea_trusted": True},
+    {"name": "Marketing Interactive (Telegram)", "url": "https://rss.app/feeds/CQ6qthodCcoFXLjT.xml", "sea_trusted": True},
     {"name": "MARKETECH APAC",        "url": "https://rss.app/feeds/Di8qt6zeF2FMZyPy.xml",        "sea_trusted": True},
     {"name": "Campaign Brief Asia",   "url": "https://campaignbriefasia.com/feed/",                "sea_trusted": True},
     # Global ad industry publications (confirmed working, require SEA keyword match)
@@ -274,7 +275,7 @@ def generate_talking_points(article: dict) -> list:
     return points[:3]
 
 
-def select_top_articles(all_articles: list, max_articles: int = 12) -> list:
+def select_top_articles(all_articles: list, max_articles: int = 6) -> list:
     sea       = [a for a in all_articles if is_sea_relevant(a)]
     movements = [a for a in all_articles if is_industry_movement(a) and not is_sea_relevant(a)]
 
@@ -369,7 +370,7 @@ def main():
     all_articles = fetch_all_articles()
 
     print("\nSelecting top articles...")
-    top_articles = select_top_articles(all_articles, max_articles=12)
+    top_articles = select_top_articles(all_articles, max_articles=6)
     print(f"  Selected {len(top_articles)} articles")
 
     print("\nFormatting and generating talking points...")
