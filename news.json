@@ -1,183 +1,93 @@
 {
-  "generatedAt": "2026-06-22T05:05:03Z",
-  "generatedDate": "22 Jun 2026",
+  "generatedAt": "2026-06-28T17:38:01Z",
+  "generatedDate": "28 Jun 2026",
   "articles": [
     {
-      "headline": "Edelman appoints Sushant Vithaldas and Rithan Vijaya to lead creator marketing across APAC",
-      "summary": "Edelman has appointed two new Creator Marketing leads in Asia Pacific, further strengthening its regional capabilities a...",
+      "headline": "☕️ -Get comfy for your Sunday scrolls Joanne Peh's livestream saga sparks wider conversation on creator respect👥 👉🏽 h...",
+      "summary": "☕️ Get comfy for your Sunday scrolls Joanne Peh's livestream saga sparks wider conversation on creator respect👥 👉🏽 https://tinyurl.com/3cm2djpv Threads’ rise in Malaysia and why brands must act mor...",
       "category": "industry",
-      "source": "Campaign Brief Asia",
+      "source": "Marketing Interactive (Telegram)",
       "date": "Today",
-      "url": "https://campaignbriefasia.com/2026/06/22/edelman-appoints-sushant-vithaldas-and-rithan-vijaya-to-lead-creator-marketing-across-apac/",
-      "image": "https://picsum.photos/seed/172/600/280",
-      "talkingPoints": [
-        "Use this as an ice-breaker in your next client meeting — ask how the news affects their plans, then listen for budget signals before introducing how GrabAds fits into their new strategy.",
-        "For any account going through a pitch or review, offer something tangible — a GrabAds media plan, an audience sizing report, or a case study from a comparable brand to get your foot in the door.",
-        "For brands in transition, position GrabAds as an easy first step — offer a no-commitment audience insights report to show the scale of their target audience on the Grab platform."
-      ],
-      "isMovement": true
-    },
-    {
-      "headline": "Cannes Lions releases first shortlists: Audio & Radio, Creative B2B, Creative Brand, Health & Wellness, Outdoor, Pharma + Print & Publishing",
-      "summary": "Cannes Lions has released the first shortlists across Audio &#38; Radio, Creative B2B, Creative Brand, Health &#38; Well...",
-      "category": "creative",
-      "source": "Campaign Brief Asia",
-      "date": "Yesterday",
-      "url": "https://campaignbriefasia.com/2026/06/21/cannes-lions-releases-first-shortlists-audio-radio-creative-b2b-creative-brand-health-wellness-outdoor-pharma-print-publishing/",
-      "image": "https://picsum.photos/seed/102/600/280",
-      "talkingPoints": [
-        "Ask how this client balances brand building vs performance in their current budget split — then show how GrabAds supports both with full-funnel solutions across Grab's super-app.",
-        "For travel or hospitality clients, connect this to seasonal campaigns — ask about their next peak period and propose a GrabAds brand awareness package timed around it.",
-        "If a client just launched a campaign, use this as an opener: 'Have you seen this trend in award-winning APAC work?' — then offer to share GrabAds creative benchmarks for their category."
-      ],
-      "isMovement": false
-    },
-    {
-      "headline": "Darlie takes aim at Thailand’s most famous bad-breath joke via BBDO Bangkok campaign",
-      "summary": "Darlie has teamed up with veteran comedian Louis Chuanchuen to challenge one of Thailand&#8217;s longest-running comedy ...",
-      "category": "creative",
-      "source": "Campaign Brief Asia",
-      "date": "3 days ago",
-      "url": "https://campaignbriefasia.com/2026/06/19/darlie-takes-aim-at-thailands-most-famous-bad-breath-joke-via-bbdo-bangkok-campaign/",
-      "image": "https://picsum.photos/seed/315/600/280",
-      "talkingPoints": [
-        "For travel or hospitality clients, connect this to seasonal campaigns — ask about their next peak period and propose a GrabAds brand awareness package timed around it.",
-        "Use this with F&B and QSR clients who run frequent promotions — ask if their current creatives are localised per market, and offer a GrabAds creative effectiveness review to show what resonates with Grab users.",
-        "Use this with agencies to show creative intelligence — ask what briefs they're working on and offer a GrabAds format deep-dive to match their creative goals."
-      ],
-      "isMovement": false
-    },
-    {
-      "headline": "VML Indonesia ECD Mark Verhagen moves to Australia as Group ECD for VML Brisbane + Perth",
-      "summary": "VML Australia has appointed Mark Verhagen as Group Executive Creative Director, VML Brisbane and Perth. &#160;...",
-      "category": "industry",
-      "source": "Campaign Brief Asia",
-      "date": "3 days ago",
-      "url": "https://campaignbriefasia.com/2026/06/19/vml-appoints-mark-verhagen-as-group-executive-creative-director-for-vml-brisbane-and-perth/",
-      "image": "https://picsum.photos/seed/258/600/280",
-      "talkingPoints": [
-        "For brands in transition, position GrabAds as an easy first step — offer a no-commitment audience insights report to show the scale of their target audience on the Grab platform.",
-        "Use this as an ice-breaker in your next client meeting — ask how the news affects their plans, then listen for budget signals before introducing how GrabAds fits into their new strategy.",
-        "If a competitor just won this account, use it to re-engage dormant prospects in the same category — what worked for one brand in the vertical can work for another."
-      ],
-      "isMovement": true
-    },
-    {
-      "headline": "Conrad Victorino joins DO. ASIA as Head of Media to drive next phase of growth",
-      "summary": "DO. ASIA has appointed Conrad Victorino as Head of Media, a move that reflects the agency’s continued investment in bu...",
-      "category": "industry",
-      "source": "Campaign Brief Asia",
-      "date": "3 days ago",
-      "url": "https://campaignbriefasia.com/2026/06/19/conrad-victorino-joins-do-asia-as-head-of-media-to-drive-next-phase-of-growth/",
-      "image": "https://picsum.photos/seed/749/600/280",
-      "talkingPoints": [
-        "If a competitor just won this account, use it to re-engage dormant prospects in the same category — what worked for one brand in the vertical can work for another.",
-        "Use this as an ice-breaker in your next client meeting — ask how the news affects their plans, then listen for budget signals before introducing how GrabAds fits into their new strategy.",
-        "If this is a brand you're actively prospecting, reach out this week — leadership changes and agency switches are the best time to get a first meeting. Use this news as your reason to connect on LinkedIn."
-      ],
-      "isMovement": true
-    },
-    {
-      "headline": "Prega News puts paternity leave in the spotlight with Father’s Day campaign",
-      "summary": "Prega News, India&#8217;s No. 1 pregnancy care brand with an 86% market share (MAT Q4 FY2026, IQVIA), has launched a cam...",
-      "category": "industry",
-      "source": "Campaign Brief Asia",
-      "date": "3 days ago",
-      "url": "https://campaignbriefasia.com/2026/06/19/prega-news-puts-paternity-leave-in-the-spotlight-with-fathers-day-campaign/",
-      "image": "https://picsum.photos/seed/853/600/280",
-      "talkingPoints": [
-        "Ask how this client balances brand building vs performance in their current budget split — then show how GrabAds supports both with full-funnel solutions across Grab's super-app.",
-        "For any account going through a pitch or review, offer something tangible — a GrabAds media plan, an audience sizing report, or a case study from a comparable brand to get your foot in the door.",
-        "If this is a brand you're actively prospecting, reach out this week — leadership changes and agency switches are the best time to get a first meeting. Use this news as your reason to connect on LinkedIn."
-      ],
-      "isMovement": false
-    },
-    {
-      "headline": "Heckler expands into the Middle East appointing John Hassan as managing director",
-      "summary": "Independent creative studio Heckler has expanded further with the opening of an office in the Middle East. The move mark...",
-      "category": "industry",
-      "source": "Campaign Brief Asia",
-      "date": "3 days ago",
-      "url": "https://campaignbriefasia.com/2026/06/18/heckler-expands-into-the-middle-east-appointing-john-hassan-as-managing-director/",
-      "image": "https://picsum.photos/seed/133/600/280",
-      "talkingPoints": [
-        "For any account going through a pitch or review, offer something tangible — a GrabAds media plan, an audience sizing report, or a case study from a comparable brand to get your foot in the door.",
-        "Use this as an ice-breaker in your next client meeting — ask how the news affects their plans, then listen for budget signals before introducing how GrabAds fits into their new strategy.",
-        "For brands in transition, position GrabAds as an easy first step — offer a no-commitment audience insights report to show the scale of their target audience on the Grab platform."
-      ],
-      "isMovement": true
-    },
-    {
-      "headline": "VML takes out the Agency Network of the Year at the New York Festivals Advertising Awards",
-      "summary": "New York Festivals Advertising Awards (NYFA) has announced the Industry Awards for the 2026 competition. &#160; The New ...",
-      "category": "creative",
-      "source": "Campaign Brief Asia",
-      "date": "3 days ago",
-      "url": "https://campaignbriefasia.com/2026/06/18/new-york-festivals-advertising-awards-announces-vml-as-agency-network-of-the-year/",
-      "image": "https://picsum.photos/seed/992/600/280",
-      "talkingPoints": [
-        "For FMCG brands running regional campaigns, this is a good prompt to ask: 'How are you adapting global assets for SEA?' — then position GrabAds' in-app formats as a high-attention environment for localised storytelling.",
-        "Use this with agencies to show creative intelligence — ask what briefs they're working on and offer a GrabAds format deep-dive to match their creative goals.",
-        "If a client just launched a campaign, use this as an opener: 'Have you seen this trend in award-winning APAC work?' — then offer to share GrabAds creative benchmarks for their category."
-      ],
-      "isMovement": false
-    },
-    {
-      "headline": "NUTs Agency Thailand and MASKET turn blurry vision into Gen Z comedy for Bausch + Lomb",
-      "summary": "The medical device and optical category is known for strict advertising regulations, with most brands confined to functi...",
-      "category": "industry",
-      "source": "Campaign Brief Asia",
-      "date": "3 days ago",
-      "url": "https://campaignbriefasia.com/2026/06/18/nuts-agency-thailand-and-masket-turn-blurry-vision-into-gen-z-comedy-for-bausch-lomb/",
-      "image": "https://picsum.photos/seed/885/600/280",
+      "url": "https://t.me/marketinginteractive_sea/13995",
+      "image": "https://picsum.photos/seed/674/600/280",
       "talkingPoints": [
         "Ask how this client balances brand building vs performance in their current budget split — then show how GrabAds supports both with full-funnel solutions across Grab's super-app.",
         "If this is a brand you're actively prospecting, reach out this week — leadership changes and agency switches are the best time to get a first meeting. Use this news as your reason to connect on LinkedIn.",
-        "For brands in transition, position GrabAds as an easy first step — offer a no-commitment audience insights report to show the scale of their target audience on the Grab platform."
+        "For any account going through a pitch or review, offer something tangible — a GrabAds media plan, an audience sizing report, or a case study from a comparable brand to get your foot in the door."
       ],
       "isMovement": false
     },
     {
-      "headline": "Uber Eats in Australia bags up other brands’ ads to show they ‘get almost almost anything’",
-      "summary": "Uber Eats has just released the latest instalment of its &#8216;Get Almost, Almost Anything&#8217; campaign, via Special...",
+      "headline": "How Coca-Cola is earning a seat at Asia's dining tables -🥢 Chrystian Lim, marketing director of Singapore, Malaysia and...",
+      "summary": "How Coca-Cola is earning a seat at Asia's dining tables 🥢 Chrystian Lim, marketing director of Singapore, Malaysia and Myanmar at The Coca-Cola Company reveals the thinking behind Coca-Cola's viral...",
       "category": "industry",
-      "source": "Campaign Brief Asia",
-      "date": "3 days ago",
-      "url": "https://campaignbriefasia.com/2026/06/18/uber-eats-bags-up-other-brands-ads-to-show-they-get-almost-almost-anything-via-special/",
-      "image": "https://picsum.photos/seed/728/600/280",
+      "source": "Marketing Interactive (Telegram)",
+      "date": "2 days ago",
+      "url": "https://t.me/marketinginteractive_sea/13987",
+      "image": "https://picsum.photos/seed/272/600/280",
       "talkingPoints": [
-        "Ask how this client balances brand building vs performance in their current budget split — then show how GrabAds supports both with full-funnel solutions across Grab's super-app.",
-        "Use this as an ice-breaker in your next client meeting — ask how the news affects their plans, then listen for budget signals before introducing how GrabAds fits into their new strategy.",
-        "If a competitor just won this account, use it to re-engage dormant prospects in the same category — what worked for one brand in the vertical can work for another."
-      ],
-      "isMovement": false
-    },
-    {
-      "headline": "Bestads Best TV of the Week: FOX One’s ‘Driving Test’ via Anomaly, Los Angeles",
-      "summary": "Each week Bestadsontv.com [the global arm of Campaign Brief] showcases standout global advertising work as reviewed by a...",
-      "category": "industry",
-      "source": "Campaign Brief Asia",
-      "date": "4 days ago",
-      "url": "https://campaignbriefasia.com/2026/06/18/bestads-best-tv-of-the-week-fox-ones-driving-test-via-anomaly-los-angeles/",
-      "image": "https://picsum.photos/seed/941/600/280",
-      "talkingPoints": [
-        "For any account going through a pitch or review, offer something tangible — a GrabAds media plan, an audience sizing report, or a case study from a comparable brand to get your foot in the door.",
-        "Use this as an ice-breaker in your next client meeting — ask how the news affects their plans, then listen for budget signals before introducing how GrabAds fits into their new strategy.",
-        "If a competitor just won this account, use it to re-engage dormant prospects in the same category — what worked for one brand in the vertical can work for another."
-      ],
-      "isMovement": false
-    },
-    {
-      "headline": "Cass and Cheil Seoul turn football fans’ widest cheers into rewards with AI-powered ‘Wide Cup’",
-      "summary": "Cass, South Korea&#8217;s best-selling beer brand, and Cheil are hosting the &#8216;Wide Cup,&#8217; a competition to se...",
-      "category": "industry",
-      "source": "Campaign Brief Asia",
-      "date": "4 days ago",
-      "url": "https://campaignbriefasia.com/2026/06/17/cass-and-cheil-seoul-turn-football-fans-widest-cheers-into-rewards-with-ai-powered-wide-cup/",
-      "image": "https://picsum.photos/seed/834/600/280",
-      "talkingPoints": [
-        "Ask how this client balances brand building vs performance in their current budget split — then show how GrabAds supports both with full-funnel solutions across Grab's super-app.",
         "For brands in transition, position GrabAds as an easy first step — offer a no-commitment audience insights report to show the scale of their target audience on the Grab platform.",
+        "If this is a brand you're actively prospecting, reach out this week — leadership changes and agency switches are the best time to get a first meeting. Use this news as your reason to connect on LinkedIn.",
+        "For any account going through a pitch or review, offer something tangible — a GrabAds media plan, an audience sizing report, or a case study from a comparable brand to get your foot in the door."
+      ],
+      "isMovement": false
+    },
+    {
+      "headline": "Unifi TV extends FIFA World Cup excitement beyond broadcasts - ⚽️ Unifi TV is extending the FIFA World Cup 2026 experien...",
+      "summary": "Unifi TV extends FIFA World Cup excitement beyond broadcasts ⚽️ Unifi TV is extending the FIFA World Cup 2026 experience beyond the live broadcast, unveiling an integrated nationwide campaign desig...",
+      "category": "media",
+      "source": "Marketing Interactive (Telegram)",
+      "date": "2 days ago",
+      "url": "https://t.me/marketinginteractive_sea/13986",
+      "image": "https://picsum.photos/seed/545/600/280",
+      "talkingPoints": [
+        "For media planning clients, use this to challenge their current channel mix — ask what percentage of budget goes to mobile, and show how GrabAds reaches SEA consumers across 8 daily touchpoints in the app.",
+        "For OOH-heavy brands, position this as a natural bridge to digital — ask if they've considered GrabAds' car-top DOOH formats to extend their outdoor presence into high-dwell moments.",
+        "If a client is heavy on traditional media, use this to introduce incremental reach — offer to model what adding GrabAds to their mix could deliver in terms of unique audience reach."
+      ],
+      "isMovement": false
+    },
+    {
+      "headline": "From mamaks to traffic jams, how Warner Bros. localised Supergirl for Malaysia - 🦸‍♀️ Warner Bros. is taking a decidedl...",
+      "summary": "From mamaks to traffic jams, how Warner Bros. localised Supergirl for Malaysia 🦸‍♀️ Warner Bros. is taking a decidedly different approach to launching Supergirl in Malaysia, moving away from tradit...",
+      "category": "industry",
+      "source": "Marketing Interactive (Telegram)",
+      "date": "2 days ago",
+      "url": "https://t.me/marketinginteractive_sea/13985",
+      "image": "https://picsum.photos/seed/159/600/280",
+      "talkingPoints": [
+        "Use this as an ice-breaker in your next client meeting — ask how the news affects their plans, then listen for budget signals before introducing how GrabAds fits into their new strategy.",
+        "If this is a brand you're actively prospecting, reach out this week — leadership changes and agency switches are the best time to get a first meeting. Use this news as your reason to connect on LinkedIn.",
+        "If a competitor just won this account, use it to re-engage dormant prospects in the same category — what worked for one brand in the vertical can work for another."
+      ],
+      "isMovement": false
+    },
+    {
+      "headline": "Manulife names chief brand and experience officer, Asia📣 - In her new role, Verma will oversee brand and customer exper...",
+      "summary": "Manulife names chief brand and experience officer, Asia📣 In her new role, Verma will oversee brand and customer experience initiatives across Hong Kong, Singapore, Japan, Vietnam, the Philippines, ...",
+      "category": "industry",
+      "source": "Marketing Interactive (Telegram)",
+      "date": "2 days ago",
+      "url": "https://t.me/marketinginteractive_sea/13981",
+      "image": "https://picsum.photos/seed/543/600/280",
+      "talkingPoints": [
+        "Ask how this client balances brand building vs performance in their current budget split — then show how GrabAds supports both with full-funnel solutions across Grab's super-app.",
+        "If this is a brand you're actively prospecting, reach out this week — leadership changes and agency switches are the best time to get a first meeting. Use this news as your reason to connect on LinkedIn.",
+        "Use this as an ice-breaker in your next client meeting — ask how the news affects their plans, then listen for budget signals before introducing how GrabAds fits into their new strategy."
+      ],
+      "isMovement": false
+    },
+    {
+      "headline": "APRW grows entertainment client roster with new PR mandates📣 - The agency has secured a string of new and renewed appoi...",
+      "summary": "APRW grows entertainment client roster with new PR mandates📣 The agency has secured a string of new and renewed appointments spanning live entertainment, cultural events and the performing arts. 👉🏽...",
+      "category": "industry",
+      "source": "Marketing Interactive (Telegram)",
+      "date": "2 days ago",
+      "url": "https://t.me/marketinginteractive_sea/13980",
+      "image": "https://picsum.photos/seed/881/600/280",
+      "talkingPoints": [
+        "For brands in transition, position GrabAds as an easy first step — offer a no-commitment audience insights report to show the scale of their target audience on the Grab platform.",
+        "If a competitor just won this account, use it to re-engage dormant prospects in the same category — what worked for one brand in the vertical can work for another.",
         "Use this as an ice-breaker in your next client meeting — ask how the news affects their plans, then listen for budget signals before introducing how GrabAds fits into their new strategy."
       ],
       "isMovement": false
