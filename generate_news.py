@@ -22,7 +22,7 @@ RSS_FEEDS = [
     # SEA-focused publications (trusted as inherently relevant)
     {"name": "Campaign Asia",         "url": "https://rss.app/feeds/sBwZgWOqOWen0qHY.xml",        "sea_trusted": True},
     {"name": "Marketing Interactive", "url": "https://rss.app/feeds/Jd6qTo2o46Mxxe3D.xml",        "sea_trusted": True},
-    {"name": "Marketing Interactive (Telegram)", "url": "https://rss.app/feeds/CQ6qthodCcoFXLjT.xml", "sea_trusted": True},
+    {"name": "Marketing Interactive", "url": "https://rss.app/feeds/CQ6qthodCcoFXLjT.xml", "sea_trusted": True},
     {"name": "MARKETECH APAC",        "url": "https://rss.app/feeds/Di8qt6zeF2FMZyPy.xml",        "sea_trusted": True},
     {"name": "Campaign Brief Asia",   "url": "https://campaignbriefasia.com/feed/",                "sea_trusted": True},
     # Global ad industry publications (confirmed working, require SEA keyword match)
@@ -189,7 +189,7 @@ def fetch_all_articles() -> list:
             filtered = 0
             for entry in feed.entries:
                 title   = entry.get("title", "").strip()
-                url     = entry.get("link", "")
+                url     = extract_article_url(entry, entry.get("link", ""))
                 summary = clean_html(entry.get("summary", entry.get("description", "")))
 
                 if not title or not url or url in seen_urls:
@@ -350,6 +350,16 @@ def clean_html(text: str) -> str:
     text = re.sub(r"<[^>]+>", " ", text or "")
     text = re.sub(r"\s+", " ", text).strip()
     return text
+
+
+def extract_article_url(entry, fallback_url: str) -> str:
+    """For Telegram posts (t.me links), extract the real article URL from the post body."""
+    if "t.me/" not in fallback_url:
+        return fallback_url
+    # Search raw HTML content for an external http(s) link
+    raw_html = entry.get("summary", "") or entry.get("description", "") or ""
+    matches = re.findall(r'href=["\']?(https?://(?!t\.me)[^\s"\'<>]+)', raw_html)
+    return matches[0] if matches else fallback_url
 
 
 def fallback() -> list:
