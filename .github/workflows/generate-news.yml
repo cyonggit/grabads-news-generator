@@ -32,33 +32,31 @@ jobs:
           echo "news.json preview:"
           head -30 news.json
 
-      - name: Save news.json to temp location
-        run: cp news.json /tmp/news.json
-
-      - name: Publish news.json to gh-pages branch
+      - name: Publish to gh-pages branch
         run: |
           git config user.email "github-actions-bot@grabads"
           git config user.name "GrabAds Bot"
 
-          # Save news.json to temp before switching branches
+          # Save files to temp before switching branches
           cp news.json /tmp/news.json
+          cp sea-news-widget-grab.html /tmp/index.html
 
           # Switch to gh-pages branch or create it fresh
           if git ls-remote --exit-code --heads origin gh-pages; then
             git fetch origin gh-pages
-            # Remove any untracked files that would conflict
-            rm -f news.json
+            rm -f news.json sea-news-widget-grab.html
             git checkout gh-pages
           else
             git checkout --orphan gh-pages
             git rm -rf . 2>/dev/null || true
           fi
 
-          # Copy news.json from temp location
+          # Copy files from temp location
           cp /tmp/news.json ./news.json
+          cp /tmp/index.html ./index.html
 
           # Commit and push
-          git add news.json
-          git diff --cached --quiet && echo "No changes to news.json." || git commit -m "chore: update news.json"
+          git add news.json index.html
+          git diff --cached --quiet && echo "No changes." || git commit -m "chore: update news widget"
           git push origin gh-pages
-          echo "news.json published successfully!"
+          echo "Published successfully!"
