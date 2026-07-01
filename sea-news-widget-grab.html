@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>GrabAds — SEA Industry News</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --green:        #00B14F;
+    --green-dark:   #008F3E;
+    --green-light:  #E8F7EE;
+    --green-mid:    #C8EDD8;
+    --bg:           #F4F6F9;
+    --white:        #FFFFFF;
+    --border:       #E2E8F0;
+    --text:         #0F1923;
+    --text-2:       #4A5568;
+    --text-3:       #8896A8;
+    --shadow-sm:    0 1px 3px rgba(0,0,0,0.07);
+    --shadow-md:    0 4px 16px rgba(0,0,0,0.09);
+    --r:            12px;
+  }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+  }
+
+  /* ── Header ── */
+  .header {
+    background: var(--green);
+    padding: 16px 28px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .logo-text {
+    font-family: 'Inter', sans-serif;
+    font-size: 22px;
+    font-weight: 800;
+    color: #fff;
+    letter-spacing: -0.5px;
+    line-height: 1;
+  }
+  .logo-text span {
+    font-weight: 400;
+    opacity: 0.85;
+  }
+  .divider { width: 1px; height: 22px; background: rgba(255,255,255,0.3); }
+  .header-sub {
+    font-size: 12px;
+    font-weight: 500;
+    color: rgba(255,255,255,0.85);
+    letter-spacing: 0.02em;
+  }
+  .header-date {
+    font-size: 11px;
+    color: rgba(255,255,255,0.7);
+    font-weight: 400;
+  }
+
+  /* ── Content ── */
+  .content { padding: 24px 28px; }
+
+  /* ── News Grid ── */
+  .news-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  /* ── Card ── */
+  .card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: var(--r);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    box-shadow: var(--shadow-sm);
+    transition: transform 0.18s, box-shadow 0.18s, border-color 0.18s;
+    animation: fadeUp 0.3s ease both;
+  }
+  .card:hover { transform: translateY(-2px); box-shadow: var(--shadow-md); border-color: var(--green-mid); }
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(10px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  .card:nth-child(1){animation-delay:.03s}
+  .card:nth-child(2){animation-delay:.06s}
+  .card:nth-child(3){animation-delay:.09s}
+  .card:nth-child(4){animation-delay:.12s}
+  .card:nth-child(5){animation-delay:.15s}
+  .card:nth-child(6){animation-delay:.18s}
+
+  /* movement badge on card image */
+  .card-img-wrap { position: relative; }
+  .card-img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    display: block;
+    background: var(--green-light);
+  }
+  .movement-badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: #0F1923;
+    color: #fff;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 3px 8px;
+    border-radius: 4px;
+  }
+
+  .card-body { padding: 16px; display: flex; flex-direction: column; gap: 8px; flex: 1; }
+
+  .card-meta { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+  .cat-badge {
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 3px 9px;
+    border-radius: 100px;
+  }
+  .cat-badge.industry { background: var(--green-light); color: #006B30; }
+  .cat-badge.digital  { background: #EEF0FF; color: #3730A3; }
+  .cat-badge.creative { background: #FFF4ED; color: #9A3412; }
+  .cat-badge.media    { background: #FFFBEA; color: #854D0E; }
+  .cat-badge.retail   { background: #F0FDF4; color: #166534; }
+
+  .card-date { font-size: 10px; color: var(--text-3); }
+
+  .card-headline {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.4;
+    color: var(--text);
+  }
+  .card-summary {
+    font-size: 12px;
+    color: var(--text-2);
+    line-height: 1.65;
+    flex: 1;
+  }
+
+  /* ── Talking Points ── */
+  .talking-points {
+    margin-top: 4px;
+    padding: 12px;
+    background: var(--green-light);
+    border-radius: 8px;
+    border-left: 3px solid var(--green);
+  }
+  .tp-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 7px;
+  }
+  .tp-label {
+    font-size: 9px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--green-dark);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  .tp-label::before {
+    content: '';
+    display: inline-block;
+    width: 6px; height: 6px;
+    background: var(--green);
+    border-radius: 50%;
+  }
+  .tp-context {
+    font-size: 9px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    padding: 2px 7px;
+    border-radius: 100px;
+  }
+  .tp-context.competitive { background: #FFF0F0; color: #B91C1C; }
+  .tp-context.advertiser  { background: #EEF0FF; color: #3730A3; }
+  .tp-context.industry    { background: var(--green-light); color: var(--green-dark); border: 1px solid var(--green-mid); }
+  .tp-item {
+    font-size: 11px;
+    color: #1A4731;
+    line-height: 1.55;
+    padding-left: 12px;
+    position: relative;
+  }
+  .tp-item::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: var(--green);
+    font-size: 10px;
+  }
+
+  /* ── Card Footer ── */
+  .card-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+    margin-top: 4px;
+    border-top: 1px solid var(--border);
+  }
+  .card-source {
+    font-size: 10px;
+    color: var(--text-3);
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  .source-dot { width: 5px; height: 5px; border-radius: 50%; background: var(--green); flex-shrink: 0; }
+  .read-link {
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--green);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+  }
+  .read-link:hover { color: var(--green-dark); }
+
+  /* ── Skeleton ── */
+  .skeleton-card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: var(--r);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+  }
+  .skel { background: #EDF0F4; border-radius: 4px; animation: pulse 1.5s ease-in-out infinite; }
+  @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.5} }
+  .skel-body { padding: 16px; display: flex; flex-direction: column; gap: 10px; }
+
+  /* ── Empty state ── */
+  .empty {
+    grid-column: 1/-1;
+    text-align: center;
+    padding: 60px 24px;
+    color: var(--text-3);
+    font-size: 13px;
+  }
+  .empty-icon {
+    width: 52px; height: 52px;
+    background: var(--green-light);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 24px;
+    margin: 0 auto 14px;
+  }
+
+  /* ── Footer ── */
+  .footer {
+    padding: 14px 28px;
+    background: var(--white);
+    border-top: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .footer-note { font-size: 11px; color: var(--text-3); }
+  .footer-brand {
+    display: flex; align-items: center; gap: 6px;
+    font-size: 11px; color: var(--text-3);
+  }
+  .footer-brand strong { color: var(--green); font-weight: 700; font-family: 'Inter', sans-serif; }
+</style>
+</head>
+<body>
+
+<!-- Header -->
+<div class="header">
+  <div class="logo">
+    <div class="logo-text">grab<span>Ads</span></div>
+    <div class="divider"></div>
+    <div class="header-sub">SEA Industry News</div>
+  </div>
+  <div class="header-date" id="lastUpdated">Loading...</div>
+</div>
+
+<!-- News Grid -->
+<div class="content">
+  <div class="news-grid" id="newsGrid"></div>
+</div>
+
+<!-- Footer -->
+<div class="footer">
+  <div class="footer-note">Updated weekly every Monday</div>
+  <div class="footer-brand">
+    <svg width="54" height="16" viewBox="0 0 54 16"><text x="0" y="13" font-family="Inter,sans-serif" font-weight="800" font-size="14" fill="#00B14F">grab</text><text x="35" y="13" font-family="Inter,sans-serif" font-weight="400" font-size="12" fill="#8896A8">Ads</text></svg>
+  </div>
+</div>
+
+<script>
+  // ── Config
+  const NEWS_URL = "https://cyonggit.github.io/grabads-news-generator/news.json";
+  let allArticles  = [];
+
+  // ── Render articles to grid
+  function render() {
+    const grid = document.getElementById('newsGrid');
+
+    if (!allArticles.length) {
+      grid.innerHTML = `<div class="empty"><div class="empty-icon">📭</div>No news found this week.</div>`;
+      return;
+    }
+
+    const catMeta = {
+      industry: "Industry & Brands",
+      digital:  "Digital & Programmatic",
+      creative: "Creative Campaigns",
+      media:    "Media & Publishing",
+      retail:   "Retail Media",
+    };
+
+    grid.innerHTML = allArticles.map((a, i) => {
+      const imgUrl   = a.image || `https://picsum.photos/seed/${Math.abs((a.headline||'').split('').reduce((s,c)=>s+c.charCodeAt(0),0))%1000}/600/280`;
+      const catLabel = catMeta[a.category] || "Industry";
+      const readLink = a.url
+        ? `<a class="read-link" href="${esc(a.url)}" target="_blank" rel="noopener">Read →</a>`
+        : '';
+      const movementBadge = a.isMovement
+        ? `<div class="movement-badge">🔔 Industry Move</div>`
+        : '';
+
+      const contextLabels = { competitive: "Competitive Context", advertiser: "Advertiser Context", industry: "Industry Context" };
+      const contextKey    = a.salesContext || "industry";
+      const contextLabel  = contextLabels[contextKey] || "Industry Context";
+      const tpHtml = a.talkingPoints && a.talkingPoints.length
+        ? `<div class="talking-points">
+            <div class="tp-header">
+              <div class="tp-label">Sales Talking Point</div>
+              <span class="tp-context ${esc(contextKey)}">${esc(contextLabel)}</span>
+            </div>
+            <div class="tp-item">${esc(a.talkingPoints[0])}</div>
+          </div>`
+        : '';
+
+      return `
+        <div class="card" style="animation-delay:${i * 0.04}s">
+          <div class="card-img-wrap">
+            <img class="card-img" src="${imgUrl}" alt="${esc(a.headline)}"
+              onerror="this.style.display='none'"/>
+            ${movementBadge}
+          </div>
+          <div class="card-body">
+            <div class="card-meta">
+              <span class="cat-badge ${esc(a.category)}">${catLabel}</span>
+              <span class="card-date">${esc(a.date || 'This week')}</span>
+            </div>
+            <div class="card-headline">${esc(a.headline)}</div>
+            <div class="card-summary">${esc(a.summary)}</div>
+            ${tpHtml}
+            <div class="card-footer">
+              <div class="card-source"><div class="source-dot"></div>${esc(a.source)}</div>
+              ${readLink}
+            </div>
+          </div>
+        </div>`;
+    }).join('');
+  }
+
+  // ── Skeletons
+  function showSkeletons() {
+    document.getElementById('newsGrid').innerHTML = Array(6).fill(`
+      <div class="skeleton-card">
+        <div class="skel" style="height:140px;border-radius:0"></div>
+        <div class="skel-body">
+          <div style="display:flex;justify-content:space-between">
+            <div class="skel" style="height:18px;width:100px;border-radius:100px"></div>
+            <div class="skel" style="height:12px;width:50px"></div>
+          </div>
+          <div class="skel" style="height:14px;width:100%"></div>
+          <div class="skel" style="height:14px;width:80%"></div>
+          <div class="skel" style="height:40px;width:100%"></div>
+          <div class="skel" style="height:50px;width:100%;border-radius:8px"></div>
+        </div>
+      </div>`).join('');
+  }
+
+  // ── Fetch news.json
+  async function load() {
+    showSkeletons();
+    try {
+      const resp = await fetch(NEWS_URL + "?v=" + Date.now());
+      if (!resp.ok) throw new Error('HTTP ' + resp.status);
+      const data = await resp.json();
+
+      allArticles = data.articles || [];
+      const dateLabel = data.generatedDate || 'this week';
+      document.getElementById('lastUpdated').textContent = `Updated ${dateLabel}`;
+      render();
+    } catch (e) {
+      console.warn('Could not load news.json:', e);
+      document.getElementById('lastUpdated').textContent = 'Preview mode';
+      allArticles = fallback();
+      render();
+    }
+  }
+
+  // ── Escape HTML
+  function esc(s = '') {
+    return String(s)
+      .replace(/&/g,'&amp;').replace(/</g,'&lt;')
+      .replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+  }
+
+  // ── Fallback data
+  function fallback() {
+    return [
+      { headline: "GrabAds expands programmatic offering across SEA", summary: "GrabAds is rolling out new programmatic ad formats across Southeast Asia, giving brands more ways to reach consumers.", category: "digital", source: "Campaign Asia", date: "This week", url: "", isMovement: false, salesContext: "industry", talkingPoints: ["Share this with your client as a value-add touchpoint — then connect the trend directly to how GrabAds is positioned to help them stay ahead."] },
+      { headline: "Retail media networks gain momentum in Asia Pacific", summary: "Retail platforms across APAC are launching ad networks, unlocking new inventory for performance-focused brands.", category: "retail", source: "Marketing Interactive", date: "This week", url: "", isMovement: false, salesContext: "industry", talkingPoints: ["Use this as an industry POV to open your next client call — then ask how this trend is affecting their planning, and guide the conversation toward a GrabAds solution."] },
+      { headline: "Agency account moves signal shifting brand priorities", summary: "Several major advertisers have consolidated their media buying with new agency partners this quarter.", category: "industry", source: "Adweek", date: "This week", url: "", isMovement: true, salesContext: "advertiser", talkingPoints: ["This is a timely reason to reach out — use the news as a conversation starter, then ask how their current SEA digital mix is performing and where GrabAds could add incremental reach."] },
+    ];
+  }
+
+  // ── Init
+  load();
+</script>
+</body>
+</html>
