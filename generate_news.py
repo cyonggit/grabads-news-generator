@@ -102,6 +102,44 @@ CATEGORY_KEYWORDS = {
     ],
 }
 
+# ── Sales context classification keywords
+COMPETITIVE_KEYWORDS = [
+    "google", "meta", "facebook", "instagram", "tiktok", "bytedance",
+    "shopee", "lazada", "tokopedia", "gojek", "youtube", "amazon",
+    "snapchat", "twitter", "x.com", "netflix", "walled garden",
+    "duopoly", "competitor", "competition", "rival", "market share",
+    "platform war", "advertising giant",
+]
+
+ADVERTISER_KEYWORDS = [
+    "advertiser", "brand campaign", "client", "account win", "pitch win",
+    "appoints", "appointed", "new ceo", "new chief", "launches campaign",
+    "brand launch", "rebranding", "rebrand", "agency win", "new business",
+    "creative campaign", "marketing campaign", "ad campaign",
+]
+
+# ── Sales context talking point templates
+CONTEXT_TALKING_POINTS = {
+    "competitive": [
+        "Use this to open a conversation about what's missing from their current platform mix — then show how GrabAds' first-party transaction data gives brands reach and precision that walled-garden platforms can't replicate in SEA.",
+        "If a client is over-indexed on one platform, this is a timely prompt to introduce GrabAds as an incremental reach channel — offer to model audience overlap to show what they're missing.",
+        "Position GrabAds as the SEA-native alternative — unlike global platforms, every impression on Grab is tied to a real purchase behaviour, giving brands a direct line to high-intent consumers.",
+        "Use this as a nudge to diversify budget — ask the client what percentage of spend goes to this platform, then propose a GrabAds trial to benchmark performance against it.",
+    ],
+    "advertiser": [
+        "This is a timely reason to reach out — use the news as a conversation starter, then ask how their current SEA digital mix is performing and where GrabAds could add incremental reach or measurable ROI.",
+        "If this brand is making moves, they're likely reviewing their media strategy — reach out this week with a tailored GrabAds audience insights report to position yourself as a strategic partner.",
+        "Use this campaign as a hook to ask about their next activation — then propose a GrabAds format that complements what they're already running, with closed-loop measurement to prove it.",
+        "Account transitions and launches are the best window to get a first meeting — send a personalised note referencing this news and offer a GrabAds proposal specific to their category.",
+    ],
+    "industry": [
+        "Share this with your client as a value-add touchpoint — then connect the trend directly to how GrabAds is positioned to help them stay ahead, whether it's first-party data, retail media, or programmatic reach.",
+        "Use this as an industry POV to open your next client call — then ask how this trend is affecting their planning, and guide the conversation toward a GrabAds solution that addresses it.",
+        "This is a useful proof point for why brands need to act now — use the trend to create urgency, then offer a GrabAds discovery session to map their gaps before the market moves further.",
+        "Forward this to a client who's been sitting on a proposal — use it to reignite the conversation and frame GrabAds as the right move given where the industry is heading.",
+    ],
+}
+
 # ── Rule-based talking point templates per category
 TALKING_POINT_TEMPLATES = {
     "digital": [
@@ -191,6 +229,7 @@ def fetch_all_articles() -> list:
                 title   = entry.get("title", "").strip()
                 url     = extract_article_url(entry, entry.get("link", ""))
                 summary = clean_html(entry.get("summary", entry.get("description", "")))
+                summary = strip_title_from_summary(title, summary)
 
                 if not title or not url or url in seen_urls:
                     continue
@@ -250,29 +289,32 @@ def classify_category(article: dict) -> str:
     return best if scores[best] > 0 else "industry"
 
 
+def classify_sales_context(article: dict) -> str:
+    """Classify article as competitive, advertiser, or industry context."""
+    text = article["raw_text"]
+    if any(kw in text for kw in COMPETITIVE_KEYWORDS):
+        return "competitive"
+    if any(kw in text for kw in ADVERTISER_KEYWORDS):
+        return "advertiser"
+    return "industry"
+
+
 def generate_talking_points(article: dict) -> list:
-    text     = article["raw_text"]
-    category = article.get("category", "industry")
-    points   = []
+    """Return 1 talking point based on sales context, with topic override if matched."""
+    text    = article["raw_text"]
+    context = article.get("salesContext", "industry")
 
+    # Check topic-specific overrides first
     for keyword, point in TOPIC_TALKING_POINTS.items():
-        if keyword in text and point not in points:
-            points.append(point)
-        if len(points) >= 2:
-            break
+        if keyword in text:
+            return [point]
 
+    # Fall back to context-based template (deterministic pick per article)
     seed      = int(hashlib.md5((article.get("url", "") + article.get("title", "")).encode()).hexdigest(), 16)
     rng       = random.Random(seed)
-    templates = TALKING_POINT_TEMPLATES.get(category, TALKING_POINT_TEMPLATES["industry"])[:]
+    templates = CONTEXT_TALKING_POINTS.get(context, CONTEXT_TALKING_POINTS["industry"])[:]
     rng.shuffle(templates)
-
-    for t in templates:
-        if t not in points:
-            points.append(t)
-        if len(points) >= 3:
-            break
-
-    return points[:3]
+    return [templates[0]]
 
 
 def select_top_articles(all_articles: list, max_articles: int = 6) -> list:
@@ -296,8 +338,10 @@ def select_top_articles(all_articles: list, max_articles: int = 6) -> list:
 
 
 def format_article(article: dict) -> dict:
-    category = classify_category(article)
-    article["category"] = category
+    category     = classify_category(article)
+    sales_context = classify_sales_context(article)
+    article["category"]     = category
+    article["salesContext"] = sales_context
     summary  = article["summary"]
     if len(summary) > 200:
         summary = summary[:197] + "..."
@@ -309,6 +353,7 @@ def format_article(article: dict) -> dict:
         "headline":      article["title"],
         "summary":       summary if summary else "Click to read the full article.",
         "category":      category,
+        "salesContext":  sales_context,
         "source":        article["source"],
         "date":          format_date(article["published"]),
         "url":           article["url"],
@@ -350,6 +395,20 @@ def clean_html(text: str) -> str:
     text = re.sub(r"<[^>]+>", " ", text or "")
     text = re.sub(r"\s+", " ", text).strip()
     return text
+
+
+def strip_title_from_summary(title: str, summary: str) -> str:
+    """Remove the article title from the start of the summary if it appears there."""
+    if not title or not summary:
+        return summary
+    # Normalise both for comparison (lowercase, collapse spaces)
+    norm_title   = re.sub(r"\s+", " ", title.lower().strip())
+    norm_summary = re.sub(r"\s+", " ", summary.lower().strip())
+    if norm_summary.startswith(norm_title):
+        # Strip the title and any following punctuation / whitespace
+        stripped = summary[len(title):].lstrip(" .:–—|-")
+        return stripped.strip() if stripped.strip() else summary
+    return summary
 
 
 def extract_article_url(entry, fallback_url: str) -> str:
