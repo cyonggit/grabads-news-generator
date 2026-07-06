@@ -1,94 +1,88 @@
 {
-  "generatedAt": "2026-07-01T08:28:51Z",
-  "generatedDate": "1 Jul 2026",
+  "generatedAt": "2026-07-06T04:07:25Z",
+  "generatedDate": "6 Jul 2026",
   "articles": [
     {
-      "headline": "Meta, Shopee expand affiliate partnerships to Instagram 🤳🏻 - The partnership gives creators another avenue to earn fro...",
-      "summary": "Meta, Shopee expand affiliate partnerships to Instagram 🤳🏻 The partnership gives creators another avenue to earn from affiliate content while providing brands and sellers with additional product di...",
+      "headline": "Telstra Australia highlights free calls for all in payphone campaign via Bear Meets Eagle On Fire",
+      "summary": "Telstra has launched its latest campaign, created by Bear Meets Eagle On Fire with +61, to highlight free calls within A...",
       "category": "industry",
-      "source": "Marketing Interactive",
+      "salesContext": "industry",
+      "source": "Campaign Brief Asia",
       "date": "Today",
-      "url": "https://tinyurl.com/475ct96t",
-      "image": "https://picsum.photos/seed/921/600/280",
+      "url": "https://campaignbriefasia.com/2026/07/06/telstra-highlights-free-calls-for-all-in-payphone-campaign-via-bear-meets-eagle-on-fire-with-61/",
+      "image": "https://picsum.photos/seed/993/600/280",
       "talkingPoints": [
-        "Ask how this client balances brand building vs performance in their current budget split — then show how GrabAds supports both with full-funnel solutions across Grab's super-app.",
-        "Use this as an ice-breaker in your next client meeting — ask how the news affects their plans, then listen for budget signals before introducing how GrabAds fits into their new strategy.",
-        "If a competitor just won this account, use it to re-engage dormant prospects in the same category — what worked for one brand in the vertical can work for another."
+        "Share this with your client as a value-add touchpoint — then connect the trend directly to how GrabAds is positioned to help them stay ahead, whether it's first-party data, retail media, or programmatic reach."
+      ],
+      "isMovement": false
+    },
+    {
+      "headline": "Omnicom Health Hong Kong launches ‘Catch-up Now’ campaign ahead of HPV Vaccination deadline",
+      "summary": "Omnicom Health Hong Kong, in partnership with the HPV Prevention Alliance and the Karen Leung Foundation, has launched &#038;...",
+      "category": "industry",
+      "salesContext": "industry",
+      "source": "Campaign Brief Asia",
+      "date": "3 days ago",
+      "url": "https://campaignbriefasia.com/2026/07/03/omnicom-health-hong-kong-launches-catch-up-now-campaign-ahead-of-hpv-vaccination-deadline/",
+      "image": "https://picsum.photos/seed/431/600/280",
+      "talkingPoints": [
+        "Use this as an industry POV to open your next client call — then ask how this trend is affecting their planning, and guide the conversation toward a GrabAds solution that addresses it."
       ],
       "isMovement": true
     },
     {
-      "headline": "Stagwell lands IBM creative as 32-year Ogilvy era ends 🔈 - Under the creative appointment, Stagwell agencies Anomaly Co...",
-      "summary": "Stagwell lands IBM creative as 32-year Ogilvy era ends 🔈 Under the creative appointment, Stagwell agencies Anomaly Code and Theory will work together as a single creative team across IBM’s brand an...",
+      "headline": "AJ Marquez named MD of Propel Manila",
+      "summary": "Filipino independent creative and communications agency, Propel Manila has appointed AJ Marquez as Managing Director....",
+      "category": "industry",
+      "salesContext": "advertiser",
+      "source": "Campaign Brief Asia",
+      "date": "3 days ago",
+      "url": "https://campaignbriefasia.com/2026/07/03/aj-marquez-named-md-of-propel-manila/",
+      "image": "https://picsum.photos/seed/522/600/280",
+      "talkingPoints": [
+        "Account transitions and launches are the best window to get a first meeting — send a personalised note referencing this news and offer a GrabAds proposal specific to their category."
+      ],
+      "isMovement": true
+    },
+    {
+      "headline": "Kingdom Digital Malaysia announces the appointment of Kevin Teh as Creative Director",
+      "summary": "Kingdom Digital Malaysia has appointed Kevin Teh as Creative Director as the agency looks to strengthen its creative off...",
+      "category": "industry",
+      "salesContext": "advertiser",
+      "source": "Campaign Brief Asia",
+      "date": "3 days ago",
+      "url": "https://campaignbriefasia.com/2026/07/02/kingdom-digital-malaysia-announces-the-appointment-of-kevin-teh-as-creative-director/",
+      "image": "https://picsum.photos/seed/896/600/280",
+      "talkingPoints": [
+        "If this brand is making moves, they're likely reviewing their media strategy — reach out this week with a tailored GrabAds audience insights report to position yourself as a strategic partner."
+      ],
+      "isMovement": true
+    },
+    {
+      "headline": "VIRTUE Asia expands into Middle East with launch of VIRTUE Arabia",
+      "summary": "VIRTUE Asia has expanded beyond Asia with the launch of VIRTUE Arabia, establishing an APAC and Middle East creative net...",
+      "category": "industry",
+      "salesContext": "industry",
+      "source": "Campaign Brief Asia",
+      "date": "4 days ago",
+      "url": "https://campaignbriefasia.com/2026/07/02/virtue-asia-expands-into-middle-east-with-launch-of-virtue-arabia/",
+      "image": "https://picsum.photos/seed/73/600/280",
+      "talkingPoints": [
+        "Forward this to a client who's been sitting on a proposal — use it to reignite the conversation and frame GrabAds as the right move given where the industry is heading."
+      ],
+      "isMovement": true
+    },
+    {
+      "headline": "Priced out of Cannes, Filipino creative Rafter Manguiat puts himself on Google Maps instead",
+      "summary": "When Cannes Lions proved too expensive, Filipino copywriter Rafter Manguiat found another way to get noticed &#8211; by ...",
       "category": "creative",
-      "source": "Marketing Interactive",
-      "date": "Today",
-      "url": "https://tinyurl.com/ucrf6n9s",
-      "image": "https://picsum.photos/seed/105/600/280",
+      "salesContext": "competitive",
+      "source": "Campaign Brief Asia",
+      "date": "4 days ago",
+      "url": "https://campaignbriefasia.com/2026/07/02/priced-out-of-cannes-filipino-creative-rafter-manguiat-puts-himself-on-google-maps-instead/",
+      "image": "https://picsum.photos/seed/670/600/280",
       "talkingPoints": [
-        "Ask how this client balances brand building vs performance in their current budget split — then show how GrabAds supports both with full-funnel solutions across Grab's super-app.",
-        "Use this with agencies to show creative intelligence — ask what briefs they're working on and offer a GrabAds format deep-dive to match their creative goals.",
-        "If a client just launched a campaign, use this as an opener: 'Have you seen this trend in award-winning APAC work?' — then offer to share GrabAds creative benchmarks for their category."
-      ],
-      "isMovement": false
-    },
-    {
-      "headline": "Hong Kong Tourism Board renews Malaysia comms mandate for two years boat 🛎 - The renewal comes a year after the agency...",
-      "summary": "Hong Kong Tourism Board renews Malaysia comms mandate for two years boat 🛎 The renewal comes a year after the agency was first appointed by HKTB in 2025. 👉🏼 https://tinyurl.com/5axwunsk",
-      "category": "industry",
-      "source": "Marketing Interactive",
-      "date": "Today",
-      "url": "https://tinyurl.com/5axwunsk",
-      "image": "https://picsum.photos/seed/859/600/280",
-      "talkingPoints": [
-        "For brands in transition, position GrabAds as an easy first step — offer a no-commitment audience insights report to show the scale of their target audience on the Grab platform.",
-        "Use this as an ice-breaker in your next client meeting — ask how the news affects their plans, then listen for budget signals before introducing how GrabAds fits into their new strategy.",
-        "For any account going through a pitch or review, offer something tangible — a GrabAds media plan, an audience sizing report, or a case study from a comparable brand to get your foot in the door."
-      ],
-      "isMovement": true
-    },
-    {
-      "headline": "Wabikong's Sai enters the agency space with Works Media Agency 👤 - Founded alongside Jin Lim of Aspect Ratio Studios, W...",
-      "summary": "Wabikong's Sai enters the agency space with Works Media Agency 👤 Founded alongside Jin Lim of Aspect Ratio Studios, WMA will focus on three core pillars: influencer and KOL campaigns, content produ...",
-      "category": "media",
-      "source": "Marketing Interactive",
-      "date": "Today",
-      "url": "https://tinyurl.com/4kwdyv9m",
-      "image": "https://picsum.photos/seed/190/600/280",
-      "talkingPoints": [
-        "Ask this client how they're measuring influencer ROI beyond reach — then introduce GrabAds performance formats that connect awareness to actual transactions on the Grab platform.",
-        "Use this with finance or banking clients running awareness campaigns — ask about their media mix and offer a GrabAds audience overlap analysis to show incrementality.",
-        "If a client is heavy on traditional media, use this to introduce incremental reach — offer to model what adding GrabAds to their mix could deliver in terms of unique audience reach."
-      ],
-      "isMovement": false
-    },
-    {
-      "headline": "Adidas hands US$512M global media account to Omnicom 👟 - The business will be led by PHD, adding Adidas to the agency's...",
-      "summary": "Adidas hands US$512M global media account to Omnicom 👟 The business will be led by PHD, adding Adidas to the agency's client roster, which includes Google and Volkswagen, among others. 👉🏼 https://t...",
-      "category": "industry",
-      "source": "Marketing Interactive",
-      "date": "Today",
-      "url": "https://tinyurl.com/5a272ae6",
-      "image": "https://picsum.photos/seed/50/600/280",
-      "talkingPoints": [
-        "For any account going through a pitch or review, offer something tangible — a GrabAds media plan, an audience sizing report, or a case study from a comparable brand to get your foot in the door.",
-        "If a competitor just won this account, use it to re-engage dormant prospects in the same category — what worked for one brand in the vertical can work for another.",
-        "If this is a brand you're actively prospecting, reach out this week — leadership changes and agency switches are the best time to get a first meeting. Use this news as your reason to connect on LinkedIn."
-      ],
-      "isMovement": false
-    },
-    {
-      "headline": "☀️ -News for your morning ☀️ News Monks names new Southeast Asia managing director 📣 👉🏽 https://tinyurl.com/rxzef39v...",
-      "summary": "☀️ News for your morning ☀️ News Monks names new Southeast Asia managing director 📣 👉🏽 https://tinyurl.com/rxzef39v Agencies UNCANNY creative co-founder exits agency 🚪 👉🏼 https://tinyurl.com/5dw43c...",
-      "category": "industry",
-      "source": "Marketing Interactive",
-      "date": "Today",
-      "url": "https://tinyurl.com/rxzef39v",
-      "image": "https://picsum.photos/seed/267/600/280",
-      "talkingPoints": [
-        "If a competitor just won this account, use it to re-engage dormant prospects in the same category — what worked for one brand in the vertical can work for another.",
-        "For brands in transition, position GrabAds as an easy first step — offer a no-commitment audience insights report to show the scale of their target audience on the Grab platform.",
-        "For any account going through a pitch or review, offer something tangible — a GrabAds media plan, an audience sizing report, or a case study from a comparable brand to get your foot in the door."
+        "If a client is over-indexed on one platform, this is a timely prompt to introduce GrabAds as an incremental reach channel — offer to model audience overlap to show what they're missing."
       ],
       "isMovement": false
     }
