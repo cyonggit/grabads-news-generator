@@ -21,7 +21,6 @@ from dateutil import parser as dateparser
 RSS_FEEDS = [
     # SEA-focused publications (trusted as inherently relevant)
     {"name": "Campaign Asia",         "url": "https://rss.app/feeds/sBwZgWOqOWen0qHY.xml",        "sea_trusted": True},
-    {"name": "Marketing Interactive", "url": "https://rss.app/feeds/Jd6qTo2o46Mxxe3D.xml",        "sea_trusted": True},
     {"name": "Marketing Interactive", "url": "https://rss.app/feeds/CQ6qthodCcoFXLjT.xml", "sea_trusted": True},
     {"name": "MARKETECH APAC",        "url": "https://rss.app/feeds/Di8qt6zeF2FMZyPy.xml",        "sea_trusted": True},
     {"name": "Campaign Brief Asia",   "url": "https://campaignbriefasia.com/feed/",                "sea_trusted": True},
@@ -317,23 +316,42 @@ def generate_talking_points(article: dict) -> list:
     return [templates[0]]
 
 
-def select_top_articles(all_articles: list, max_articles: int = 6) -> list:
+def select_top_articles(all_articles: list, max_articles: int = 6, mi_slots: int = 4) -> list:
     sea       = [a for a in all_articles if is_sea_relevant(a)]
     movements = [a for a in all_articles if is_industry_movement(a) and not is_sea_relevant(a)]
 
     print(f"  SEA/trusted: {len(sea)}")
     print(f"  Global industry movements: {len(movements)}")
 
-    combined = sea[:max_articles]
-    if len(combined) < max_articles:
-        combined += movements[:(max_articles - len(combined))]
-
-    # Sort by recency
+    # Sort all articles by recency
     def sort_key(a):
         d = format_date(a["published"])
         return {"Today": 0, "Yesterday": 1}.get(d, 2)
-    combined.sort(key=sort_key)
+    sea.sort(key=sort_key)
 
+    # Priority slots for Marketing Interactive (Telegram)
+    mi_articles    = [a for a in sea if a["source"] == "Marketing Interactive"][:mi_slots]
+    other_articles = [a for a in sea if a["source"] != "Marketing Interactive"]
+
+    # Fill remaining slots from other sources (cap 1 per source for variety)
+    other_slots  = max_articles - len(mi_articles)
+    source_counts = {}
+    other_picked  = []
+    for a in other_articles:
+        source = a["source"]
+        source_counts[source] = source_counts.get(source, 0)
+        if source_counts[source] < 1:
+            other_picked.append(a)
+            source_counts[source] += 1
+        if len(other_picked) >= other_slots:
+            break
+
+    # Fill any remaining gaps with movements
+    combined = mi_articles + other_picked
+    if len(combined) < max_articles:
+        combined += movements[:(max_articles - len(combined))]
+
+    print(f"  MI (Telegram): {len(mi_articles)}, Other: {len(other_picked)}")
     return combined[:max_articles]
 
 
