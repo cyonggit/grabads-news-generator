@@ -1,88 +1,88 @@
 {
-  "generatedAt": "2026-08-10T02:13:17Z",
-  "generatedDate": "10 Aug 2026",
+  "generatedAt": "2026-08-17T01:40:49Z",
+  "generatedDate": "17 Aug 2026",
   "articles": [
     {
-      "headline": "F5 Shanghai appoints Jimyi Xu as Director of Global Marketing & Communications",
-      "summary": "F5 Shanghai, a global-minded independent creative agency rooted in China, has appointed Jimyi Xu as its inaugural Direct...",
-      "category": "creative",
-      "salesContext": "advertiser",
-      "source": "Campaign Brief Asia",
-      "date": "Today",
-      "url": "https://campaignbriefasia.com/2026/08/10/f5-shanghai-appoints-jimyi-xu-as-director-of-global-marketing-communications/",
-      "image": "https://picsum.photos/seed/586/600/280",
-      "talkingPoints": [
-        "Use this campaign as a hook to ask about their next activation — then propose a GrabAds format that complements what they're already running, with closed-loop measurement to prove it."
-      ],
-      "isMovement": true
-    },
-    {
-      "headline": "Fabulate raises $4.5m to support APAC expansion",
-      "summary": "Australian influencer marketing platform Fabulate has raised $4.5m to support its expansion across the APAC region. The funding round follows recent leadership appointments and reflects the company...",
+      "headline": "STOM Productions creates new campaign for River’s Made for Makers initiative",
+      "summary": "River has launched a new campaign film as part of its larger Made for Makers initiative, which spotlights solopreneurs i...",
       "category": "industry",
       "salesContext": "industry",
-      "source": "Mumbrella",
+      "source": "Campaign Brief Asia",
       "date": "Today",
-      "url": "https://mumbrella.com.au/fabulate-raises-4-5m-to-support-apac-expansion-932581",
-      "image": "https://picsum.photos/seed/321/600/280",
+      "url": "https://campaignbriefasia.com/2026/08/17/stom-productions-creates-new-campaign-for-rivers-made-for-makers-initiative/",
+      "image": "https://picsum.photos/seed/668/600/280",
       "talkingPoints": [
-        "Ask this client how they're measuring influencer ROI beyond reach — then introduce GrabAds performance formats that connect awareness to actual transactions on the Grab platform."
+        "This is a useful proof point for why brands need to act now — use the trend to create urgency, then offer a GrabAds discovery session to map their gaps before the market moves further."
       ],
       "isMovement": false
     },
     {
-      "headline": "Nielsen acquires DoubleVerify to link ad verification, audience measurement",
-      "summary": "The $2.15 billion deal follows other platforms valued for their independence getting acquired, which has stoked advertiser concern.",
-      "category": "industry",
-      "salesContext": "advertiser",
-      "source": "Marketing Dive",
-      "date": "2 days ago",
-      "url": "https://www.marketingdive.com/news/nielsen-acquires-doubleverify-to-link-ad-verification-audience-measurement/827319/",
-      "image": "https://picsum.photos/seed/658/600/280",
+      "headline": "Moloco launches an agency partner program, in part to expand beyond mobile programmatic",
+      "summary": "Although not a pure-play DSP, Moloco is expanding beyond into CTV and other media realms, building on its mobile and app base.",
+      "category": "digital",
+      "salesContext": "industry",
+      "source": "Digiday",
+      "date": "3 days ago",
+      "url": "https://digiday.com/media-buying/moloco-launches-an-agency-partner-program-in-part-to-expand-beyond-mobile-programmatic/?utm_campaign=digidaydis&utm_medium=rss&utm_source=general-rss",
+      "image": "https://picsum.photos/seed/342/600/280",
       "talkingPoints": [
-        "Ask this client how they're currently proving campaign ROI to their CFO — then offer a GrabAds closed-loop measurement pilot to connect ad impressions directly to sales outcomes."
+        "Ask what DSPs this client is currently using and whether they have access to SEA-specific first-party data — then position GrabAds' programmatic offering as the only one built on real transaction behaviour in the region."
       ],
       "isMovement": true
     },
     {
-      "headline": "Kraft Heinz pours nearly $100M more into marketing to drive turnaround",
-      "summary": "Higher-impact media partnerships and stronger creative are leading to &ldquo;green shoots&rdquo; for its brands in the U.S., executives said.",
+      "headline": "Agentic AI Is A Shiny New Object, But Supply-Path Optimization Is A Reality Check",
+      "summary": "AI can add more operational efficiency to the media buying process. But it will take some more time before AI agents are a seamless part of the modern media buying process, Andrea Kwiatek, director...",
+      "category": "media",
+      "salesContext": "industry",
+      "source": "AdExchanger",
+      "date": "2 days ago",
+      "url": "https://www.adexchanger.com/agencies/agentic-ai-is-a-shiny-new-object-but-supply-path-optimization-is-a-reality-check/",
+      "image": "https://picsum.photos/seed/641/600/280",
+      "talkingPoints": [
+        "Forward this to a client who's been sitting on a proposal — use it to reignite the conversation and frame GrabAds as the right move given where the industry is heading."
+      ],
+      "isMovement": true
+    },
+    {
+      "headline": "How brands can navigate the Paramount-WBD merger chaos",
+      "summary": "The issue is less about a specific transaction and more about how the ad industry prepares for the ongoing consolidation reality, says Crossmedia's Kaitlyn McInnis.",
       "category": "industry",
       "salesContext": "industry",
       "source": "Marketing Dive",
       "date": "3 days ago",
-      "url": "https://www.marketingdive.com/news/kraft-heinz-zeroes-in-on-marketing-as-it-pours-another-100m-into-turnaroun/827183/",
-      "image": "https://picsum.photos/seed/714/600/280",
+      "url": "https://www.marketingdive.com/news/how-brands-can-navigate-the-paramount-wbd-merger-chaos/827386/",
+      "image": "https://picsum.photos/seed/476/600/280",
       "talkingPoints": [
         "Ask how this client balances brand building vs performance in their current budget split — then show how GrabAds supports both with full-funnel solutions across Grab's super-app."
       ],
       "isMovement": true
     },
     {
-      "headline": "Papa Johns changes CMOs, ramps up mass marketing amid struggles",
-      "summary": "CMO Jenna Bromberg will depart as the chain appoints a global marketer and plans to rebalance its media mix and continue to invest in marketing co-ops.",
+      "headline": "M360: Why Airtasker is betting against the algorithm",
+      "summary": "Session Beyond the Algorithm: How Airtasker Builds Brand Story Through Partnership, Not Just Performance Date 27 May 2026, Carriageworks, Sydney On Stage Tim Fung, Founder &#38; CEO, Airtasker Rich...",
       "category": "industry",
-      "salesContext": "advertiser",
-      "source": "Marketing Dive",
-      "date": "3 days ago",
-      "url": "https://www.marketingdive.com/news/papa-johns-changes-cmo-role-ramps-up-mass-marketing-amid-struggles/827203/",
-      "image": "https://picsum.photos/seed/412/600/280",
+      "salesContext": "industry",
+      "source": "Mumbrella",
+      "date": "Today",
+      "url": "https://mumbrella.com.au/m360-airtasker-doubles-down-on-long-term-media-partnerships-926582",
+      "image": "https://picsum.photos/seed/905/600/280",
       "talkingPoints": [
-        "Account transitions and launches are the best window to get a first meeting — send a personalised note referencing this news and offer a GrabAds proposal specific to their category."
+        "Ask how this client balances brand building vs performance in their current budget split — then show how GrabAds supports both with full-funnel solutions across Grab's super-app."
       ],
       "isMovement": true
     },
     {
-      "headline": "Dig bags Soul Origin creative account",
-      "summary": "Independent agency Dig has been appointed as the creative agency for Soul Origin following a competitive pitch. The announcement: Dig has been appointed as Soul Origin’s lead strategic and creative...",
-      "category": "creative",
-      "salesContext": "advertiser",
+      "headline": "Taste.com.au launches Savvy Kitchen campaign with Coles",
+      "summary": "Food platform Taste.com.au has launched a four-week campaign called Savvy Kitchen in partnership with Coles, aimed at addressing changing consumer needs around meal preparation. The campaign, now i...",
+      "category": "retail",
+      "salesContext": "industry",
       "source": "Mumbrella",
       "date": "Today",
-      "url": "https://mumbrella.com.au/dig-bags-soul-origin-creative-account-932666",
-      "image": "https://picsum.photos/seed/311/600/280",
+      "url": "https://mumbrella.com.au/taste-com-au-launches-savvy-kitchen-campaign-with-coles-933339",
+      "image": "https://picsum.photos/seed/407/600/280",
       "talkingPoints": [
-        "For OOH-active clients, ask if they've considered extending their outdoor presence into high-dwell digital moments — then introduce GrabAds' car-top DOOH and in-app formats as a complement."
+        "For F&B and QSR brands, ask about their next promotion window — then propose a GrabFood Sponsored Listing or in-app banner campaign to capture hungry, high-intent users at decision time."
       ],
       "isMovement": true
     }
