@@ -1,88 +1,88 @@
 {
-  "generatedAt": "2026-08-17T01:40:49Z",
-  "generatedDate": "17 Aug 2026",
+  "generatedAt": "2026-08-24T01:42:41Z",
+  "generatedDate": "24 Aug 2026",
   "articles": [
     {
-      "headline": "STOM Productions creates new campaign for River’s Made for Makers initiative",
-      "summary": "River has launched a new campaign film as part of its larger Made for Makers initiative, which spotlights solopreneurs i...",
+      "headline": "Axis Bank and TBWA\\Lintas highlight the ties that keep NRIs connected to India in new campaign",
+      "summary": "Axis Bank, one of the largest private sector banks in India, has launched a new integrated campaign, create via TBWA\\Lin...",
       "category": "industry",
       "salesContext": "industry",
       "source": "Campaign Brief Asia",
       "date": "Today",
-      "url": "https://campaignbriefasia.com/2026/08/17/stom-productions-creates-new-campaign-for-rivers-made-for-makers-initiative/",
-      "image": "https://picsum.photos/seed/668/600/280",
+      "url": "https://campaignbriefasia.com/2026/08/24/axis-bank-and-tbwalintas-highlight-the-ties-that-keep-nris-connected-to-india-in-new-campaign/",
+      "image": "https://picsum.photos/seed/661/600/280",
       "talkingPoints": [
         "This is a useful proof point for why brands need to act now — use the trend to create urgency, then offer a GrabAds discovery session to map their gaps before the market moves further."
       ],
       "isMovement": false
     },
     {
-      "headline": "Moloco launches an agency partner program, in part to expand beyond mobile programmatic",
-      "summary": "Although not a pure-play DSP, Moloco is expanding beyond into CTV and other media realms, building on its mobile and app base.",
+      "headline": "Retail Roundup: 8 Commerce Moves From Target, Citi, Klarna, and More",
+      "summary": "Citi expands into commerce media, the ANA flags retail media’s biggest roadblocks, and agencies deepen their bets on Amazon and TikTok",
       "category": "digital",
+      "salesContext": "competitive",
+      "source": "Adweek",
+      "date": "2 days ago",
+      "url": "https://www.adweek.com/commerce/retail-roundup-8-commerce-moves-from-target-citi-klarna-and-more/",
+      "image": "https://picsum.photos/seed/418/600/280",
+      "talkingPoints": [
+        "Use TikTok's growth as context — then ask if this client is spreading budget across too many platforms. Position GrabAds as the platform with the deepest purchase-intent data in SEA."
+      ],
+      "isMovement": true
+    },
+    {
+      "headline": "For brands, the creator ambassador is becoming a creator executive",
+      "summary": "The new creator partnership brings them into the C-Suite and seeks input and strategy, like Blenders and Jordan \"The Stallion\" Howlett.",
+      "category": "industry",
       "salesContext": "industry",
       "source": "Digiday",
+      "date": "2 days ago",
+      "url": "https://digiday.com/media/for-brands-the-creator-ambassador-is-becoming-a-creator-executive/?utm_campaign=digidaydis&utm_medium=rss&utm_source=general-rss",
+      "image": "https://picsum.photos/seed/645/600/280",
+      "talkingPoints": [
+        "Ask how this client balances brand building vs performance in their current budget split — then show how GrabAds supports both with full-funnel solutions across Grab's super-app."
+      ],
+      "isMovement": true
+    },
+    {
+      "headline": "Thinking Outside The Chumbox; Divine Inspiration",
+      "summary": "Outta The Box Back in the long, long ago – as in, 2017 – Apple News made a tentative step into programmatic territory via an ad sales partnership with NBCUniversal. The arrangement brought programm...",
+      "category": "digital",
+      "salesContext": "competitive",
+      "source": "AdExchanger",
       "date": "3 days ago",
-      "url": "https://digiday.com/media-buying/moloco-launches-an-agency-partner-program-in-part-to-expand-beyond-mobile-programmatic/?utm_campaign=digidaydis&utm_medium=rss&utm_source=general-rss",
-      "image": "https://picsum.photos/seed/342/600/280",
+      "url": "https://www.adexchanger.com/daily-news-roundup/thursday-20082026/",
+      "image": "https://picsum.photos/seed/50/600/280",
       "talkingPoints": [
         "Ask what DSPs this client is currently using and whether they have access to SEA-specific first-party data — then position GrabAds' programmatic offering as the only one built on real transaction behaviour in the region."
       ],
       "isMovement": true
     },
     {
-      "headline": "Agentic AI Is A Shiny New Object, But Supply-Path Optimization Is A Reality Check",
-      "summary": "AI can add more operational efficiency to the media buying process. But it will take some more time before AI agents are a seamless part of the modern media buying process, Andrea Kwiatek, director...",
-      "category": "media",
-      "salesContext": "industry",
-      "source": "AdExchanger",
-      "date": "2 days ago",
-      "url": "https://www.adexchanger.com/agencies/agentic-ai-is-a-shiny-new-object-but-supply-path-optimization-is-a-reality-check/",
-      "image": "https://picsum.photos/seed/641/600/280",
-      "talkingPoints": [
-        "Forward this to a client who's been sitting on a proposal — use it to reignite the conversation and frame GrabAds as the right move given where the industry is heading."
-      ],
-      "isMovement": true
-    },
-    {
-      "headline": "How brands can navigate the Paramount-WBD merger chaos",
-      "summary": "The issue is less about a specific transaction and more about how the ad industry prepares for the ongoing consolidation reality, says Crossmedia's Kaitlyn McInnis.",
-      "category": "industry",
-      "salesContext": "industry",
+      "headline": "Chipotle broadens Gen Alpha marketing with Salish Matter collab",
+      "summary": "A partnership with the 16-year-old YouTube and TikTok star marks the first time the brand has brought a custom creator order to its Kid&rsquo;s Meal.",
+      "category": "digital",
+      "salesContext": "competitive",
       "source": "Marketing Dive",
-      "date": "3 days ago",
-      "url": "https://www.marketingdive.com/news/how-brands-can-navigate-the-paramount-wbd-merger-chaos/827386/",
-      "image": "https://picsum.photos/seed/476/600/280",
+      "date": "4 days ago",
+      "url": "https://www.marketingdive.com/news/chipotle-broadens-gen-alpha-marketing-strategy-with-salish-matter-collab/828178/",
+      "image": "https://picsum.photos/seed/884/600/280",
       "talkingPoints": [
-        "Ask how this client balances brand building vs performance in their current budget split — then show how GrabAds supports both with full-funnel solutions across Grab's super-app."
+        "Use TikTok's growth as context — then ask if this client is spreading budget across too many platforms. Position GrabAds as the platform with the deepest purchase-intent data in SEA."
       ],
       "isMovement": true
     },
     {
-      "headline": "M360: Why Airtasker is betting against the algorithm",
-      "summary": "Session Beyond the Algorithm: How Airtasker Builds Brand Story Through Partnership, Not Just Performance Date 27 May 2026, Carriageworks, Sydney On Stage Tim Fung, Founder &#38; CEO, Airtasker Rich...",
+      "headline": "X launches MCP server",
+      "summary": "The system allows advertisers to connect their campaigns to the artificial intelligence tool of their choice and use it to guide their promotions.",
       "category": "industry",
-      "salesContext": "industry",
-      "source": "Mumbrella",
+      "salesContext": "advertiser",
+      "source": "Social Media Today",
       "date": "Today",
-      "url": "https://mumbrella.com.au/m360-airtasker-doubles-down-on-long-term-media-partnerships-926582",
-      "image": "https://picsum.photos/seed/905/600/280",
+      "url": "https://www.socialmediatoday.com/news/x-launches-mcp-server/828552/",
+      "image": "https://picsum.photos/seed/925/600/280",
       "talkingPoints": [
-        "Ask how this client balances brand building vs performance in their current budget split — then show how GrabAds supports both with full-funnel solutions across Grab's super-app."
-      ],
-      "isMovement": true
-    },
-    {
-      "headline": "Taste.com.au launches Savvy Kitchen campaign with Coles",
-      "summary": "Food platform Taste.com.au has launched a four-week campaign called Savvy Kitchen in partnership with Coles, aimed at addressing changing consumer needs around meal preparation. The campaign, now i...",
-      "category": "retail",
-      "salesContext": "industry",
-      "source": "Mumbrella",
-      "date": "Today",
-      "url": "https://mumbrella.com.au/taste-com-au-launches-savvy-kitchen-campaign-with-coles-933339",
-      "image": "https://picsum.photos/seed/407/600/280",
-      "talkingPoints": [
-        "For F&B and QSR brands, ask about their next promotion window — then propose a GrabFood Sponsored Listing or in-app banner campaign to capture hungry, high-intent users at decision time."
+        "This is a timely reason to reach out — use the news as a conversation starter, then ask how their current SEA digital mix is performing and where GrabAds could add incremental reach or measurable ROI."
       ],
       "isMovement": true
     }
