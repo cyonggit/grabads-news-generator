@@ -1,88 +1,88 @@
 {
-  "generatedAt": "2026-09-07T04:00:42Z",
-  "generatedDate": "7 Sep 2026",
+  "generatedAt": "2026-09-14T04:24:18Z",
+  "generatedDate": "14 Sep 2026",
   "articles": [
     {
-      "headline": "Duolingo brings English learning to Punjabi speakers in new campaign via Talented",
-      "summary": "Duolingo, the world&#8217;s leading mobile learning platform, has launched its new &#8216;Learn English from Punjabi&#82...",
+      "headline": "Rexona and frank. Singapore tackle women’s sweat anxieties in first Southeast Asia campaign",
+      "summary": "Rexona has launched a new campaign in Southeast Asia in collaboration with frank. Singapore, Omnicom’s dedicated Unile...",
       "category": "industry",
       "salesContext": "industry",
       "source": "Campaign Brief Asia",
       "date": "Today",
-      "url": "https://campaignbriefasia.com/2026/09/07/duolingo-brings-english-learning-to-punjabi-speakers-in-new-campaign-via-talented/",
-      "image": "https://picsum.photos/seed/150/600/280",
+      "url": "https://campaignbriefasia.com/2026/09/14/rexona-and-frank-singapore-tackle-womens-sweat-anxieties-in-first-southeast-asia-campaign/",
+      "image": "https://picsum.photos/seed/478/600/280",
       "talkingPoints": [
-        "Share this with your client as a value-add touchpoint — then connect the trend directly to how GrabAds is positioned to help them stay ahead, whether it's first-party data, retail media, or programmatic reach."
+        "Forward this to a client who's been sitting on a proposal — use it to reignite the conversation and frame GrabAds as the right move given where the industry is heading."
       ],
       "isMovement": false
     },
     {
-      "headline": "Athletic Brewing appoints new CMO amid marketing push",
-      "summary": "The appointment comes as the brand continues to invest heavily in sports sponsorships and is doubling down on its national media spend.",
+      "headline": "QMS NZ launches City Rail Link network with foundation partners",
+      "summary": "New Zealand out of home company QMS NZ has launched its City Rail Link network with a full roster of foundation partners. The network is part of a NZ$5.5b infrastructure project aimed at improving ...",
       "category": "industry",
-      "salesContext": "advertiser",
-      "source": "Marketing Dive",
-      "date": "4 days ago",
-      "url": "https://www.marketingdive.com/news/athletic-brewing-appoints-new-cmo-amid-marketing-push/829349/",
-      "image": "https://picsum.photos/seed/705/600/280",
-      "talkingPoints": [
-        "Ask how this client balances brand building vs performance in their current budget split — then show how GrabAds supports both with full-funnel solutions across Grab's super-app."
-      ],
-      "isMovement": true
-    },
-    {
-      "headline": "News24 launches national brand campaign following rebrand",
-      "summary": "Australian news network News24 has launched its first brand campaign since rebranding from Sky News Australia on 27 July. The campaign aims to strengthen audience engagement and expand reach, lever...",
-      "category": "industry",
-      "salesContext": "advertiser",
+      "salesContext": "industry",
       "source": "Mumbrella",
       "date": "Today",
-      "url": "https://mumbrella.com.au/news24-launches-national-brand-campaign-following-rebrand-936049",
-      "image": "https://picsum.photos/seed/710/600/280",
+      "url": "https://mumbrella.com.au/qms-nz-launches-city-rail-link-network-with-foundation-partners-936919",
+      "image": "https://picsum.photos/seed/608/600/280",
       "talkingPoints": [
-        "Ask how this client balances brand building vs performance in their current budget split — then show how GrabAds supports both with full-funnel solutions across Grab's super-app."
+        "This is a useful proof point for why brands need to act now — use the trend to create urgency, then offer a GrabAds discovery session to map their gaps before the market moves further."
       ],
       "isMovement": true
     },
     {
-      "headline": "Lottery Corporation appoints Joe Hawkins as head of creative strategy",
-      "summary": "Australian lottery company The Lottery Corporation has appointed Joe Hawkins as its new Head of Creative Strategy. Hawkins, who has over 25 years of experience in the industry, will focus on enhanc...",
+      "headline": "Caesars gives NFL legend a ‘looksmaxxing’ makeover in sportsbook ads",
+      "summary": "&ldquo;We&rsquo;ve Had Some Work Done&rdquo; was created in partnership with minority-owned, full-service creative agency Fellow Kids and produced by Hungry Man.",
+      "category": "creative",
+      "salesContext": "industry",
+      "source": "Marketing Dive",
+      "date": "4 days ago",
+      "url": "https://www.marketingdive.com/news/caesars-gives-nfl-legend-a-looksmaxxing-makeover-in-sportsbook-ads/829915/",
+      "image": "https://picsum.photos/seed/291/600/280",
+      "talkingPoints": [
+        "Forward this to a client who's been sitting on a proposal — use it to reignite the conversation and frame GrabAds as the right move given where the industry is heading."
+      ],
+      "isMovement": true
+    },
+    {
+      "headline": "Emotive bolsters team with three new executive hires",
+      "summary": "Emotive has appointed Tian Skene, Jessica Nord, and Claire O’Sullivan to its account management team. The new hires come as the agency reports a series of recent business wins. The announcement: In...",
       "category": "creative",
       "salesContext": "advertiser",
       "source": "Mumbrella",
       "date": "Today",
-      "url": "https://mumbrella.com.au/lottery-corporation-appoints-joe-hawkins-as-head-of-creative-strategy-936052",
-      "image": "https://picsum.photos/seed/970/600/280",
-      "talkingPoints": [
-        "Ask how this client balances brand building vs performance in their current budget split — then show how GrabAds supports both with full-funnel solutions across Grab's super-app."
-      ],
-      "isMovement": true
-    },
-    {
-      "headline": "Publicis Groupe promotes Jayde Hill to general manager of people and culture",
-      "summary": "Australian marketing firm Publicis Groupe has appointed Jayde Hill as general manager of people &#38; culture for its New Zealand operations. Hill, who has been with the company for eight years, wi...",
-      "category": "industry",
-      "salesContext": "advertiser",
-      "source": "Mumbrella",
-      "date": "Today",
-      "url": "https://mumbrella.com.au/publicis-groupe-promotes-jayde-hill-to-general-manager-of-people-and-culture-936057",
-      "image": "https://picsum.photos/seed/238/600/280",
+      "url": "https://mumbrella.com.au/emotive-bolsters-team-with-three-new-executive-hires-937031",
+      "image": "https://picsum.photos/seed/901/600/280",
       "talkingPoints": [
         "Use this campaign as a hook to ask about their next activation — then propose a GrabAds format that complements what they're already running, with closed-loop measurement to prove it."
       ],
       "isMovement": true
     },
     {
-      "headline": "MLC launches new campaign featuring blockbuster film The Heist",
-      "summary": "Australian superannuation provider MLC has launched a new campaign featuring a film titled The Heist, directed by Mark Molloy. The campaign aims to shift perceptions about superannuation from a sta...",
+      "headline": "Gotransit expands Skybus network with AFL partnership",
+      "summary": "Gotransit Media Group has expanded its partnership with Skybus, adding new services in Melbourne. The AFL is the first major brand to leverage this expanded network ahead of the 2026 Finals Series....",
       "category": "industry",
       "salesContext": "industry",
       "source": "Mumbrella",
       "date": "Today",
-      "url": "https://mumbrella.com.au/mlc-launches-new-campaign-featuring-blockbuster-film-the-heist-936070",
-      "image": "https://picsum.photos/seed/11/600/280",
+      "url": "https://mumbrella.com.au/gotransit-expands-skybus-network-with-afl-partnership-936994",
+      "image": "https://picsum.photos/seed/893/600/280",
       "talkingPoints": [
-        "This is a useful proof point for why brands need to act now — use the trend to create urgency, then offer a GrabAds discovery session to map their gaps before the market moves further."
+        "Ask how this client balances brand building vs performance in their current budget split — then show how GrabAds supports both with full-funnel solutions across Grab's super-app."
+      ],
+      "isMovement": true
+    },
+    {
+      "headline": "Today the Brave appoints new managing director",
+      "summary": "Today the Brave has appointed Laura Mahony as its new managing director. Mahony&#8217;s appointment comes as the agency experiences growth and expansion in various service areas. The announcement: ...",
+      "category": "industry",
+      "salesContext": "advertiser",
+      "source": "Mumbrella",
+      "date": "Today",
+      "url": "https://mumbrella.com.au/today-the-brave-appoints-new-managing-director-937005",
+      "image": "https://picsum.photos/seed/271/600/280",
+      "talkingPoints": [
+        "If this brand is making moves, they're likely reviewing their media strategy — reach out this week with a tailored GrabAds audience insights report to position yourself as a strategic partner."
       ],
       "isMovement": true
     }
