@@ -1,88 +1,88 @@
 {
-  "generatedAt": "2026-09-21T04:24:41Z",
-  "generatedDate": "21 Sep 2026",
+  "generatedAt": "2026-09-28T04:50:26Z",
+  "generatedDate": "28 Sep 2026",
   "articles": [
     {
-      "headline": "TBWA takes out Network of the Year in Campaign Brief’s The Work 2026 with VML #2 + HAKUHODO #3",
-      "summary": "TBWA has taken out the Network of the Year title in Campaign Brief’s The Work 2026 after a strong performance across m...",
+      "headline": "Campaign Brief Video: Interview with Barbara Levy, President and Founder of LIA, at start of awards judging + Creative LIAisons in Las Vegas",
+      "summary": "Campaign Brief caught up with Barbara Levy, President and Founder of LIA, in Las Vegas at the start of awards judging an...",
       "category": "industry",
       "salesContext": "industry",
       "source": "Campaign Brief Asia",
       "date": "Today",
-      "url": "https://campaignbriefasia.com/2026/09/21/tbwa-takes-out-network-of-the-year-in-campaign-briefs-the-work-2026-with-vml-2-hakuhodo-3/",
-      "image": "https://picsum.photos/seed/730/600/280",
+      "url": "https://campaignbriefasia.com/2026/09/28/campaign-brief-video-interview-with-barbara-levy-president-and-founder-of-lia-at-start-of-awards-judging-creative-liaisons-in-las-vegas-2/",
+      "image": "https://picsum.photos/seed/982/600/280",
       "talkingPoints": [
-        "Forward this to a client who's been sitting on a proposal — use it to reignite the conversation and frame GrabAds as the right move given where the industry is heading."
+        "Use this as an industry POV to open your next client call — then ask how this trend is affecting their planning, and guide the conversation toward a GrabAds solution that addresses it."
       ],
       "isMovement": false
     },
     {
-      "headline": "Infillion Acquires Foursquare, Adding More Location Data To Its Ever-Growing Ad Tech Stack",
-      "summary": "Infillion checked in with its latest acquisition on Friday: Foursquare. Apparently, if there’s a strategically interesting or distressed ad tech asset on the market, Infillion will find it. Terms o...",
-      "category": "digital",
+      "headline": "Are AI Ads Ready for Prime Time?",
+      "summary": "This post was created in partnership with Higgsfield AI After years of debate over AI’s creative capabilities, Higgsfield, an AI-native creative suite, put them to the test. During a Brandweek [&he...",
+      "category": "industry",
+      "salesContext": "industry",
+      "source": "Adweek",
+      "date": "2 days ago",
+      "url": "https://www.adweek.com/creativity/are-ai-ads-ready-for-prime-time/",
+      "image": "https://picsum.photos/seed/408/600/280",
+      "talkingPoints": [
+        "Ask how this client balances brand building vs performance in their current budget split — then show how GrabAds supports both with full-funnel solutions across Grab's super-app."
+      ],
+      "isMovement": true
+    },
+    {
+      "headline": "Dave &amp; Buster’s Hires New Agencies to Get More People Into Its Locations",
+      "summary": "The brand appointed Gut for creative and Mediaplus to handle media buying.",
+      "category": "media",
       "salesContext": "advertiser",
+      "source": "Adweek",
+      "date": "2 days ago",
+      "url": "https://www.adweek.com/agencies/dave-busters-hires-new-agencies-to-get-more-people-into-its-locations/",
+      "image": "https://picsum.photos/seed/282/600/280",
+      "talkingPoints": [
+        "Ask how this client balances brand building vs performance in their current budget split — then show how GrabAds supports both with full-funnel solutions across Grab's super-app."
+      ],
+      "isMovement": true
+    },
+    {
+      "headline": "Why AI Treats Publisher Content As A Commodity; Playing Your Credit Cards Right",
+      "summary": "Why AI commoditizes publisher content; credit cards are incorporating brand deals at the expense of exclusivity; and McDonald's launches a media network. The post Why AI Treats Publisher Content As...",
+      "category": "industry",
+      "salesContext": "industry",
+      "source": "AdExchanger",
+      "date": "Today",
+      "url": "https://www.adexchanger.com/daily-news-roundup/monday-28092026/",
+      "image": "https://picsum.photos/seed/590/600/280",
+      "talkingPoints": [
+        "Ask how this client balances brand building vs performance in their current budget split — then show how GrabAds supports both with full-funnel solutions across Grab's super-app."
+      ],
+      "isMovement": true
+    },
+    {
+      "headline": "Buying CTV In The WarnerMount World",
+      "summary": "Let's talk acquisitions! The WarnerMount merger is close to being in the clear, after California and 11 other states settled their antitrust lawsuit against the merger. Plus: Taboola bought Dianomi...",
+      "category": "industry",
+      "salesContext": "industry",
       "source": "AdExchanger",
       "date": "2 days ago",
-      "url": "https://www.adexchanger.com/marketers/infillion-acquires-foursquare-adding-more-location-data-to-its-ever-growing-ad-tech-stack/",
-      "image": "https://picsum.photos/seed/720/600/280",
+      "url": "https://www.adexchanger.com/the-big-story/buying-ctv-in-the-warnermount-world/",
+      "image": "https://picsum.photos/seed/26/600/280",
       "talkingPoints": [
         "Ask what their current customer acquisition cost looks like — then offer a GrabAds performance campaign proposal benchmarked against category averages on the Grab platform."
       ],
       "isMovement": true
     },
     {
-      "headline": "Habitat M picks 1st Energy media account",
-      "summary": "Independent media agency Habitat M has been appointed by 1st Energy as its media strategy and performance marketing partner following a competitive pitch. The announcement: Independent media agency...",
-      "category": "digital",
-      "salesContext": "advertiser",
-      "source": "Mumbrella",
-      "date": "Today",
-      "url": "https://mumbrella.com.au/habitat-m-picks-1st-energy-media-account-938003",
-      "image": "https://picsum.photos/seed/633/600/280",
-      "talkingPoints": [
-        "This is a timely reason to reach out — use the news as a conversation starter, then ask how their current SEA digital mix is performing and where GrabAds could add incremental reach or measurable ROI."
-      ],
-      "isMovement": true
-    },
-    {
-      "headline": "Ogilvy launches first work for St John Lottery with national campaign",
-      "summary": "St John Lottery has enlisted Ogilvy for its latest &#8220;Good Good&#8221; campaign, positioning the charity lottery as a double win by pairing the prospect of a jackpot win with the community work...",
-      "category": "creative",
-      "salesContext": "industry",
-      "source": "Mumbrella",
-      "date": "Today",
-      "url": "https://mumbrella.com.au/ogilvy-launches-first-work-for-st-john-lottery-with-national-campaign-937969",
-      "image": "https://picsum.photos/seed/35/600/280",
-      "talkingPoints": [
-        "Use this as an industry POV to open your next client call — then ask how this trend is affecting their planning, and guide the conversation toward a GrabAds solution that addresses it."
-      ],
-      "isMovement": true
-    },
-    {
-      "headline": "News Corp Australia launches second annual Think Again campaign",
-      "summary": "Media company News Corp Australia has launched its second annual Think Again campaign to advocate for dementia awareness and action. The campaign coincides with Dementia Action Week and aims to ref...",
+      "headline": "Target’s new campaign puts design legacy at center of marketing",
+      "summary": "The effort will extend to creator partnerships and experiential activations and arrives as the retailer&rsquo;s turnaround efforts begin to show results.",
       "category": "industry",
       "salesContext": "industry",
-      "source": "Mumbrella",
-      "date": "Today",
-      "url": "https://mumbrella.com.au/news-corp-australia-launches-second-annual-think-again-campaign-937911",
-      "image": "https://picsum.photos/seed/720/600/280",
+      "source": "Marketing Dive",
+      "date": "4 days ago",
+      "url": "https://www.marketingdive.com/news/targets-new-campaign-puts-design-legacy-at-center-of-marketing/831116/",
+      "image": "https://picsum.photos/seed/73/600/280",
       "talkingPoints": [
         "Use this as an industry POV to open your next client call — then ask how this trend is affecting their planning, and guide the conversation toward a GrabAds solution that addresses it."
-      ],
-      "isMovement": true
-    },
-    {
-      "headline": "Veracity Research partners with the Marketing Club for 12-month collaboration",
-      "summary": "Research firm Veracity Research has partnered with the Marketing Club to enhance support for marketers through a 12-month collaboration. The partnership aims to combine community engagement with re...",
-      "category": "industry",
-      "salesContext": "industry",
-      "source": "Mumbrella",
-      "date": "Today",
-      "url": "https://mumbrella.com.au/veracity-research-partners-with-the-marketing-club-for-12-month-collaboration-937909",
-      "image": "https://picsum.photos/seed/241/600/280",
-      "talkingPoints": [
-        "Share this with your client as a value-add touchpoint — then connect the trend directly to how GrabAds is positioned to help them stay ahead, whether it's first-party data, retail media, or programmatic reach."
       ],
       "isMovement": true
     }
