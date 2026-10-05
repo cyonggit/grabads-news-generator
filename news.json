@@ -1,88 +1,88 @@
 {
-  "generatedAt": "2026-09-28T04:50:26Z",
-  "generatedDate": "28 Sep 2026",
+  "generatedAt": "2026-10-05T05:04:27Z",
+  "generatedDate": "5 Oct 2026",
   "articles": [
     {
-      "headline": "Campaign Brief Video: Interview with Barbara Levy, President and Founder of LIA, at start of awards judging + Creative LIAisons in Las Vegas",
-      "summary": "Campaign Brief caught up with Barbara Levy, President and Founder of LIA, in Las Vegas at the start of awards judging an...",
-      "category": "industry",
+      "headline": "Ogilvy Gurgaon’s Soham Ghosh: Nine Bets I’m Taking Home From Vegas",
+      "summary": "Soham Ghosh, Creative Director at Ogilvy Gurgaon, was one of the near 130 talented young creatives, selected from around...",
+      "category": "creative",
       "salesContext": "industry",
       "source": "Campaign Brief Asia",
       "date": "Today",
-      "url": "https://campaignbriefasia.com/2026/09/28/campaign-brief-video-interview-with-barbara-levy-president-and-founder-of-lia-at-start-of-awards-judging-creative-liaisons-in-las-vegas-2/",
-      "image": "https://picsum.photos/seed/982/600/280",
+      "url": "https://campaignbriefasia.com/2026/10/05/ogilvy-gurgaons-soham-ghosh-nine-bets-im-taking-home-from-vegas/",
+      "image": "https://picsum.photos/seed/280/600/280",
       "talkingPoints": [
-        "Use this as an industry POV to open your next client call — then ask how this trend is affecting their planning, and guide the conversation toward a GrabAds solution that addresses it."
+        "Forward this to a client who's been sitting on a proposal — use it to reignite the conversation and frame GrabAds as the right move given where the industry is heading."
       ],
       "isMovement": false
     },
     {
-      "headline": "Are AI Ads Ready for Prime Time?",
-      "summary": "This post was created in partnership with Higgsfield AI After years of debate over AI’s creative capabilities, Higgsfield, an AI-native creative suite, put them to the test. During a Brandweek [&he...",
+      "headline": "‘It scared the hell out of me’: What brands have learned from creator partnerships",
+      "summary": "At Shoptalk Fall, brands like Favorite Daughter, SharkNinja and Bob's Discount Furniture talked about what they've learned from working with creators.",
       "category": "industry",
       "salesContext": "industry",
-      "source": "Adweek",
-      "date": "2 days ago",
-      "url": "https://www.adweek.com/creativity/are-ai-ads-ready-for-prime-time/",
-      "image": "https://picsum.photos/seed/408/600/280",
+      "source": "Digiday",
+      "date": "3 days ago",
+      "url": "https://digiday.com/marketing/it-scared-the-hell-out-of-me-what-brands-have-learned-from-creator-partnerships/?utm_campaign=digidaydis&utm_medium=rss&utm_source=general-rss",
+      "image": "https://picsum.photos/seed/663/600/280",
       "talkingPoints": [
         "Ask how this client balances brand building vs performance in their current budget split — then show how GrabAds supports both with full-funnel solutions across Grab's super-app."
       ],
       "isMovement": true
     },
     {
-      "headline": "Dave &amp; Buster’s Hires New Agencies to Get More People Into Its Locations",
-      "summary": "The brand appointed Gut for creative and Mediaplus to handle media buying.",
-      "category": "media",
+      "headline": "Delivery Apps And Retailers Unite; How Do You Measure, Measure An Ad",
+      "summary": "Why retail partnerships are so popular; advertisers aren't satisfied with OpenAI's ad measurement; and how US tax dollars ended up going toward pro-Trump ads. The post Delivery Apps And Retailers U...",
+      "category": "industry",
       "salesContext": "advertiser",
-      "source": "Adweek",
-      "date": "2 days ago",
-      "url": "https://www.adweek.com/agencies/dave-busters-hires-new-agencies-to-get-more-people-into-its-locations/",
-      "image": "https://picsum.photos/seed/282/600/280",
-      "talkingPoints": [
-        "Ask how this client balances brand building vs performance in their current budget split — then show how GrabAds supports both with full-funnel solutions across Grab's super-app."
-      ],
-      "isMovement": true
-    },
-    {
-      "headline": "Why AI Treats Publisher Content As A Commodity; Playing Your Credit Cards Right",
-      "summary": "Why AI commoditizes publisher content; credit cards are incorporating brand deals at the expense of exclusivity; and McDonald's launches a media network. The post Why AI Treats Publisher Content As...",
-      "category": "industry",
-      "salesContext": "industry",
       "source": "AdExchanger",
-      "date": "Today",
-      "url": "https://www.adexchanger.com/daily-news-roundup/monday-28092026/",
-      "image": "https://picsum.photos/seed/590/600/280",
+      "date": "3 days ago",
+      "url": "https://www.adexchanger.com/daily-news-roundup/friday-02102026/",
+      "image": "https://picsum.photos/seed/612/600/280",
       "talkingPoints": [
-        "Ask how this client balances brand building vs performance in their current budget split — then show how GrabAds supports both with full-funnel solutions across Grab's super-app."
+        "Ask this client how they're currently proving campaign ROI to their CFO — then offer a GrabAds closed-loop measurement pilot to connect ad impressions directly to sales outcomes."
       ],
       "isMovement": true
     },
     {
-      "headline": "Buying CTV In The WarnerMount World",
-      "summary": "Let's talk acquisitions! The WarnerMount merger is close to being in the clear, after California and 11 other states settled their antitrust lawsuit against the merger. Plus: Taboola bought Dianomi...",
-      "category": "industry",
-      "salesContext": "industry",
+      "headline": "Instead Of AI Insights Replacing Ad Measurement, Think Of Attribution As Running Your AI",
+      "summary": "AI models and machine learning have reshaped ad campaign measurement. It’s now commonplace for advertisers to set up campaigns with a budget and a cost-per-acquisition goal on all the walled garden...",
+      "category": "digital",
+      "salesContext": "competitive",
       "source": "AdExchanger",
-      "date": "2 days ago",
-      "url": "https://www.adexchanger.com/the-big-story/buying-ctv-in-the-warnermount-world/",
-      "image": "https://picsum.photos/seed/26/600/280",
+      "date": "3 days ago",
+      "url": "https://www.adexchanger.com/commerce/instead-of-ai-insights-replacing-ad-measurement-think-of-attribution-as-running-your-ai/",
+      "image": "https://picsum.photos/seed/497/600/280",
       "talkingPoints": [
-        "Ask what their current customer acquisition cost looks like — then offer a GrabAds performance campaign proposal benchmarked against category averages on the Grab platform."
+        "Ask what DSPs this client is currently using and whether they have access to SEA-specific first-party data — then position GrabAds' programmatic offering as the only one built on real transaction behaviour in the region."
       ],
       "isMovement": true
     },
     {
-      "headline": "Target’s new campaign puts design legacy at center of marketing",
-      "summary": "The effort will extend to creator partnerships and experiential activations and arrives as the retailer&rsquo;s turnaround efforts begin to show results.",
+      "headline": "Sociable: TikTok adds certification tiers for agency partners",
+      "summary": "The platform will offer Agency Partner or Premier Agency Partner badges to assure marketers that partnership requirements have been met.",
+      "category": "digital",
+      "salesContext": "competitive",
+      "source": "Marketing Dive",
+      "date": "3 days ago",
+      "url": "https://www.marketingdive.com/news/sociable-tiktok-adds-certification-tiers-for-agency-partners/831892/",
+      "image": "https://picsum.photos/seed/587/600/280",
+      "talkingPoints": [
+        "Use TikTok's growth as context — then ask if this client is spreading budget across too many platforms. Position GrabAds as the platform with the deepest purchase-intent data in SEA."
+      ],
+      "isMovement": true
+    },
+    {
+      "headline": "What Kroger’s predictive scoring work means for e-commerce marketers",
+      "summary": "The grocer, in partnership with Vidmob and MMA Global, was able to forecast e-commerce conversion of ad creative with 81% accuracy.",
       "category": "industry",
       "salesContext": "industry",
       "source": "Marketing Dive",
       "date": "4 days ago",
-      "url": "https://www.marketingdive.com/news/targets-new-campaign-puts-design-legacy-at-center-of-marketing/831116/",
-      "image": "https://picsum.photos/seed/73/600/280",
+      "url": "https://www.marketingdive.com/news/how-kroger-uses-ai-and-predictive-scoring-to-tie-creative-to-conversion/831659/",
+      "image": "https://picsum.photos/seed/829/600/280",
       "talkingPoints": [
-        "Use this as an industry POV to open your next client call — then ask how this trend is affecting their planning, and guide the conversation toward a GrabAds solution that addresses it."
+        "Ask this e-commerce client what their current cost-per-click looks like on other platforms — then offer to run a GrabAds benchmark comparison using transaction data from Grab's ecosystem."
       ],
       "isMovement": true
     }
